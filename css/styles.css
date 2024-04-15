@@ -1,0 +1,110 @@
+/* Pallette adapted from Color Hunt https://colorhunt.co/palette/a79277d1bb9eead8c0fff2e1 
+#A79277
+#D1BB9E
+#EAD8C0
+#FFF2E1
+*/
+
+
+
+* {
+    background-color: #F8F0E5;
+    color: #102C57;
+}
+
+.president-area {
+    background: repeating-linear-gradient(
+            red,
+            red 10%,
+            #F8F0E5 9%,
+            #F8F0E5 18%);
+}
+
+.pres-button-area {
+    background-color: #102C57;
+
+    color: #F8F0E5;
+    display: grid;
+    width: fit-content;
+    /* grid-template-columns: repeat (9, 1fr); */
+    /* grid-template-columns: 5.5em 5.5em 5.5em 5.5em 5.5em 5.5em 5.5em 5.5em 5.5em; */
+    grid-template-columns: repeat(9, 5.5em);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    padding: 1em;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+}
+
+.pres-button {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    border: 3px solid #F8F0E5;
+    border-radius: 10%;
+    box-shadow: 2px 2px #94918e;
+    cursor: pointer;
+}
+
+.pres-button:active {
+    text-shadow: .4px .4px .75px brown;
+    transform: translate(1px);
+}
+
+#mode-game {
+    display: block;
+}
+#mode-info {
+    display: none;
+}
+
+.portrait {
+    height: 5em;
+    width: 5em;
+    border-radius: 5%;
+    filter: sepia(100%);
+}
+
+.portrait:hover {
+    filter: sepia(100%) opacity(75%) brightness(.75);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: .8em;
+    margin-bottom: .25em;
+}
+
+.profile-pic {
+    width: 3em;
+    height: 3em;
+}
+
+/*tablet query*/
+@media only screen and (min-width: 768px) {
+
+    footer {
+        flex-direction: row;
+        margin-top: 1.25em;
+        font-size: .9em;
+    }
+
+    .profile-pic {
+        width: 3.5em;
+        height: 3.5em;
+    }
+}
+
+/*desktop query*/
+@media only screen and (min-width: 992px) {
+    footer {
+        font-size: 1em;
+    }
+
+    .profile-pic {
+        width: 3.75em;
+        height: 3.75em;
+    }
+}

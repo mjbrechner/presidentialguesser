@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8">
+        <title>Presidential Guesser</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/profile-pic.png">
+        <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+        <main>
+                <button onclick="toggle()">Toggle Game/Info</button>
+                <div id="mode-game">
+
+                        <div class="question-answer-area">
+                                <div class="question-area">
+                                        <h1>TRIVIA QUESTION AREA</h1>
+                                </div>
+                                <div class="answer-area">
+                                        <h2>ANSWER AREA</h2>
+                                </div>
+                        </div>
+
+                        <div class="president-area">
+                                <div class="pres-button-area">
+                                        <div class="pres-button"><img src="/images/01Washington.jpg" class="portrait"
+                                                        alt="George Washington" title="George Washington"></img></div>
+
+                                        <div class="pres-button"><img src="/images/02Adams.jpg" class="portrait"
+                                                        alt="John Adams" title="John Adams"></img></div>
+
+                                        <div class="pres-button"><img src="/images/03Jefferson.jpg" class="portrait"
+                                                        alt="Thomas Jefferson" title="Thomas Jefferson"></img></div>
+
+                                        <div class="pres-button"><img src="/images/04Madison.jpg" class="portrait"
+                                                        alt="James Madison" title="James Madison"></img></div>
+
+                                        <div class="pres-button"><img src="/images/05Monroe.jpg" class="portrait"
+                                                        alt="James Monroe" title="James Monroe"></img></div>
+
+                                        <div class="pres-button"><img src="/images/06Adams.jpg" class="portrait"
+                                                        alt="John Quincy Adams" title="John Quincy Adams"></img></div>
+
+                                        <div class="pres-button"><img src="/images/07Jackson.jpg" class="portrait"
+                                                        alt="Andrew Jackson" title="Andrew Jackson"></img></div>
+
+                                        <div class="pres-button"><img src="/images/08VanBuren.jpg" class="portrait"
+                                                        alt="Martin Van Buren" title="Martin Van Buren"></img></div>
+
+                                        <div class="pres-button"><img src="/images/09Harrison.jpg" class="portrait"
+                                                        alt="William Henry Harrison"
+                                                        title="William Henry Harrison"></img></div>
+
+                                        <div class="pres-button"><img src="/images/10Tyler.jpg" class="portrait"
+                                                        alt="John Tyler" title="John Tyler"></img></div>
+
+                                        <div class="pres-button"><img src="/images/11Polk.jpg" class="portrait"
+                                                        alt="James K. Polk" title="James K. Polk"></img></div>
+
+                                        <div class="pres-button"><img src="/images/12Taylor.jpg" class="portrait"
+                                                        alt="Zachary Taylor" title="Zachary Taylor"></img></div>
+
+                                        <div class="pres-button"><img src="/images/13Fillmore.jpg" class="portrait"
+                                                        alt="Millard Fillmorer" title="Millard Fillmore"></img></div>
+
+                                        <div class="pres-button"><img src="/images/14Pierce.jpg" class="portrait"
+                                                        alt="Franklin Pierce" title="Franklin Pierce"></img></div>
+
+                                        <div class="pres-button"><img src="/images/15Buchanan.jpg" class="portrait"
+                                                        alt="James Buchanan" title="James Buchanan"></img></div>
+
+                                        <div class="pres-button"><img src="/images/16Lincoln.jpg" class="portrait"
+                                                        alt="Abraham Lincoln" title="Abraham Lincoln"></img></div>
+
+                                        <div class="pres-button"><img src="/images/17Johnson.jpg" class="portrait"
+                                                        alt="Andrew Johnson" title="Andrew Johnson"></img></div>
+
+                                        <div class="pres-button"><img src="/images/18Grant.jpg" class="portrait"
+                                                        alt="Ulysses S. Grant" title="Ulysses S. Grant"></img></div>
+
+                                        <div class="pres-button"><img src="/images/19Hayes.jpg" class="portrait"
+                                                        alt="Rutherford Hayes" title="Rutherford Hayes"></img></div>
+
+                                        <div class="pres-button"><img src="/images/20Garfield.jpg" class="portrait"
+                                                        alt="James Garfield" title="James Garfield"></img></div>
+
+                                        <div class="pres-button"><img src="/images/21Arthur.jpg" class="portrait"
+                                                        alt="Chester Arthur" title="Chester Arthur"></img></div>
+
+                                        <div class="pres-button"><img src="/images/22-24Cleveland.jpg" class="portrait"
+                                                        alt="Grover Cleveland" title="Grover Cleveland"></img></div>
+
+                                        <div class="pres-button"><img src="/images/23Harrison.jpg" class="portrait"
+                                                        alt="Benjamin Harrison" title="Benjamin Harrison"></img></div>
+
+                                        <div class="pres-button"><img src="/images/25McKinley.jpg" class="portrait"
+                                                        alt="William McKinley" title="William McKinley"></img></div>
+
+                                        <div class="pres-button"><img src="/images/26Roosevelt.jpg" class="portrait"
+                                                        alt="Theodore Roosevelt" title="Theodore Roosevelt"></img></div>
+
+                                        <div class="pres-button"><img src="/images/27Taft.jpg" class="portrait"
+                                                        alt="William Howard Taft" title="William Howard Taft"></img>
+                                        </div>
+
+                                        <div class="pres-button"><img src="/images/28Wilson.jpg" class="portrait"
+                                                        alt="Woodrow Wilson" title="Woodrow Wilson"></img></div>
+
+                                        <div class="pres-button"><img src="/images/29Harding.jpg" class="portrait"
+                                                        alt="Warren G. Harding" title="Warren G. Harding"></img></div>
+
+                                        <div class="pres-button"><img src="/images/30Coolidge.jpg" class="portrait"
+                                                        alt="Calvin Coolidge" title="Calvin Coolidge"></img></div>
+
+                                        <div class="pres-button"><img src="/images/31Hoover.jpg" class="portrait"
+                                                        alt="Herbert Hoover" title="Herbert Hoover"></img></div>
+
+                                        <div class="pres-button"><img src="/images/32Roosevelt.jpg" class="portrait"
+                                                        alt="Franklin D. Roosevelt" title="Franklin D. Roosevelt"></img>
+                                        </div>
+
+                                        <div class="pres-button"><img src="/images/33Truman.jpg" class="portrait"
+                                                        alt="Harry Truman" title="Harry Truman"></img></div>
+
+                                        <div class="pres-button"><img src="/images/34Eisenhower.jpg" class="portrait"
+                                                        alt="Dwight Eisenhower" title="Dwight Eisenhower"></img></div>
+
+                                        <div class="pres-button"><img src="/images/35Kennedy.jpg" class="portrait"
+                                                        alt="John F. Kennedy" title="John F. Kennedy"></img></div>
+
+                                        <div class="pres-button"><img src="/images/36Johnson.jpg" class="portrait"
+                                                        alt="Lyndon Johnson" title="Lyndon Johnson"></img></div>
+
+                                        <div class="pres-button"><img src="/images/37Nixon.jpg" class="portrait"
+                                                        alt="Richard Nixon" title="Richard Nixon"></img></div>
+
+                                        <div class="pres-button"><img src="/images/38Ford.jpg" class="portrait"
+                                                        alt="Gerald Ford" title="Gerald Ford"></img></div>
+
+                                        <div class="pres-button"><img src="/images/39Carter.jpg" class="portrait"
+                                                        alt="Jimmy Carter" title="Jimmy Carter"></img></div>
+
+                                        <div class="pres-button"><img src="/images/40Reagan.jpg" class="portrait"
+                                                        alt="Ronald Reagan" title="Ronald Reagan"></img></div>
+
+                                        <div class="pres-button"><img src="/images/41Bush.jpg" class="portrait"
+                                                        alt="George H.W. Bush" title="George H.W. Bush"></img></div>
+
+                                        <div class="pres-button"><img src="/images/42Clinton.jpg" class="portrait"
+                                                        alt="Bill Clinton" title="Bill Clinton"></img></div>
+
+                                        <div class="pres-button"><img src="/images/43Bush.jpg" class="portrait"
+                                                        alt="George W. Bush" title="George W. Bush"></img></div>
+
+                                        <div class="pres-button"><img src="/images/44Obama.jpg" class="portrait"
+                                                        alt="Barack Obama" title="Barack Obama"></img></div>
+
+                                        <div class="pres-button"><img src="/images/45Trump.jpg" class="portrait"
+                                                        alt="Donald Trump" title="Donald Trump"></img></div>
+
+                                        <div class="pres-button"><img src="/images/46Biden.jpg" class="portrait"
+                                                        alt="Joe Biden" title="Joe Biden"></img></div>
+
+                                </div>
+                        </div>
+
+                </div>
+
+                <div id="mode-info">
+                        <h1>Presidential Portraits</h1>
+                        <p>All presidential portraits are edited from images available in the public domain, obtained
+                                from the <a href="https://www.loc.gov/free-to-use/presidential-portraits/"
+                                        target="_blank" rel="noopener noreferrer">Library of Congress</a>.</p>
+                        <ul>
+                                <li><a href="https://lccn.loc.gov/96523313" target="_blank"
+                                                rel="noopener noreferrer">George Washington, first president of the
+                                                United States</a> (Credit: From the original series painted by Stuart
+                                        for the Messrs. Doggett of Boston.)</li>
+                                <li><a href="https://lccn.loc.gov/96522259" target="_blank"
+                                                rel="noopener noreferrer">John Adams, second President of the United
+                                                States</a> (Credit: From the original series painted by Stuart for the
+                                        Messrs. Doggett of Boston.)</li>
+                                <li><a href="https://lccn.loc.gov/96523332" target="_blank"
+                                                rel="noopener noreferrer">Thomas Jefferson, third president of the
+                                                United States</a> (Credit: From the original series painted by Stuart
+                                        for the Messrs. Doggett of Boston.)</li>
+                                <li><a href="https://lccn.loc.gov/96522271" target="_blank"
+                                                rel="noopener noreferrer">James Madison, fourth President of the United
+                                                States</a> (Credit: From the original series painted by Stuart for the
+                                        Messrs. Doggett of Boston.)</li>
+                                <li><a href="https://lccn.loc.gov/96523417" target="_blank"
+                                                rel="noopener noreferrer">James Monroe, fifth president of the United
+                                                States</a> (Credit: From another impression From the original series
+                                        painted by Stuart for the Messrs. Doggett of Boston.)</li>
+                                <li><a href="https://lccn.loc.gov/96523419" target="_blank"
+                                                rel="noopener noreferrer">J.Q. Adams</a> (Credit: Engraving from
+                                        original painting by J.P.A. (i.e. G.P.A.) Healy.)</li>
+                                <li><a href="https://lccn.loc.gov/96523440" target="_blank"
+                                                rel="noopener noreferrer">Andrew Jackson</a> (Engraver: James Barton
+                                        Longacre, 1794-1869)</li>
+                                <li><a href="https://lccn.loc.gov/96522273" target="_blank"
+                                                rel="noopener noreferrer">Former President Martin Van Buren, half-length
+                                                portrait, facing right</a></li>
+                                <li><a href="https://lccn.loc.gov/96522278" target="_blank"
+                                                rel="noopener noreferrer">Wm. H. Harrison, President of the United
+                                                States</a> (Lithographer: Charles Fenderich)</li>
+                                <li><a href="https://lccn.loc.gov/96522383" target="_blank"
+                                                rel="noopener noreferrer">President John Tyler, half-length portrait,
+                                                facing right</a></li>
+                                <li><a href="https://lccn.loc.gov/96522397" target="_blank"
+                                                rel="noopener noreferrer">President James K. Polk, half-length portrait,
+                                                seated, facing right</a></li>
+                                <li><a href="https://lccn.loc.gov/2004664062" target="_blank"
+                                                rel="noopener noreferrer">Zachary Taylor, half-length portrait, head in
+                                                profile to the right</a> (Credit: Mathew B. Brady)</li>
+                                <li><a href="https://lccn.loc.gov/96522448" target="_blank"
+                                                rel="noopener noreferrer">Millard Fillmore, three-quarter length
+                                                portrait, seated, facing left</a> (Photographer: Mathew B. Brady)</li>
+                                <li><a href="https://lccn.loc.gov/96522460" target="_blank"
+                                                rel="noopener noreferrer">President Franklin Pierce, three-quarter
+                                                length portrait, seated, facing right, with left hand inside vest</a>
+                                </li>
+                                <li><a href="https://lccn.loc.gov/89707760" target="_blank"
+                                                rel="noopener noreferrer">James Buchanan</a></li>
+                                <li><a href="https://lccn.loc.gov/96522529" target="_blank"
+                                                rel="noopener noreferrer">Abraham Lincoln, head-and-shoulders portrait,
+                                                facing front</a> (Photographer: Alexander Gardner, 1821-1882)</li>
+                                </li>
+                                <li><a href="https://lccn.loc.gov/96522530" target="_blank"
+                                                rel="noopener noreferrer">Hon.
+                                                Andrew Johnson, half-length portrait, facing left</a></li>
+                                <li><a href="https://lccn.loc.gov/00652563" target="_blank"
+                                                rel="noopener noreferrer">Ulysses S. Grant, Lieutenant-General,
+                                                U.S.A</a> (Photographer: Frederick Gutekunst, 1831-1917)</li>
+                                <li><a href="https://lccn.loc.gov/96522533" target="_blank"
+                                                rel="noopener noreferrer">President Rutherford B. Hayes, half-length
+                                                portrait, seated, facing left</a></li>
+                                <li><a href="https://lccn.loc.gov/96522558" target="_blank"
+                                                rel="noopener noreferrer">President James A. Garfield, half-length
+                                                portrait, facing right</a></li>
+                                <li><a href="https://lccn.loc.gov/96524270" target="_blank"
+                                                rel="noopener noreferrer">Chester A. Arthur, President of the United
+                                                States</a> (Photographer: Charles Milton Bell, 1848-1893)</li>
+                                <li><a href="https://lccn.loc.gov/96511406" target="_blank"
+                                                rel="noopener noreferrer">President Grover Cleveland, half-length
+                                                portrait, facing right</a></li>
+                                <li><a href="https://lccn.loc.gov/96524264" target="_blank"
+                                                rel="noopener noreferrer">Benjamin Harrison, three-quarter length
+                                                portrait, seated, facing left, with right hand on table</a>
+                                        (Photographer: George Prince, 1848-1929)</li>
+                                <li><a href="https://lccn.loc.gov/96522569" target="_blank"
+                                                rel="noopener noreferrer">William McKinley, head-and-shoulders portrait,
+                                                facing right</a></li>
+                                <li><a href="https://lccn.loc.gov/2009631526" target="_blank"
+                                                rel="noopener noreferrer">Theodore Roosevelt, three quarter length
+                                                portrait, facing front</a></li>
+                                <li><a href="https://lccn.loc.gov/96522628" target="_blank"
+                                                rel="noopener noreferrer">William Taft, head-and-shoulders portrait,
+                                                facing left</a></li>
+                                <li><a href="https://lccn.loc.gov/96522632" target="_blank"
+                                                rel="noopener noreferrer">Woodrow Wilson, head-and-shoulders portrait,
+                                                facing left</a></li>
+                                <li><a href="https://lccn.loc.gov/96522644" target="_blank"
+                                                rel="noopener noreferrer">Senator Warren G. Harding, head-and-shoulders
+                                                portrait, facing front</a></li>
+                                <li><a href="https://lccn.loc.gov/96522645" target="_blank"
+                                                rel="noopener noreferrer">Calvin Coolidge, head-and-shoulders portrait,
+                                                facing right</a></li>
+                                <li><a href="https://lccn.loc.gov/96522651" target="_blank"
+                                                rel="noopener noreferrer">Herbert Hoover, head-and-shoulders portrait,
+                                                facing slightly right</a></li>
+                                <li><a href="https://lccn.loc.gov/96523441" target="_blank"
+                                                rel="noopener noreferrer">Franklin Delano Roosevelt, head-and-shoulders
+                                                portrait, facing slightly left</a> (Photographer: Elias Goldensky,
+                                        1868-1943)</li>
+                                <li><a href="https://lccn.loc.gov/96523444" target="_blank"
+                                                rel="noopener noreferrer">Harry Truman, half-length portrait, facing
+                                                front</a></li>
+                                <li><a href="https://lccn.loc.gov/96523445" target="_blank"
+                                                rel="noopener noreferrer">Dwight D. Eisenhower, head-and-shoulders
+                                                portrait, facing slightly left</a> (Photographer: Fabian Bachrach,
+                                        1917-2010)</li>
+                                <li><a href="https://lccn.loc.gov/96523447" target="_blank"
+                                                rel="noopener noreferrer">President John F. Kennedy, head-and-shoulders
+                                                portrait, facing front</a></li>
+                                <li><a href="https://lccn.loc.gov/96522661" target="_blank"
+                                                rel="noopener noreferrer">Lyndon B. Johnson, head-and-shoulders
+                                                portrait, facing left</a></li>
+                                <li><a href="https://lccn.loc.gov/96522669" target="_blank"
+                                                rel="noopener noreferrer">Richard M. Nixon, head-and-shoulders portrait,
+                                                facing front</a></li>
+                                <li><a href="https://lccn.loc.gov/96522670" target="_blank"
+                                                rel="noopener noreferrer">Gerald R. Ford, half-length portrait, facing
+                                                front, with arms crossed</a></li>
+                                <li><a href="https://lccn.loc.gov/96522672" target="_blank"
+                                                rel="noopener noreferrer">Jimmy Carter, head-and-shoulders portrait,
+                                                facing front, next to an American flag</a> (Photographer: Karl
+                                        Schumacher)</li>
+                                <li><a href="https://lccn.loc.gov/96522678" target="_blank"
+                                                rel="noopener noreferrer">Ronald Reagan, head-and-shoulders portrait,
+                                                facing front</a></li>
+                                <li><a href="https://lccn.loc.gov/89715763" target="_blank"
+                                                rel="noopener noreferrer">George Bush, half-length portrait, facing
+                                                front</a> (Photographer: David Valdez, 1949- )</li>
+                                <li><a href="https://lccn.loc.gov/93505822" target="_blank"
+                                                rel="noopener noreferrer">Bill Clinton, head-and-shoulders portrait,
+                                                facing front</a></li>
+                                <li><a href="https://lccn.loc.gov/2011645073" target="_blank"
+                                                rel="noopener noreferrer">President Bush poses for his official portrait
+                                                in the Roosevelt Room (blue tie)</a> (Credit: Eric Draper, photographer,
+                                        courtesy of the George Bush Presidential Library)</li>
+                                <li><a href="https://lccn.loc.gov/2010647151" target="_blank"
+                                                rel="noopener noreferrer">Official portrait of President-elect Barack
+                                                Obama</a> (Photographer: Pete Souza)</li>
+                                <li><a href="https://lccn.loc.gov/2017656484" target="_blank"
+                                                rel="noopener noreferrer">Official portrait of President Donald J.
+                                                Trump</a> (Photographer: Shealah Craighead)</li>
+                                <li><a href="https://lccn.loc.gov/2021630112" target="_blank"
+                                                rel="noopener noreferrer">Official portrait of President Joe Biden,
+                                                taken in the Library room at the White House</a> (Photographer: Adam
+                                        Schultz)</li>
+                        </ul>
+
+                </div>
+        </main>
+
+
+        <footer>
+                <p>
+                        <script>
+                                const thisYear = new Date().getFullYear();
+                                if (thisYear === 2024) {
+                                        document.write(`Copyright © 2024 `);
+                                } else {
+                                        document.write(`Copyright © 2024-${thisYear} `);
+                                }
+                        </script>
+                        <a class="credits-link" href="https://github.com/mjbrechner">M.J. Brechner</a>
+                </p>
+        </footer>
+        <script src="javascript/index.js" defer></script>
+</body>
+
+</html>
