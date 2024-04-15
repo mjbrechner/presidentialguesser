@@ -8,22 +8,41 @@
 
 
 * {
-    background-color: #F8F0E5;
+    background-color: #FFE9CC;
     color: #102C57;
+
+}
+
+
+.title {
+    background-color: #102C57;
+    color: #FFE9CC;
+    text-shadow: -1px 1px 1px #940404,
+        1px 1px 1px #940404,
+        1px -1px 1px #940404,
+        -1px -1px 1px #940404;
+    text-align: center;
+    padding: .35em;
+    font-size: 2.5em;
 }
 
 .president-area {
-    background: repeating-linear-gradient(
-            red,
+    /* background: repeating-linear-gradient(red,
             red 10%,
             #F8F0E5 9%,
             #F8F0E5 18%);
+
+    filter: sepia(50%); */
+
+    background: repeating-linear-gradient(#940404,
+            #940404 10%,
+            #FFE9CC 9%,
+            #FFE9CC 18%);
 }
 
 .pres-button-area {
     background-color: #102C57;
-
-    color: #F8F0E5;
+    color: #FFE9CC;
     display: grid;
     width: fit-content;
     /* grid-template-columns: repeat (9, 1fr); */
@@ -40,20 +59,21 @@
     height: 5em;
     width: 5em;
     border-radius: 50%;
-    border: 3px solid #F8F0E5;
+    border: 3px solid #FFE9CC;
     border-radius: 10%;
     box-shadow: 2px 2px #94918e;
     cursor: pointer;
 }
 
 .pres-button:active {
-    text-shadow: .4px .4px .75px brown;
+    text-shadow: .4px .4px .75px #940404;
     transform: translate(1px);
 }
 
 #mode-game {
     display: block;
 }
+
 #mode-info {
     display: none;
 }
