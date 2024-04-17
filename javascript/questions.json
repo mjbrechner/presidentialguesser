@@ -1,0 +1,202 @@
+[
+
+
+    {
+        "question": "Born in Virginia",
+        "answer": ["washington", "jefferson", "madison", "monroe", "harrison_wh", "tyler", "taylor", "wilson"],
+        "answerNumber": 8
+    },
+
+    {
+        "question": "Born in Ohio",
+        "answer": ["grant", "hayes", "garfield", "harrison_b", "mckinley", "taft", "harding"],
+        "answerNumber": 7
+    },
+
+
+    {
+        "question": "Born in Massachusetts",
+        "answer": ["adams_j", "adams_jq", "kennedy", "bush_ghw"],
+        "answerNumber": 4
+    }, {
+        "question": "Born in New York",
+        "answer": ["roosevelt_t", "roosevelt_fd", "vanburen", "trump", "fillmore"],
+        "answerNumber": 5
+    },
+
+    {
+        "question": "Born in Pennsylvania",
+        "answer": ["buchanan", "biden"],
+        "answerNumber": 2
+    },
+
+    {
+        "question": "Born in Texas",
+        "answer": ["eisenhower", "johnson_lb"],
+        "answerNumber": 2
+    },
+
+    {
+        "question": "Born in Vermont",
+        "answer": ["arthur", "coolidge"],
+        "answerNumber": 2
+    },
+
+    {
+        "question": "Born as a British citizen",
+        "answer": ["washington", "adams_j", "jefferson", "madison", "monroe", "jackson", "adams_jq", "harrison_wh"],
+        "answerNumber": 8
+    },
+
+    {
+        "question": "Issued no vetoes as president",
+        "answer": ["adams_j", "jefferson", "adams_jq", "harrison_wh", "taylor", "fillmore", "garfield"],
+        "answerNumber": 7
+    },
+
+    {
+        "question": "Issued more than 50 or more vetoes as president",
+        "answer": ["roosevelt_fd", "cleveland", "truman", "eisenhower", "grant", "roosevelt_t", "reagan", "ford", "coolidge"],
+        "answerNumber": 9
+    },
+
+    {
+        "question": "Never elected to public office before becoming president",
+        "answer": ["taylor", "grant", "hoover", "eisenhower", "trump"],
+        "answerNumber": 5
+    },
+
+
+    {
+        "question": "Served as U.S. vice president",
+        "answer": ["adams_j", "jefferson", "vanburen", "tyler", "fillmore", "johnson_a", "arthur", "roosevelt_t", "coolidge", "truman", "nixon", "johnson_lb", "ford", "bush_ghw", "biden"],
+        "answerNumber": 15
+    },
+
+
+    {
+        "question": "Served as U.S. secretary of state",
+        "answer": ["jefferson", "madison", "monroe", "adams_jq", "vanburen", "buchanan"],
+        "answerNumber": 6
+    },
+
+    {
+        "question": "Served as a U.S. senator",
+        "answer": ["tyler", "monroe", "johnson_lb", "johnson_a", "jackson", "buchanan", "harding", "harrison_wh", "vanburen", "pierce", "truman", "kennedy", "adams_jq", "obama", "harrison_b", "biden", "nixon"],
+        "answerNumber": 17
+    },
+
+    {
+        "question": "Served as a member of the U.S. House of Representatives",
+        "answer": ["tyler", "madison", "bush_ghw", "johnson_lb", "johnson_a", "polk", "jackson", "buchanan", "mckinley", "garfield", "hayes", "harrison_wh", "fillmore", "pierce", "ford", "kennedy", "adams_jq", "lincoln", "nixon"],
+        "answerNumber": 19
+    },
+
+    {
+        "question": "Served as a governor of a U.S. state (not territory)",
+        "answer": ["tyler", "monroe", "jefferson", "bush_gw", "johnson_a", "polk", "mckinley", "hayes", "roosevelt_fd", "roosevelt_t", "cleveland", "vanburen", "wilson", "coolidge", "carter", "reagan", "clinton"],
+        "answerNumber": 17
+    },
+
+    {
+        "question": "Served as a member of a colonial legislature under the Kingdom of Great Britain.",
+        "answer": ["washington", "adams_j", "jefferson"],
+        "answerNumber": 3
+    },
+
+    {
+        "question": "Served as a U.S. ambassador",
+        "answer": ["adams_j", "jefferson", "monroe", "adams_jq", "vanburen", "harrison_wh", "buchanan", "bush_ghw"],
+        "answerNumber": 8
+    },
+
+    {
+        "question": "Served as a U.S. Secretary of War (or Acting Secretary of War)",
+        "answer": ["monroe", "grant", "taft"],
+        "answerNumber": 3
+    },
+
+    {
+        "question": "Died while president",
+        "answer": ["harrison_wh", "taylor", "lincoln", "garfield", "mckinley", "harding", "roosevelt_fd", "kennedy"],
+        "answerNumber": 8
+    },
+
+
+    {
+        "question": "President before the age of 50",
+        "answer": ["roosevelt_t", "kennedy", "clinton", "grant", "obama", "cleveland", "pierce", "garfield", "polk"],
+        "answerNumber": 9
+    },
+
+    {
+        "question": "Presidency included time over the age of 70",
+        "answer": ["biden", "reagan", "trump", "eisenhower"],
+        "answerNumber": 4
+    },
+
+    {
+        "question": "Alive past the age of 90",
+        "answer": ["hoover", "adams_j", "reagan", "ford", "bush_ghw", "carter"],
+        "answerNumber": 6
+    },
+
+    {
+        "question": "Did not graduate with a college degree",
+        "answer": ["washington", "monroe", "jackson", "vanburen", "harrison_wh", "taylor", "fillmore", "lincoln", "johnson", "cleveland", "mckinley", "truman"],
+        "answerNumber": 12
+    },
+    {
+        "question": "Undergraduate and/or graduate degree from Harvard University",
+        "answer": ["adams_j", "adams_jq", "roosevelt_t", "roosevelt_fd", "kennedy", "bush_gw", "hayes", "obama"],
+        "answerNumber": 8
+    },
+
+    {
+        "question": "Undergraduate and/or graduate degree from Yale University",
+        "answer": ["taft", "bush_ghw", "bush_gw", "ford", "clinton"],
+        "answerNumber": 5
+    },
+
+    {
+        "question": "Served two or more full terms as president",
+        "answer": ["roosevelt_fd", "jefferson", "madison", "monroe", "jackson", "grant", "cleveland", "wilson", "eisenhower", "reagan", "clinton", "bush_gw", "obama", "washington"],
+        "answerNumber": 14
+    },
+
+    {
+        "question": "Served exactly one term as president (no more, no less)",
+        "answer": ["adams_j", "adams_jq", "vanburen", "polk", "pierce", "buchanan", "hayes", "harrison_b", "taft", "hoover", "carter", "bush_ghw", "trump"],
+        "answerNumber": 13
+    },
+
+    {
+        "question": "Served less than one complete term as president",
+        "answer": ["harrison_wh", "garfield", "taylor", "harding", "ford", "fillmore", "kennedy", "biden", "arthur", "johnson_a", "tyler"],
+        "answerNumber": 11
+    },
+
+    {
+        "question": "Impeached by the U.S. House of Representatives",
+        "answer": ["johnson_a", "clinton", "trump"],
+        "answerNumber": 3
+    },
+
+    {
+        "question": "Issued more than 500 executive orders",
+        "answer": ["roosevelt_fd", "wilson", "coolidge", "roosevelt_t", "hoover", "truman", "taft", "harding"],
+        "answerNumber": 8
+    }, 
+
+        {
+        "question": "Appointed five or more justices to the U.S. Supreme Court",
+        "answer": ["washington", "roosevelt_fd", "taft", "jackson", "lincoln", "eisenhower"],
+        "answerNumber": 6
+    }, 
+
+            {
+        "question": "Did not appoint any justices to the U.S. Supreme Court",
+        "answer": ["harrison_wh", "taylor", "johnson_a", "carter"],
+        "answerNumber": 4
+    }
+]
