@@ -186,17 +186,165 @@
         "question": "Issued more than 500 executive orders",
         "answer": ["roosevelt_fd", "wilson", "coolidge", "roosevelt_t", "hoover", "truman", "taft", "harding"],
         "answerNumber": 8
-    }, 
+    },
 
-        {
+    {
         "question": "Appointed five or more justices to the U.S. Supreme Court",
         "answer": ["washington", "roosevelt_fd", "taft", "jackson", "lincoln", "eisenhower"],
         "answerNumber": 6
-    }, 
+    },
 
-            {
+    {
         "question": "Did not appoint any justices to the U.S. Supreme Court",
         "answer": ["harrison_wh", "taylor", "johnson_a", "carter"],
         "answerNumber": 4
+    },
+
+    {
+        "question": "Had multiple different vice presidents",
+        "answer": ["jefferson", "madison", "jackson", "lincoln", "grant", "cleveland", "mckinley", "roosevelt_fd", "nixon"],
+        "answerNumber": 9
+    },
+
+    {
+        "question": "Was known to be a member of the Freemasons",
+        "answer": ["washington", "monroe", "jackson", "polk", "buchanan", "johnson_a", "garfield", "mckinley", "roosevelt_t", "taft", "harding", "roosevelt_fd", "truman", "ford"],
+        "answerNumber": 14
+    },
+
+    {
+        "question": "Won a presidential election while losing the popular vote",
+        "answer": ["adams_jq", "hayes", "harrison_b", "bush_gw", "trump"],
+        "answerNumber": 5
+    },
+
+    {
+        "question": "Won a presidential election with 85% ore more of the Electoral College vote",
+        "answer": ["washington", "monroe", "roosevelt_fd", "reagan", "nixon", "jefferson", "lincoln", "johnson_lb", "eisenhower", "pierce"],
+        "answerNumber": 10
+    },
+
+    {
+        "question": "Was a member of the Whig Party at least part of the time while president",
+        "answer": ["harrison_wh", "tyler", "taylor", "fillmore"],
+        "answerNumber": 4
+    },
+
+    {
+        "question": "Did not serve in the U.S. military prior to becoming president",
+        "answer": ["adams_j", "adams_jq", "vanburen", "cleveland", "wilson", "harding", "coolidge", "hoover", "roosevelt_fd", "clinton", "obama", "trump", "biden"],
+        "answerNumber": 13
+    },
+
+    {
+        "question": "Prior to becoming president, achieved the rank of general officer in the U.S. Armed Forces",
+        "answer": ["washington", "grant", "eisenhower", "jackson", "harrison_wh", "taylor", "hayes", "garfield", "taft", "pierce", "arthur", "johnson_a", "harrison_b"],
+        "answerNumber": 13
+    },
+
+    {
+        "question": "Served in the U.S. Navy prior to becoming president",
+        "answer": ["johnson_lb", "nixon", "ford", "kennedy", "bush_ghw", "carter"],
+        "answerNumber": 6
+    },
+
+    {
+        "question": "Served in the U.S. Air Force or U.S. Army Air Forces before becoming president",
+        "answer": ["reagan", "bush_gw"],
+        "answerNumber": 2
+    },
+
+    {
+        "question": "Recipient of the Nobel Peace Prize",
+        "answer": ["roosevelt_t", "wilson", "carter", "obama"],
+        "answerNumber": 4
+    },
+
+    {
+        "question": "Was never elected to the office of the U.S. presidency",
+        "answer": ["tyler", "fillmore", "johnson_a", "arthur", "ford"],
+        "answerNumber": 5
+    },
+
+    {
+        "question": "Day of either birth or death was on the fourth of July.",
+        "answer": ["jefferson", "adams_j", "monroe", "coolidge"],
+        "answerNumber": 4
+    },
+
+    {
+        "question": "Born in January",
+        "answer": ["fillmore", "mckinley", "roosevelt_fd", "nixon"],
+        "answerNumber": 4
+    },
+
+    {
+        "question": "Born in February",
+        "answer": ["washington", "harrison_wh", "lincoln", "reagan"],
+        "answerNumber": 4
+    },
+
+    {
+        "question": "Born in March",
+        "answer": ["madison", "jackson", "tyler", "cleveland"],
+        "answerNumber": 4
+    },
+
+    {
+        "question": "Born in April",
+        "answer": ["jefferson", "monroe", "buchanan", "grant"],
+        "answerNumber": 4
+    },
+
+    {
+        "question": "Born in May",
+        "answer": ["truman", "kennedy"],
+        "answerNumber": 2
+    },
+
+    {
+        "question": "Born in June",
+        "answer": ["bush_ghw", "trump"],
+        "answerNumber": 2
+    },
+    {
+        "question": "Born in July",
+        "answer": ["adams_jq", "coolidge", "ford", "bush_gw"],
+        "answerNumber": 4
+    },
+    {
+        "question": "Born in August",
+        "answer": ["harrison_b", "hoover", "johnson_lb", "clinton", "obama"],
+        "answerNumber": 5
+    },
+
+    {
+        "question": "Born in October",
+        "answer": ["adams_j", "hayes", "arthur", "roosevelt_t", "eisenhower", "carter"],
+        "answerNumber": 6
+    },
+
+    {
+        "question": "Born in November",
+        "answer": ["polk", "taylor", "pierce", "garfield", "harding", "biden"],
+        "answerNumber": 6
+    },
+
+    {
+        "question": "Born in December",
+        "answer": ["vanburen", "johnson_a", "wilson"],
+        "answerNumber": 3
+    },
+
+    {
+        "question": "Held the office of attorney general of a U.S. state",
+        "answer": ["vanburen", "clinton"],
+        "answerNumber": 2
+    },
+
+    {
+        "question": "Once held the office of mayor of a town or city",
+        "answer": ["johnson_a", "cleveland", "coolidge"],
+        "answerNumber": 3
     }
 ]
