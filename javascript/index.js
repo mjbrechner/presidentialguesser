@@ -260,3 +260,5 @@ function hoverBiden() {
 function hoverNone() {
     chosenPresidentBox.innerText = "";
 }
+
+
