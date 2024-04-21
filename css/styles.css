@@ -27,6 +27,8 @@
 }
 
 .president-area {
+    display: flex;
+    flex-direction: column-reverse;
     /* background: repeating-linear-gradient(red,
             red 10%,
             #F8F0E5 9%,
@@ -34,13 +36,14 @@
 
     filter: sepia(50%); */
 
-    background: repeating-linear-gradient(#940404,
+    /* background: repeating-linear-gradient(#940404,
             #940404 10%,
             #FFE9CC 9%,
-            #FFE9CC 18%);
+            #FFE9CC 18%); */
+
 }
 
-.pres-button-area {
+#pres-button-area {
     background-color: #102C57;
     color: #FFE9CC;
     display: grid;
@@ -68,6 +71,29 @@
 .pres-button:active {
     text-shadow: .4px .4px .75px #940404;
     transform: translate(1px);
+}
+
+#pres-name-area {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+
+#pres-name-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #102C57;
+    color: #FFE9CC;
+    border: .25em solid #FFE9CC;
+    border-radius: 5px;
+    height: 1.5em;
+    width: 10em;
+    padding: .5em;
+    font-size: 2em;
+
 }
 
 #mode-game {
@@ -104,6 +130,28 @@ footer {
 
 /*tablet query*/
 @media only screen and (min-width: 768px) {
+
+    .president-area {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+    #pres-name-area {
+        width: 832px;
+        height: 450px;
+        background: repeating-linear-gradient(#940404,
+                #940404 8%,
+                #FFE9CC 8%,
+                #FFE9CC 16%);
+
+        /* background: repeating-linear-gradient(#940404,
+                #940404 10%,
+                #FFE9CC 9%,
+                #FFE9CC 18%); */
+    }
+
 
     footer {
         flex-direction: row;
