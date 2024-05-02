@@ -6,14 +6,22 @@ const questionBox = document.getElementById("question-asker");
 let workingQuestionSet = [];
 
 
+
 async function questionAsker() {
+    // When a question IS being asked, enable the presidential portrait section and clear answer area.
+    document.getElementById("pres-button-area").style.pointerEvents = "auto";
+    document.getElementById("pres-name-box").style.display = "flex";
+    document.getElementById("answer-box").innerText = "";
+    //
     let randomizer = Math.floor(Math.random() * superJSON.length);
-    questionBox.innerText = superJSON[randomizer]["question"];
-    console.log(superJSON.length + " " + randomizer + " " + superJSON[randomizer]["question"] + " " + superJSON[randomizer]["answer"][0]);
+    questionBeingAsked = superJSON[randomizer]["question"];
+    questionBox.innerText = questionBeingAsked;
+    currentAnswers = superJSON[randomizer]["answer"];
+    console.log(superJSON.length + " " + randomizer + " " + superJSON[randomizer]["question"] + " " + currentAnswers);
 
 
     // This should delete the question that has just been asked. Still need to delete the president who has just been answered, though.
-    console.log(`I want to delete the question ${superJSON[randomizer]["question"]}.`);
+    console.log(`I want to delete the question ${superJSON[randomizer]["question"]} It currents has the answers: ${currentAnswers}.`);
     superJSON.splice(randomizer, 1);
     console.log(superJSON);
 }
