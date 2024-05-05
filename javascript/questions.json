@@ -143,7 +143,7 @@
 
     {
         "question": "Did not graduate with a college degree",
-        "answer": ["washington", "monroe", "jackson", "vanburen", "harrison_wh", "taylor", "fillmore", "lincoln", "johnson", "cleveland", "mckinley", "truman"],
+        "answer": ["washington", "monroe", "jackson", "vanburen", "harrison_wh", "taylor", "fillmore", "lincoln", "johnson_a", "cleveland", "mckinley", "truman"],
         "answerNumber": 12
     },
     {

@@ -69,6 +69,9 @@ const chosenPresidentBox = document.getElementById("pres-name-box");
 
 
 function displayChosenPresident() {
+    // Display the name of chosen president.
+    document.getElementById("answer-box").innerText = `You have chosen ${document.getElementById(`portrait-${chosenPresident}`).title}.`;
+
     document.getElementById("pres-button-area").style.pointerEvents = "none";
     document.getElementById("pres-name-box").style.display = "none";
 }
@@ -90,28 +93,34 @@ function revealAnswer() {
                     return nameToBeRemoved !== chosenPresident
                 });
             }
-            console.log(`testing oh testing ${superJSON[i]["question"]}: ${superJSON[i]["answer"]}`);
+            // console.log(`testing oh testing ${superJSON[i]["question"]}: ${superJSON[i]["answer"]}`);
         }
 
         // Remove any questions that no longer have any remaining answers
-        for (let i = 0; i < superJSON.length; i++) {
-            if (superJSON[i]["answer"].length === 0) {
-                //remove
-                // THIS NEEDS TO BE TESTED!!!!!!
-                // THIS NEEDS TO BE TESTED!!!!!!
-                // THIS NEEDS TO BE TESTED!!!!!!
-                superJSON.splice(superJSON[i], 1);
-                // THIS NEEDS TO BE TESTED!!!!!!
-                // THIS NEEDS TO BE TESTED!!!!!!
-                // THIS NEEDS TO BE TESTED!!!!!!
-            }
-            console.log(`testing oh testing ${superJSON[i]["question"]}: ${superJSON[i]["answer"]}`);
-        }
+        // for (let i = 0; i < superJSON.length; i++) {
+        //     if (superJSON[i]["answer"].length === 0) {
+        //         //remove
+        //         // THIS NEEDS TO BE TESTED MORE!!! I think it works but could use more testing.
+        //         // THIS NEEDS TO BE TESTED!!!!!!
+        //         // THIS NEEDS TO BE TESTED!!!!!!
+        //         console.log(`NO ANSWERS FOR ${superJSON[i]["question"]}}!`);
+        //         // console.log(`NO ANSWERS FOR ${superJSON[i]}!`);
+        //         superJSON.splice(i, 1);
+        //         console.log("JSON IS NOW:");
+        //         console.log(superJSON);
+        //         // THIS NEEDS TO BE TESTED!!!!!!
+        //         // THIS NEEDS TO BE TESTED!!!!!!
+        //         // THIS NEEDS TO BE TESTED!!!!!!
+        //     } else {
+        //         // console.log(`length is ${superJSON[i]["answer"].length}!`);
+        //     }
+        //     // console.log(`testing oh testing ${superJSON[i]["question"]}: ${superJSON[i]["answer"]}`);
+        // }
 
         // Unhighlight president's portrait image, since that president cannot be used any more.
         //!!!!!!!!!! instead of this, make an array of used answers. After a president has been used, add that name to the array. The with one click,
         /// add all presidents in that array to be unhighlighted and unclickable. Then, with a new game, reset this.!!!!!!!!!!!!!!!!!!!!!!!
-        
+
         document.getElementById(`portrait-${chosenPresident}`).style.filter = "sepia(100%) opacity(75%) brightness(.25)";
     } else {
         console.log(`You're wrong!`);
@@ -122,42 +131,270 @@ function revealAnswer() {
 // When presidents are actually clicked and therefore chosen
 function chooserWashington() {
     chosenPresident = "washington";
-    document.getElementById("answer-box").innerText = `You have chosen George Washington.`;
     displayChosenPresident();
     revealAnswer();
 }
 
 function chooserAdams_J() {
     chosenPresident = "adams_j";
-    document.getElementById("answer-box").innerText = `You have chosen John Adams.`;
     displayChosenPresident();
     revealAnswer();
 }
 
 function chooserJefferson() {
     chosenPresident = "jefferson";
-    document.getElementById("answer-box").innerText = `You have chosen Thomas Jefferson.`;
     displayChosenPresident();
     revealAnswer();
 }
 
 function chooserMadison() {
     chosenPresident = "madison";
-    document.getElementById("answer-box").innerText = `You have chosen James Madison.`;
     displayChosenPresident();
     revealAnswer();
 }
 
 function chooserMonroe() {
     chosenPresident = "monroe";
-    document.getElementById("answer-box").innerText = `You have chosen James Monroe.`;
     displayChosenPresident();
     revealAnswer();
 }
 
 function chooserAdams_JQ() {
     chosenPresident = "adams_jq";
-    document.getElementById("answer-box").innerText = `You have chosen John Quincy Adams.`;
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserJackson() {
+    chosenPresident = "jackson";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserVanBuren() {
+    chosenPresident = "vanburen";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserHarrison_WH() {
+    chosenPresident = "harrison_wh";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserTyler() {
+    chosenPresident = "tyler";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserPolk() {
+    chosenPresident = "polk";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserTaylor() {
+    chosenPresident = "taylor";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserFillmore() {
+    chosenPresident = "fillmore";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserPierce() {
+    chosenPresident = "pierce";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserBuchanan() {
+    chosenPresident = "buchanan";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserLincoln() {
+    chosenPresident = "lincoln";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserJohnson_A() {
+    chosenPresident = "johnson_a";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserGrant() {
+    chosenPresident = "grant";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserHayes() {
+    chosenPresident = "hayes";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserGarfield() {
+    chosenPresident = "garfield";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserArthur() {
+    chosenPresident = "arthur";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserCleveland() {
+    chosenPresident = "cleveland";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserHarrison_B() {
+    chosenPresident = "harrison_b";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserMcKinley() {
+    chosenPresident = "mckinley";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserRoosevelt_T() {
+    chosenPresident = "roosevelt_t";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserTaft() {
+    chosenPresident = "taft";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserWilson() {
+    chosenPresident = "wilson";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserHarding() {
+    chosenPresident = "harding";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserCoolidge() {
+    chosenPresident = "coolidge";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserHoover() {
+    chosenPresident = "hoover";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserRoosevelt_FD() {
+    chosenPresident = "roosevelt_fd";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserTruman() {
+    chosenPresident = "truman";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserEisenhower() {
+    chosenPresident = "eisenhower";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserKennedy() {
+    chosenPresident = "kennedy";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserJohnson_LB() {
+    chosenPresident = "johnson_lb";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserNixon() {
+    chosenPresident = "nixon";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserFord() {
+    chosenPresident = "ford";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserCarter() {
+    chosenPresident = "carter";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserReagan() {
+    chosenPresident = "reagan";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserBush_GHW() {
+    chosenPresident = "bush_ghw";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserClinton() {
+    chosenPresident = "clinton";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserBush_GW() {
+    chosenPresident = "bush_gw";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserObama() {
+    chosenPresident = "obama";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserTrump() {
+    chosenPresident = "trump";
+    displayChosenPresident();
+    revealAnswer();
+}
+
+function chooserBiden() {
+    chosenPresident = "biden";
     displayChosenPresident();
     revealAnswer();
 }

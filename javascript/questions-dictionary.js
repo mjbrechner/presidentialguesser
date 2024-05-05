@@ -22,7 +22,7 @@ let questionsRegular = {
     "President before the age of 50": ["roosevelt_t", "kennedy", "clinton", "grant", "obama", "cleveland", "pierce", "garfield", "polk"],
     "Presidency included time over the age of 70": ["biden", "reagan", "trump", "eisenhower"],
     "Alive past the age of 90": ["hoover", "adams_j", "reagan", "ford", "bush_ghw", "carter"],
-    "Did not graduate with a college degree": ["washington", "monroe", "jackson", "vanburen", "harrison_wh", "taylor", "fillmore", "lincoln", "johnson", "cleveland", "mckinley", "truman"],
+    "Did not graduate with a college degree": ["washington", "monroe", "jackson", "vanburen", "harrison_wh", "taylor", "fillmore", "lincoln", "johnson_a", "cleveland", "mckinley", "truman"],
     "Undergraduate and/or graduate degree from Harvard University": ["adams_j", "adams_jq", "roosevelt_t", "roosevelt_fd", "kennedy", "bush_gw", "hayes", "obama"],
     "Undergraduate and/or graduate degree from Yale University": ["taft", "bush_ghw", "bush_gw", "ford", "clinton"],
     "Served two or more full terms as president": ["roosevelt_fd", "jefferson", "madison", "monroe", "jackson", "grant", "cleveland", "wilson", "eisenhower", "reagan", "clinton", "bush_gw", "obama", "washington"],
@@ -35,7 +35,7 @@ let questionsRegular = {
     "Had multiple different vice presidents": ["jefferson", "madison", "jackson", "lincoln", "grant", "cleveland", "mckinley", "roosevelt_fd", "nixon"],
     "Was known to be a member of the Freemasons": ["washington", "monroe", "jackson", "polk", "buchanan", "johnson_a", "garfield", "mckinley", "roosevelt_t", "taft", "harding", "roosevelt_fd", "truman", "ford"],
     "Won a presidential election while losing the popular vote": ["adams_jq", "hayes", "harrison_b", "bush_gw", "trump"],
-    "Won a presidential election with 85% ore more of the Electoral College vote": ["washington", "monroe", "roosevelt_fd", "reagan", "nixon", "jefferson", "lincoln", "johnson_lb", "eisenhower", "pierce"],
+    "Won a presidential election with 85% or more of the Electoral College vote": ["washington", "monroe", "roosevelt_fd", "reagan", "nixon", "jefferson", "lincoln", "johnson_lb", "eisenhower", "pierce"],
     "Was a member of the Whig Party at least part of the time while president": ["harrison_wh", "tyler", "taylor", "fillmore"],
     "Did not serve in the U.S. military prior to becoming president": ["adams_j", "adams_jq", "vanburen", "cleveland", "wilson", "harding", "coolidge", "hoover", "roosevelt_fd", "clinton", "obama", "trump", "biden"],
     "Prior to becoming president, achieved the rank of general in the U.S. Armed Forces": ["washington", "grant", "eisenhower", "jackson", "harrison_wh", "taylor", "hayes", "garfield", "taft", "pierce", "arthur", "johnson_a", "harrison_b"],
@@ -56,7 +56,8 @@ let questionsRegular = {
     "Born in November": ["polk", "taylor", "pierce", "garfield", "harding", "biden"],
     "Born in December": ["vanburen", "johnson_a", "wilson"],
     "Held the office of attorney general of a U.S. state": ["vanburen", "clinton"],
-    "Once held the office of mayor of a town or city": ["johnson_a", "cleveland", "coolidge"]
+    "Once held the office of mayor of a town or city": ["johnson_a", "cleveland", "coolidge"],
+    "Won and/or was nominated for a Grammy Award": ["truman", "kennedy", "nixon", "carter", "clinton", "obama"]
 }
 
 let superJSON = `[
@@ -204,7 +205,7 @@ let superJSON = `[
 
     {
         "question": "Did not graduate with a college degree",
-        "answer": ["washington", "monroe", "jackson", "vanburen", "harrison_wh", "taylor", "fillmore", "lincoln", "johnson", "cleveland", "mckinley", "truman"],
+        "answer": ["washington", "monroe", "jackson", "vanburen", "harrison_wh", "taylor", "fillmore", "lincoln", "johnson_a", "cleveland", "mckinley", "truman"],
         "answerNumber": 12
     },
     {
@@ -280,7 +281,7 @@ let superJSON = `[
     },
 
     {
-        "question": "Won a presidential election with 85% ore more of the Electoral College vote",
+        "question": "Won a presidential election with 85% or more of the Electoral College vote",
         "answer": ["washington", "monroe", "roosevelt_fd", "reagan", "nixon", "jefferson", "lincoln", "johnson_lb", "eisenhower", "pierce"],
         "answerNumber": 10
     },
@@ -407,9 +408,30 @@ let superJSON = `[
         "question": "Once held the office of mayor of a town or city",
         "answer": ["johnson_a", "cleveland", "coolidge"],
         "answerNumber": 3
+    },
+    
+    {
+        "question": "Won or was nominated for a Grammy Award",
+        "answer": ["truman", "kennedy", "nixon", "carter", "clinton", "obama"],
+        "answerNumber": 6
+    }, 
+
+    {
+        "question": "Signed the Declaration of Independence or directly descended from one of its signers",
+        "answer": ["adams_j", "jefferson", "harrison_wh", "harrison_b"],
+        "answerNumber": 4
     }
 ]`;
 
 
 superJSON = JSON.parse(superJSON);
 console.log(superJSON[1]);
+let superJSON2 = `[
+        {
+        "question": "First president to sign a Declaration of War",
+        "answer": ["madison"],
+        "answerNumber": 1
+    }
+]`;
+
+superJSON2 = JSON.parse(superJSON2);

@@ -61,7 +61,7 @@
     },
 
     {
-        "question": "Born in Nebraaska",
+        "question": "Born in Nebraska",
         "answer": ["ford"],
         "answerNumber": 1
     },
@@ -74,6 +74,12 @@
 
     {
         "question": "Born in New Jersey",
+        "answer": ["cleveland"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served non-concesutive terms as president",
         "answer": ["cleveland"],
         "answerNumber": 1
     },
@@ -130,17 +136,41 @@
         "question": "Served as speaker of the U.S. House of Representatives",
         "answer": ["polk"],
         "answerNumber": 1
-    }, 
+    },
 
-        {
+    {
         "question": "Served as president pro tempore of the U.S. Senate",
         "answer": ["tyler"],
         "answerNumber": 1
-    }, 
+    },
 
-            {
+    {
         "question": "Native speaker of Dutch",
         "answer": ["vanburen"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Never affiliated with a political party while president",
+        "answer": ["washington"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Affiliated with the Federalist Party",
+        "answer": ["adams_j"],
+        "answerNumber": 1
+    }, 
+
+    {
+        "question": "Founded the University of Virginia",
+        "answer": ["jefferson"],
+        "answerNumber": 1
+    }, 
+
+    {
+        "question": "First president to sign a Declaration of War",
+        "answer": ["madison"],
         "answerNumber": 1
     }
 
