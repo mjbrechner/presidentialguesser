@@ -38,7 +38,7 @@ let questionsRegular = {
     "Won a presidential election with 85% or more of the Electoral College vote": ["washington", "monroe", "roosevelt_fd", "reagan", "nixon", "jefferson", "lincoln", "johnson_lb", "eisenhower", "pierce"],
     "Was a member of the Whig Party at least part of the time while president": ["harrison_wh", "tyler", "taylor", "fillmore"],
     "Did not serve in the U.S. military prior to becoming president": ["adams_j", "adams_jq", "vanburen", "cleveland", "wilson", "harding", "coolidge", "hoover", "roosevelt_fd", "clinton", "obama", "trump", "biden"],
-    "Prior to becoming president, achieved the rank of general in the U.S. Armed Forces": ["washington", "grant", "eisenhower", "jackson", "harrison_wh", "taylor", "hayes", "garfield", "taft", "pierce", "arthur", "johnson_a", "harrison_b"],
+    "Prior to becoming president, achieved the rank of general in the U.S. Armed Forces": ["washington", "grant", "eisenhower", "jackson", "harrison_wh", "taylor", "hayes", "garfield", "pierce", "arthur", "johnson_a", "harrison_b"],
     "Served in the U.S. Navy prior to becoming president": ["johnson_lb", "nixon", "ford", "kennedy", "bush_ghw", "carter"],
     "Served in the U.S. Air Force or U.S. Army Air Forces before becoming president": ["reagan", "bush_gw"],
     "Recipient of the Nobel Peace Prize": ["roosevelt_t", "wilson", "carter", "obama"],
@@ -300,8 +300,8 @@ let superJSON = `[
 
     {
         "question": "Prior to becoming president, achieved the rank of general in the U.S. Armed Forces",
-        "answer": ["washington", "grant", "eisenhower", "jackson", "harrison_wh", "taylor", "hayes", "garfield", "taft", "pierce", "arthur", "johnson_a", "harrison_b"],
-        "answerNumber": 13
+        "answer": ["washington", "grant", "eisenhower", "jackson", "harrison_wh", "taylor", "hayes", "garfield", "pierce", "arthur", "johnson_a", "harrison_b"],
+        "answerNumber": 12
     },
 
     {
@@ -421,17 +421,216 @@ let superJSON = `[
         "answer": ["adams_j", "jefferson", "harrison_wh", "harrison_b"],
         "answerNumber": 4
     }
+
 ]`;
 
+// The following set of questions are unique for having only a single answer.
 
-superJSON = JSON.parse(superJSON);
-console.log(superJSON[1]);
 let superJSON2 = `[
-        {
+    {
+        "question": "Born in September",
+        "answer": ["taft"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Arkansas",
+        "answer": ["clinton"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in California",
+        "answer": ["nixon"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Connecticut",
+        "answer": ["bush_gw"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Georgia",
+        "answer": ["carter"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Hawaii",
+        "answer": ["obama"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Illinois",
+        "answer": ["reagan"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Iowa",
+        "answer": ["hoover"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Kentucky",
+        "answer": ["lincoln"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Missouri",
+        "answer": ["truman"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Nebraska",
+        "answer": ["ford"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in New Hampshire",
+        "answer": ["pierce"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in New Jersey",
+        "answer": ["cleveland"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served non-concesutive terms as president",
+        "answer": ["cleveland"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Held the office of govenor of Indiana Territory",
+        "answer": ["harrison_wh"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Held the office of governor-general of the Philippines",
+        "answer": ["taft"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Held the office of New York State Comptroller",
+        "answer": ["fillmore"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Held the office of sherriff",
+        "answer": ["cleveland"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as U.S. Secretary of Commerce",
+        "answer": ["hoover"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as Director of Central Intelligence",
+        "answer": ["bush_ghw"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as Collector of the Port of New York",
+        "answer": ["arthur"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as Chief Justice of the U.S. Supreme Court",
+        "answer": ["taft"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as speaker of the U.S. House of Representatives",
+        "answer": ["polk"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as president pro tempore of the U.S. Senate",
+        "answer": ["tyler"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Native speaker of Dutch",
+        "answer": ["vanburen"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Never affiliated with a political party while president",
+        "answer": ["washington"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Member of the Federalist Party",
+        "answer": ["adams_j"],
+        "answerNumber": 1
+    }, 
+
+    {
+        "question": "Founded the University of Virginia",
+        "answer": ["jefferson"],
+        "answerNumber": 1
+    }, 
+
+    {
         "question": "First president to sign a Declaration of War",
         "answer": ["madison"],
+        "answerNumber": 1
+    }, 
+
+    {
+        "question": "Awarded the Medal of Honor",
+        "answer": ["roosevelt_t"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Awarded the Navy and marine Corps Medal",
+        "answer": ["kennedy"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Awarded the Distinguished Flying Cross",
+        "answer": ["bush_ghw"],
         "answerNumber": 1
     }
 ]`;
 
+
+// TO DO - Need to make sure there are THREE one-answer questions for each president. The reason for this is that
+// if a user guesses wrong (and the question is skipped), the user might need a question with that president to
+// still remain available for a future question. Since users have three chances to guess an answer (two failures
+// and the one more chance), there needs to be the POSSIBILITY (however rare) that each president would have at least
+// three questions in which that president GUARANTEED to be an available answer.
+
+superJSON = JSON.parse(superJSON);
 superJSON2 = JSON.parse(superJSON2);
+superJSON = superJSON.concat(superJSON2);
+
+console.log(superJSON[1]);
+
+
