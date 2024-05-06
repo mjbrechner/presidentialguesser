@@ -21,6 +21,14 @@ async function questionAsker() {
         }
     }
 
+    console.log("Here are a list of all remaining questions with less than 2 answers");
+
+    for (let i = 0; i < superJSON.length; i++) {
+        if (superJSON[i]["answer"].length <= 1) {
+            console.log(`${superJSON[i]["answer"].length} answers remain for question: ${superJSON[i]["question"]}. Answers are: ${superJSON[i]["answer"]}`);
+        }
+    }
+
     // Use the answersStillFound array to see if any questions with 2+ answers still remain.
     // If questions with 2+ answers are found, these questions are chosen at random to be asked.
     // If ALL the remaining questions have only a single possible answer, these single-answer questions will be available to be asked. 

@@ -420,7 +420,13 @@ let superJSON = `[
         "question": "Signed the Declaration of Independence or directly descended from one of its signers",
         "answer": ["adams_j", "jefferson", "harrison_wh", "harrison_b"],
         "answerNumber": 4
-    }
+    },
+
+    {
+        "question": "Had one or more pet oppossums.",
+        "answer": ["harrison_b", "hoover"],
+        "answerNumber": 2
+    }    
 
 ]`;
 
@@ -608,7 +614,7 @@ let superJSON2 = `[
     },
 
     {
-        "question": "Awarded the Navy and marine Corps Medal",
+        "question": "Awarded the Navy and Marine Corps Medal",
         "answer": ["kennedy"],
         "answerNumber": 1
     },
@@ -617,7 +623,14 @@ let superJSON2 = `[
         "question": "Awarded the Distinguished Flying Cross",
         "answer": ["bush_ghw"],
         "answerNumber": 1
+    },
+
+    {
+        "question": "Had a Newfoundland dog named Veto",
+        "answer": ["garfield"],
+        "answerNumber": 1
     }
+    
 ]`;
 
 
@@ -627,10 +640,22 @@ let superJSON2 = `[
 // and the one more chance), there needs to be the POSSIBILITY (however rare) that each president would have at least
 // three questions in which that president GUARANTEED to be an available answer.
 
+// TO DO - Maybe instead of arranging difficulty level by number of answers remaining, maybe each question should be
+// labeled DIRECTLY as "easy" or "hard." All single-answer questions could be "HARD" by default, BOTH questions that
+// start out as single-answer AND questions that later become single-answer questions. That's the same as what I have
+// now, but with this direct "easy"/"hard" labeling method, I could also designate some multi-answer questions as
+// being "hard" as well. Just because a question has multiple available answers doesn't mean that it is "easy" per se.
+
 superJSON = JSON.parse(superJSON);
+console.log("superJSON");
+console.log(superJSON);
 superJSON2 = JSON.parse(superJSON2);
+console.log("superJSON2");
+console.log(superJSON2);
 superJSON = superJSON.concat(superJSON2);
 
 console.log(superJSON[1]);
+console.log("this should have everything");
+console.log(superJSON);
 
 
