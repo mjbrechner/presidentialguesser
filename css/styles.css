@@ -26,6 +26,37 @@
     font-size: 2.5em;
 }
 
+#question-asker,
+#answer-box {
+    height: 25px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.mistake-area {
+    display: flex;
+    gap: 2px;
+    padding: 5px;
+}
+
+.mistake-imagery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1em;
+    width: 1em;
+    text-align: center;
+    font-size: 1.5em;
+    color: #940404;
+    border: 7px solid #940404;
+    border-radius: 25%;
+    visibility: hidden;
+}
+
+/* #mistake-1 {
+    visibility: visible;
+} */
+
 .president-area {
     display: flex;
     flex-direction: column-reverse;
@@ -41,6 +72,20 @@
             #FFE9CC 9%,
             #FFE9CC 18%); */
 
+}
+
+#game-over-notice {
+    position: fixed;
+    display: flex;
+    height: 100px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    border: 5px solid #940404;
+    border-radius: 10px;
+    z-index: 1;
+    visibility: hidden;
 }
 
 #pres-button-area {

@@ -50,8 +50,7 @@ let wrongAnswers = 0;
 
 
 function gameOver() {
-    document.getElementById("question-asker").innerText = "GAME OVER!!!";
-    document.getElementById("answer-box").innerText = "";
+    document.getElementById("game-over-notice").style.visibility = "visible";
     document.getElementById("question-asker-button").style.visibility = "hidden";
 }
 
@@ -84,8 +83,22 @@ function revealAnswer() {
         document.getElementById(`portrait-${chosenPresident}`).style.filter = "sepia(100%) opacity(75%) brightness(.25)";
     } else {
         wrongAnswers++
+
+        if (wrongAnswers >= 1) {
+            document.getElementById("mistake-1").style.visibility = "visible";
+        }
+
+        if (wrongAnswers >= 2) {
+            document.getElementById("mistake-2").style.visibility = "visible";
+        }
+
+        if (wrongAnswers >= 3) {
+            document.getElementById("mistake-3").style.visibility = "visible";
+        }
+
+
         console.log(`You're wrong! You now have ${wrongAnswers} wrong answers.`);
-document.getElementById("answer-box").innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistakes.`;
+        document.getElementById("answer-box").innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistakes.`;
         if (wrongAnswers === 3) {
             gameOver();
         }
