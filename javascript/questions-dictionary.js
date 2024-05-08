@@ -423,10 +423,20 @@ let superJSON = `[
     },
 
     {
-        "question": "Had one or more pet oppossums.",
+        "question": "Had one or more pet oppossums",
         "answer": ["harrison_b", "hoover"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "hard"
+    },
+    
+    {
+        "question": "Served as chancellor of the College of William & Mary",
+        "answer": ["washington", "tyler"],
+        "answerNumber": 2,
+        "difficulty": "hard"
     }    
+
+
 
 ]`;
 
@@ -512,7 +522,7 @@ let superJSON2 = `[
     },
 
     {
-        "question": "Served non-concesutive terms as president",
+        "question": "Served non-consecutive terms as president",
         "answer": ["cleveland"],
         "answerNumber": 1
     },
@@ -536,7 +546,7 @@ let superJSON2 = `[
     },
 
     {
-        "question": "Held the office of sherriff",
+        "question": "Held the office of sheriff",
         "answer": ["cleveland"],
         "answerNumber": 1
     },
@@ -556,12 +566,6 @@ let superJSON2 = `[
     {
         "question": "Served as Collector of the Port of New York",
         "answer": ["arthur"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Served as Chief Justice of the U.S. Supreme Court",
-        "answer": ["taft"],
         "answerNumber": 1
     },
 
@@ -590,6 +594,18 @@ let superJSON2 = `[
     },
 
     {
+        "question": "Known as the American Cincinnatus",
+        "answer": ["washington"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as official surveyor of Culpeper County",
+        "answer": ["washington"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Member of the Federalist Party",
         "answer": ["adams_j"],
         "answerNumber": 1
@@ -602,14 +618,44 @@ let superJSON2 = `[
     }, 
 
     {
+        "question": "Served as commissioner and governor of the territories of East and West Florida",
+        "answer": ["jackson"],
+        "answerNumber": 1
+    }, 
+
+    {
         "question": "First president to sign a Declaration of War",
         "answer": ["madison"],
         "answerNumber": 1
     }, 
 
     {
+        "question": "Spent his childhood in Louisville, Kentucky, and is buried in Jefferson County",
+        "answer": ["taylor"],
+        "answerNumber": 1
+    }, 
+
+    {
         "question": "Awarded the Medal of Honor",
         "answer": ["roosevelt_t"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as Chief Justice of the U.S. Supreme Court",
+        "answer": ["taft"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as dean of the University of Cincinnati College of Law",
+        "answer": ["taft"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Earned a PhD from Johns Hopkins University",
+        "answer": ["wilson"],
         "answerNumber": 1
     },
 
