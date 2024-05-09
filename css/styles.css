@@ -26,6 +26,10 @@
     font-size: 2.5em;
 }
 
+#question-asker-button {
+    visibility: hidden;
+}
+
 #question-asker,
 #answer-box {
     height: 25px;

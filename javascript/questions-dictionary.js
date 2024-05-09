@@ -444,150 +444,6 @@ let superJSON = `[
 
 let superJSON2 = `[
     {
-        "question": "Born in September",
-        "answer": ["taft"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Born in Arkansas",
-        "answer": ["clinton"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Born in California",
-        "answer": ["nixon"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Born in Connecticut",
-        "answer": ["bush_gw"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Born in Georgia",
-        "answer": ["carter"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Born in Hawaii",
-        "answer": ["obama"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Born in Illinois",
-        "answer": ["reagan"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Born in Iowa",
-        "answer": ["hoover"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Born in Kentucky",
-        "answer": ["lincoln"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Born in Missouri",
-        "answer": ["truman"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Born in Nebraska",
-        "answer": ["ford"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Born in New Hampshire",
-        "answer": ["pierce"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Born in New Jersey",
-        "answer": ["cleveland"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Served non-consecutive terms as president",
-        "answer": ["cleveland"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Held the office of govenor of Indiana Territory",
-        "answer": ["harrison_wh"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Held the office of governor-general of the Philippines",
-        "answer": ["taft"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Held the office of New York State Comptroller",
-        "answer": ["fillmore"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Held the office of sheriff",
-        "answer": ["cleveland"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Served as U.S. Secretary of Commerce",
-        "answer": ["hoover"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Served as Director of Central Intelligence",
-        "answer": ["bush_ghw"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Served as Collector of the Port of New York",
-        "answer": ["arthur"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Served as speaker of the U.S. House of Representatives",
-        "answer": ["polk"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Served as president pro tempore of the U.S. Senate",
-        "answer": ["tyler"],
-        "answerNumber": 1
-    },
-
-    {
-        "question": "Native speaker of Dutch",
-        "answer": ["vanburen"],
-        "answerNumber": 1
-    },
-
-    {
         "question": "Never affiliated with a political party while president",
         "answer": ["washington"],
         "answerNumber": 1
@@ -612,14 +468,26 @@ let superJSON2 = `[
     }, 
 
     {
+        "question": "First president to live in the White House",
+        "answer": ["adams_j"],
+        "answerNumber": 1
+    }, 
+
+    {
+        "question": "Known as the Duke of Braintree",
+        "answer": ["adams_j"],
+        "answerNumber": 1
+    }, 
+
+    {
         "question": "Founded the University of Virginia",
         "answer": ["jefferson"],
         "answerNumber": 1
     }, 
 
     {
-        "question": "Served as commissioner and governor of the territories of East and West Florida",
-        "answer": ["jackson"],
+        "question": "Pets included a horse named Caractacus and a mockingbird named Dick",
+        "answer": ["jefferson"],
         "answerNumber": 1
     }, 
 
@@ -630,10 +498,100 @@ let superJSON2 = `[
     }, 
 
     {
+        "question": "Served as commissioner and governor of the territories of East and West Florida",
+        "answer": ["jackson"],
+        "answerNumber": 1
+    }, 
+
+    {
+        "question": "Native speaker of Dutch",
+        "answer": ["vanburen"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Held the office of govenor of Indiana Territory",
+        "answer": ["harrison_wh"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as president pro tempore of the U.S. Senate",
+        "answer": ["tyler"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Elected to the Provisioner Congress of the Conferedate States",
+        "answer": ["tyler"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as speaker of the U.S. House of Representatives",
+        "answer": ["polk"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Spent his childhood in Louisville, Kentucky, and is buried in Jefferson County",
         "answer": ["taylor"],
         "answerNumber": 1
     }, 
+
+    {
+        "question": "Only person to be awarded the Congressional Gold Medal three times",
+        "answer": ["taylor"],
+        "answerNumber": 1
+    }, 
+    
+    {
+        "question": "Held the office of New York State Comptroller",
+        "answer": ["fillmore"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in New Hampshire",
+        "answer": ["pierce"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Kentucky",
+        "answer": ["lincoln"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Had a Newfoundland dog named Veto",
+        "answer": ["garfield"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as Collector of the Port of New York",
+        "answer": ["arthur"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in New Jersey",
+        "answer": ["cleveland"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served non-consecutive terms as president",
+        "answer": ["cleveland"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Held the office of sheriff",
+        "answer": ["cleveland"],
+        "answerNumber": 1
+    },
 
     {
         "question": "Awarded the Medal of Honor",
@@ -643,6 +601,18 @@ let superJSON2 = `[
 
     {
         "question": "Served as Chief Justice of the U.S. Supreme Court",
+        "answer": ["taft"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in September",
+        "answer": ["taft"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Held the office of governor-general of the Philippines",
         "answer": ["taft"],
         "answerNumber": 1
     },
@@ -660,11 +630,53 @@ let superJSON2 = `[
     },
 
     {
+        "question": "Born in Iowa",
+        "answer": ["hoover"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as U.S. Secretary of Commerce",
+        "answer": ["hoover"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Missouri",
+        "answer": ["truman"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Awarded the Navy and Marine Corps Medal",
         "answer": ["kennedy"],
         "answerNumber": 1
     },
 
+    {
+        "question": "Born in California",
+        "answer": ["nixon"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Nebraska",
+        "answer": ["ford"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Georgia",
+        "answer": ["carter"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Illinois",
+        "answer": ["reagan"],
+        "answerNumber": 1
+    },
+    
     {
         "question": "Awarded the Distinguished Flying Cross",
         "answer": ["bush_ghw"],
@@ -672,8 +684,26 @@ let superJSON2 = `[
     },
 
     {
-        "question": "Had a Newfoundland dog named Veto",
-        "answer": ["garfield"],
+        "question": "Served as Director of Central Intelligence",
+        "answer": ["bush_ghw"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Arkansas",
+        "answer": ["clinton"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Connecticut",
+        "answer": ["bush_gw"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Born in Hawaii",
+        "answer": ["obama"],
         "answerNumber": 1
     }
     

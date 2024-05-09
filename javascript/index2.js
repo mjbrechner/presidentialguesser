@@ -47,11 +47,23 @@ let chosenPresident;
 let currentAnswers = [];
 const chosenPresidentBox = document.getElementById("pres-name-box");
 let wrongAnswers = 0;
+let rightAnswers = 0;
+
+
+function newGame() {
+    document.getElementById("new-game-button").style.visibility = "hidden";
+    questionAsker();
+}
 
 
 function gameOver() {
     document.getElementById("game-over-notice").style.visibility = "visible";
     document.getElementById("question-asker-button").style.visibility = "hidden";
+
+    // Option to play again. Changes the button from "New Game" to "Play Again," since "again" is appropriate
+    // for every game following the initial one.
+    // document.getElementById("new-game-button").style.visibility = "visible";
+    // document.getElementById("new-game-button").innerText = "Play Again";
 }
 
 function displayChosenPresident() {
@@ -67,9 +79,14 @@ function revealAnswer() {
     let chosenPresidentFullName = document.getElementById(`portrait-${chosenPresident}`).title;
     console.log(`You have chosen ${chosenPresident}. The correct answer is ${currentAnswers}.`);
 
+    //Enable "Next Question" button, though it will get disabled again if the game turns out to be over.
+    document.getElementById("question-asker-button").style.visibility = "visible";
+
     if (currentAnswers.includes(chosenPresident)) {
         console.log(`You're right!`);
         document.getElementById("answer-box").innerText = `You have chosen ${chosenPresidentFullName}. Correct!`;
+        rightAnswers++;
+        document.getElementById(`portrait-${chosenPresident}`).style.filter = "sepia(100%) opacity(75%) brightness(.25)";
         // Remove any instance of that correct answer from future questions, so it won't be a possibility going forward.
         for (let i = 0; i < superJSON.length; i++) {
             if (superJSON[i]["answer"].includes(chosenPresident)) {
@@ -80,28 +97,35 @@ function revealAnswer() {
             }
         }
 
-        document.getElementById(`portrait-${chosenPresident}`).style.filter = "sepia(100%) opacity(75%) brightness(.25)";
+        // If 45 answers are correct, the game has been won!
+        if (rightAnswers === 45) {
+            document.getElementById("mistake-1").style.visibility = "visible";
+            document.getElementById("answer-box").innerText = `You win!`;
+            gameOver();
+        }
+
     } else {
         wrongAnswers++
 
         if (wrongAnswers >= 1) {
             document.getElementById("mistake-1").style.visibility = "visible";
+            document.getElementById("answer-box").innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistake.`;
         }
 
         if (wrongAnswers >= 2) {
             document.getElementById("mistake-2").style.visibility = "visible";
+            document.getElementById("answer-box").innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistakes.`;
         }
 
         if (wrongAnswers >= 3) {
             document.getElementById("mistake-3").style.visibility = "visible";
+            document.getElementById("answer-box").innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistakes.`;
         }
 
-
-        console.log(`You're wrong! You now have ${wrongAnswers} wrong answers.`);
-        document.getElementById("answer-box").innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistakes.`;
         if (wrongAnswers === 3) {
             gameOver();
         }
+
     }
 
 }

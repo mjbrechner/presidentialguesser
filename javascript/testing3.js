@@ -107,6 +107,8 @@ async function questionAsker() {
     currentAnswers = superJSON[randomizer]["answer"];
     console.log(superJSON.length + " " + randomizer + " " + superJSON[randomizer]["question"] + " " + currentAnswers);
 
+    // Now that a queston has been asked, hide the Question Asker button for the time being.
+    document.getElementById("question-asker-button").style.visibility = "hidden";
 
     // This should delete the question that has just been asked. Still need to delete the president who has just been answered, though.
     console.log(`I want to delete the question ${superJSON[randomizer]["question"]} It currents has the answers: ${currentAnswers}.`);
