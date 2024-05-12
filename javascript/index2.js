@@ -1,6 +1,7 @@
 'use strict';
 
 let chosenMode = "game";
+let presidentialList = ['washington', 'adams_j', 'jefferson', 'madison', 'monroe', 'adams_jq', 'jackson', 'vanburen', 'harrison_wh', 'tyler', 'polk', 'taylor', 'fillmore', 'pierce', 'buchanan', 'lincoln', 'johnson_a', 'grant', 'hayes', 'garfield', 'arthur', 'cleveland', 'harrison_b', 'mckinley', 'roosevelt_t', 'taft', 'wilson', 'harding', 'coolidge', 'hoover', 'roosevelt_fd', 'truman', 'eisenhower', 'kennedy', 'johnson_lb', 'nixon', 'ford', 'carter', 'reagan', 'bush_ghw', 'clinton', 'bush_gw', 'obama', 'trump', 'biden'];
 
 console.log("chosenMode");
 
@@ -71,7 +72,7 @@ function displayChosenPresident() {
     document.getElementById("pres-name-box").style.display = "none";
 }
 
-// The function revealAnswer() reveals weather the answer is correct or not.
+// The function revealAnswer() reveals whether the answer is correct or not.
 // If the answer is correct, the president is removed from the json.
 // If any questions in the json no longer have any available answers, those questions are also removed.
 
@@ -86,7 +87,13 @@ function revealAnswer() {
         console.log(`You're right!`);
         document.getElementById("answer-box").innerText = `You have chosen ${chosenPresidentFullName}. Correct!`;
         rightAnswers++;
+
+        // Since this was a correct choice, disable it as a potential choice going forward.
+
         document.getElementById(`portrait-${chosenPresident}`).style.filter = "sepia(100%) opacity(75%) brightness(.25)";
+        presidentialList.splice((presidentialList.indexOf(chosenPresident)), 1);
+        console.log(`Remaining presidents: ${presidentialList}`);
+
         // Remove any instance of that correct answer from future questions, so it won't be a possibility going forward.
         for (let i = 0; i < superJSON.length; i++) {
             if (superJSON[i]["answer"].includes(chosenPresident)) {
@@ -133,272 +140,362 @@ function revealAnswer() {
 // When presidents are actually clicked and therefore chosen
 function chooserWashington() {
     chosenPresident = "washington";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) { // presidentialList only contains available names. Names chosen as CORRECT answers can't be chosen again.
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserAdams_J() {
     chosenPresident = "adams_j";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserJefferson() {
     chosenPresident = "jefferson";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserMadison() {
     chosenPresident = "madison";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserMonroe() {
     chosenPresident = "monroe";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserAdams_JQ() {
     chosenPresident = "adams_jq";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserJackson() {
     chosenPresident = "jackson";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserVanBuren() {
     chosenPresident = "vanburen";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserHarrison_WH() {
     chosenPresident = "harrison_wh";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserTyler() {
     chosenPresident = "tyler";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserPolk() {
     chosenPresident = "polk";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserTaylor() {
     chosenPresident = "taylor";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserFillmore() {
     chosenPresident = "fillmore";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserPierce() {
     chosenPresident = "pierce";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserBuchanan() {
     chosenPresident = "buchanan";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserLincoln() {
     chosenPresident = "lincoln";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserJohnson_A() {
     chosenPresident = "johnson_a";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserGrant() {
     chosenPresident = "grant";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserHayes() {
     chosenPresident = "hayes";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserGarfield() {
     chosenPresident = "garfield";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserArthur() {
     chosenPresident = "arthur";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserCleveland() {
     chosenPresident = "cleveland";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserHarrison_B() {
     chosenPresident = "harrison_b";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserMcKinley() {
     chosenPresident = "mckinley";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserRoosevelt_T() {
     chosenPresident = "roosevelt_t";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserTaft() {
     chosenPresident = "taft";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserWilson() {
     chosenPresident = "wilson";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserHarding() {
     chosenPresident = "harding";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserCoolidge() {
     chosenPresident = "coolidge";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserHoover() {
     chosenPresident = "hoover";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserRoosevelt_FD() {
     chosenPresident = "roosevelt_fd";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserTruman() {
     chosenPresident = "truman";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserEisenhower() {
     chosenPresident = "eisenhower";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserKennedy() {
     chosenPresident = "kennedy";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserJohnson_LB() {
     chosenPresident = "johnson_lb";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserNixon() {
     chosenPresident = "nixon";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserFord() {
     chosenPresident = "ford";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserCarter() {
     chosenPresident = "carter";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserReagan() {
     chosenPresident = "reagan";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserBush_GHW() {
     chosenPresident = "bush_ghw";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserClinton() {
     chosenPresident = "clinton";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserBush_GW() {
     chosenPresident = "bush_gw";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserObama() {
     chosenPresident = "obama";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserTrump() {
     chosenPresident = "trump";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 function chooserBiden() {
     chosenPresident = "biden";
-    displayChosenPresident();
-    revealAnswer();
+    if (presidentialList.includes(chosenPresident)) {
+        displayChosenPresident();
+        revealAnswer();
+    }
 }
 
 // Display president name when user hovers over their image without clicking to choose

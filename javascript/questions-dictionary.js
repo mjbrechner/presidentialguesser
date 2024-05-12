@@ -1,67 +1,15 @@
-let questionsRegular = {
-    "Born in Virginia": ["washington", "jefferson", "madison", "monroe", "harrison_wh", "tyler", "taylor", "wilson"],
-    "Born in Ohio": ["grant", "hayes", "garfield", "harrison_b", "mckinley", "taft", "harding"],
-    "Born in Massachusetts": ["adams_j", "adams_jq", "kennedy", "bush_ghw"],
-    "Born in New York": ["roosevelt_t", "roosevelt_fd", "vanburen", "trump", "fillmore"],
-    "Born in Pennsylvania": ["buchanan", "biden"],
-    "Born in Texas": ["eisenhower", "johnson_lb"],
-    "Born in Vermont": ["arthur", "coolidge"],
-    "Born as a British citizen": ["washington", "adams_j", "jefferson", "madison", "monroe", "jackson", "adams_jq", "harrison_wh"],
-    "Issued no vetoes as president": ["adams_j", "jefferson", "adams_jq", "harrison_wh", "taylor", "fillmore", "garfield"],
-    "Issued more than 50 or more vetoes as president": ["roosevelt_fd", "cleveland", "truman", "eisenhower", "grant", "roosevelt_t", "reagan", "ford", "coolidge"],
-    "Never elected to public office before becoming president": ["taylor", "grant", "hoover", "eisenhower", "trump"],
-    "Served as U.S. vice president": ["adams_j", "jefferson", "vanburen", "tyler", "fillmore", "johnson_a", "arthur", "roosevelt_t", "coolidge", "truman", "nixon", "johnson_lb", "ford", "bush_ghw", "biden"],
-    "Served as U.S. secretary of state": ["jefferson", "madison", "monroe", "adams_jq", "vanburen", "buchanan"],
-    "Served as a U.S. senator": ["tyler", "monroe", "johnson_lb", "johnson_a", "jackson", "buchanan", "harding", "harrison_wh", "vanburen", "pierce", "truman", "kennedy", "adams_jq", "obama", "harrison_b", "biden", "nixon"],
-    "Served as a member of the U.S. House of Representatives": ["tyler", "madison", "bush_ghw", "johnson_lb", "johnson_a", "polk", "jackson", "buchanan", "mckinley", "garfield", "hayes", "harrison_wh", "fillmore", "pierce", "ford", "kennedy", "adams_jq", "lincoln", "nixon"],
-    "Served as a governor of a U.S. state (not territory)": ["tyler", "monroe", "jefferson", "bush_gw", "johnson_a", "polk", "mckinley", "hayes", "roosevelt_fd", "roosevelt_t", "cleveland", "vanburen", "wilson", "coolidge", "carter", "reagan", "clinton"],
-    "Served as a member of a colonial legislature under the Kingdom of Great Britain": ["washington", "adams_j", "jefferson"],
-    "Served as a U.S. ambassador": ["adams_j", "jefferson", "monroe", "adams_jq", "vanburen", "harrison_wh", "buchanan", "bush_ghw"],
-    "Served as a U.S. Secretary of War (or Acting Secretary of War)": ["monroe", "grant", "taft"],
-    "Died while president": ["harrison_wh", "taylor", "lincoln", "garfield", "mckinley", "harding", "roosevelt_fd", "kennedy"],
-    "President before the age of 50": ["roosevelt_t", "kennedy", "clinton", "grant", "obama", "cleveland", "pierce", "garfield", "polk"],
-    "Presidency included time over the age of 70": ["biden", "reagan", "trump", "eisenhower"],
-    "Alive past the age of 90": ["hoover", "adams_j", "reagan", "ford", "bush_ghw", "carter"],
-    "Did not graduate with a college degree": ["washington", "monroe", "jackson", "vanburen", "harrison_wh", "taylor", "fillmore", "lincoln", "johnson_a", "cleveland", "mckinley", "truman"],
-    "Undergraduate and/or graduate degree from Harvard University": ["adams_j", "adams_jq", "roosevelt_t", "roosevelt_fd", "kennedy", "bush_gw", "hayes", "obama"],
-    "Undergraduate and/or graduate degree from Yale University": ["taft", "bush_ghw", "bush_gw", "ford", "clinton"],
-    "Served two or more full terms as president": ["roosevelt_fd", "jefferson", "madison", "monroe", "jackson", "grant", "cleveland", "wilson", "eisenhower", "reagan", "clinton", "bush_gw", "obama", "washington"],
-    "Served exactly one full term as president (no more, no less)": ["adams_j", "adams_jq", "vanburen", "polk", "pierce", "buchanan", "hayes", "harrison_b", "taft", "hoover", "carter", "bush_ghw", "trump"],
-    "Served less than one complete term as president": ["harrison_wh", "garfield", "taylor", "harding", "ford", "fillmore", "kennedy", "biden", "arthur", "johnson_a", "tyler"],
-    "Impeached by the U.S. House of Representatives": ["johnson_a", "clinton", "trump"],
-    "Issued more than 500 executive orders": ["roosevelt_fd", "wilson", "coolidge", "roosevelt_t", "hoover", "truman", "taft", "harding"],
-    "Appointed five or more justices to the U.S. Supreme Court": ["washington", "roosevelt_fd", "taft", "jackson", "lincoln", "eisenhower"],
-    "Did not appoint any justices to the U.S. Supreme Court": ["harrison_wh", "taylor", "johnson_a", "carter"],
-    "Had multiple different vice presidents": ["jefferson", "madison", "jackson", "lincoln", "grant", "cleveland", "mckinley", "roosevelt_fd", "nixon"],
-    "Was known to be a member of the Freemasons": ["washington", "monroe", "jackson", "polk", "buchanan", "johnson_a", "garfield", "mckinley", "roosevelt_t", "taft", "harding", "roosevelt_fd", "truman", "ford"],
-    "Won a presidential election while losing the popular vote": ["adams_jq", "hayes", "harrison_b", "bush_gw", "trump"],
-    "Won a presidential election with 85% or more of the Electoral College vote": ["washington", "monroe", "roosevelt_fd", "reagan", "nixon", "jefferson", "lincoln", "johnson_lb", "eisenhower", "pierce"],
-    "Was a member of the Whig Party at least part of the time while president": ["harrison_wh", "tyler", "taylor", "fillmore"],
-    "Did not serve in the U.S. military prior to becoming president": ["adams_j", "adams_jq", "vanburen", "cleveland", "wilson", "harding", "coolidge", "hoover", "roosevelt_fd", "clinton", "obama", "trump", "biden"],
-    "Prior to becoming president, achieved the rank of general in the U.S. Armed Forces": ["washington", "grant", "eisenhower", "jackson", "harrison_wh", "taylor", "hayes", "garfield", "pierce", "arthur", "johnson_a", "harrison_b"],
-    "Served in the U.S. Navy prior to becoming president": ["johnson_lb", "nixon", "ford", "kennedy", "bush_ghw", "carter"],
-    "Served in the U.S. Air Force or U.S. Army Air Forces before becoming president": ["reagan", "bush_gw"],
-    "Recipient of the Nobel Peace Prize": ["roosevelt_t", "wilson", "carter", "obama"],
-    "Was never elected to the office of the U.S. presidency": ["tyler", "fillmore", "johnson_a", "arthur", "ford"],
-    "Day of either birth or death was on the fourth of July": ["jefferson", "adams_j", "monroe", "coolidge"],
-    "Born in January": ["fillmore", "mckinley", "roosevelt_fd", "nixon"],
-    "Born in February": ["washington", "harrison_wh", "lincoln", "reagan"],
-    "Born in March": ["madison", "jackson", "tyler", "cleveland"],
-    "Born in April": ["jefferson", "monroe", "buchanan", "grant"],
-    "Born in May": ["truman", "kennedy"],
-    "Born in June": ["bush_ghw", "trump"],
-    "Born in July": ["adams_jq", "coolidge", "ford", "bush_gw"],
-    "Born in August": ["harrison_b", "hoover", "johnson_lb", "clinton", "obama"],
-    "Born in October": ["adams_j", "hayes", "arthur", "roosevelt_t", "eisenhower", "carter"],
-    "Born in November": ["polk", "taylor", "pierce", "garfield", "harding", "biden"],
-    "Born in December": ["vanburen", "johnson_a", "wilson"],
-    "Held the office of attorney general of a U.S. state": ["vanburen", "clinton"],
-    "Once held the office of mayor of a town or city": ["johnson_a", "cleveland", "coolidge"],
-    "Won and/or was nominated for a Grammy Award": ["truman", "kennedy", "nixon", "carter", "clinton", "obama"]
-}
+'use strict';
 
-let superJSON = `[
+let superJSON;
+let superJSON2;
 
+// The trivia questions are contained within two JSONs that are immediately merged into a single JSON. This JSON gets manipulated
+// as the game progresses and questions/answers that have been used are then deleted. This whole section is enclosed within
+// a function called resetJSON() in order that, upon starting a new game, this function can reset everything to where it began.
+
+function resetJSON() {
+
+superJSON = `[
 
     {
         "question": "Born in Virginia",
@@ -442,7 +390,7 @@ let superJSON = `[
 
 // The following set of questions are unique for having only a single answer.
 
-let superJSON2 = `[
+superJSON2 = `[
     {
         "question": "Never affiliated with a political party while president",
         "answer": ["washington"],
@@ -450,7 +398,7 @@ let superJSON2 = `[
     },
 
     {
-        "question": "Known as the American Cincinnatus",
+        "question": "Known as the 'American Cincinnatus'",
         "answer": ["washington"],
         "answerNumber": 1
     },
@@ -474,7 +422,7 @@ let superJSON2 = `[
     }, 
 
     {
-        "question": "Known as the Duke of Braintree",
+        "question": "Known as the 'Duke of Braintree'",
         "answer": ["adams_j"],
         "answerNumber": 1
     }, 
@@ -486,7 +434,7 @@ let superJSON2 = `[
     }, 
 
     {
-        "question": "Pets included a horse named Caractacus and a mockingbird named Dick",
+        "question": "Pets included a horse named 'Caractacus' and a mockingbird named 'Dick'",
         "answer": ["jefferson"],
         "answerNumber": 1
     }, 
@@ -496,6 +444,12 @@ let superJSON2 = `[
         "answer": ["madison"],
         "answerNumber": 1
     }, 
+
+    {
+        "question": "Only former president to serve in the the U.S. House of Representatives post-presidency",
+        "answer": ["adams_jq"],
+        "answerNumber": 1
+    },
 
     {
         "question": "Served as commissioner and governor of the territories of East and West Florida",
@@ -511,6 +465,18 @@ let superJSON2 = `[
 
     {
         "question": "Held the office of govenor of Indiana Territory",
+        "answer": ["harrison_wh"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Led U.S. forces in the Battle of Tippecanoe and the Battle of the Thames",
+        "answer": ["harrison_wh"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Sometimes called 'Old Granny' or 'General Mum'",
         "answer": ["harrison_wh"],
         "answerNumber": 1
     },
@@ -546,6 +512,12 @@ let superJSON2 = `[
     }, 
     
     {
+        "question": Known as 'Old Rough and Ready'",
+        "answer": ["taylor"],
+        "answerNumber": 1
+    }, 
+
+    {
         "question": "Held the office of New York State Comptroller",
         "answer": ["fillmore"],
         "answerNumber": 1
@@ -564,13 +536,31 @@ let superJSON2 = `[
     },
 
     {
-        "question": "Had a Newfoundland dog named Veto",
+        "question": "Worked as a professional tailor",
+        "answer": ["johnson_a"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Only former president to serve in the the U.S. Senate post-presidency",
+        "answer": ["johnson_a"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Had a Newfoundland dog named 'Veto'",
         "answer": ["garfield"],
         "answerNumber": 1
     },
 
     {
         "question": "Served as Collector of the Port of New York",
+        "answer": ["arthur"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Known as the 'Dude President' or 'Gentleman Boss'",
         "answer": ["arthur"],
         "answerNumber": 1
     },
@@ -593,6 +583,13 @@ let superJSON2 = `[
         "answerNumber": 1
     },
 
+
+    {
+        "question": "Called the 'Napoleon of Protection' for supporting tariffs",
+        "answer": ["mckinley"],
+        "answerNumber": 1
+    },
+    
     {
         "question": "Awarded the Medal of Honor",
         "answer": ["roosevelt_t"],
@@ -734,4 +731,6 @@ console.log(superJSON[1]);
 console.log("this should have everything");
 console.log(superJSON);
 
+};
 
+resetJSON();
