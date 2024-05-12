@@ -9,7 +9,7 @@ let superJSON2;
 
 function resetJSON() {
 
-superJSON = `[
+    superJSON = `[
 
     {
         "question": "Born in Virginia",
@@ -371,6 +371,24 @@ superJSON = `[
     },
 
     {
+        "question": "Member of the Roman Catholic Church",
+        "answer": ["kennedy", "biden"],
+        "answerNumber": 2
+    },
+
+    {
+        "question": "Raised in a Quaker family",
+        "answer": ["hoover", "nixon"],
+        "answerNumber": 2
+    },
+
+    {
+        "question": "Elected to a federal office as a candidate for the Anti-Masonic Party",
+        "answer": ["adams_jq", "fillmore"],
+        "answerNumber": 2
+    },
+
+    {
         "question": "Had one or more pet oppossums",
         "answer": ["harrison_b", "hoover"],
         "answerNumber": 2,
@@ -388,9 +406,9 @@ superJSON = `[
 
 ]`;
 
-// The following set of questions are unique for having only a single answer.
+    // The following set of questions are unique for having only a single answer.
 
-superJSON2 = `[
+    superJSON2 = `[
     {
         "question": "Never affiliated with a political party while president",
         "answer": ["washington"],
@@ -488,7 +506,7 @@ superJSON2 = `[
     },
 
     {
-        "question": "Elected to the Provisioner Congress of the Conferedate States",
+        "question": "Elected to the Provisional Congress of the Conferedate States",
         "answer": ["tyler"],
         "answerNumber": 1
     },
@@ -500,7 +518,7 @@ superJSON2 = `[
     },
 
     {
-        "question": "Spent his childhood in Louisville, Kentucky, and is buried in Jefferson County",
+        "question": "Spent his childhood in Louisville, Kentucky, and was buried in Jefferson County",
         "answer": ["taylor"],
         "answerNumber": 1
     }, 
@@ -512,13 +530,19 @@ superJSON2 = `[
     }, 
     
     {
-        "question": Known as 'Old Rough and Ready'",
+        "question": "Known as 'Old Rough and Ready'",
         "answer": ["taylor"],
         "answerNumber": 1
     }, 
 
     {
         "question": "Held the office of New York State Comptroller",
+        "answer": ["fillmore"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Once ran for president as the candidate for the Know Nothings",
         "answer": ["fillmore"],
         "answerNumber": 1
     },
@@ -582,7 +606,6 @@ superJSON2 = `[
         "answer": ["cleveland"],
         "answerNumber": 1
     },
-
 
     {
         "question": "Called the 'Napoleon of Protection' for supporting tariffs",
@@ -707,29 +730,29 @@ superJSON2 = `[
 ]`;
 
 
-// TO DO - Need to make sure there are THREE one-answer questions for each president. The reason for this is that
-// if a user guesses wrong (and the question is skipped), the user might need a question with that president to
-// still remain available for a future question. Since users have three chances to guess an answer (two failures
-// and the one more chance), there needs to be the POSSIBILITY (however rare) that each president would have at least
-// three questions in which that president GUARANTEED to be an available answer.
+    // TO DO - Need to make sure there are THREE one-answer questions for each president. The reason for this is that
+    // if a user guesses wrong (and the question is skipped), the user might need a question with that president to
+    // still remain available for a future question. Since users have three chances to guess an answer (two failures
+    // and the one more chance), there needs to be the POSSIBILITY (however rare) that each president would have at least
+    // three questions in which that president GUARANTEED to be an available answer.
 
-// TO DO - Maybe instead of arranging difficulty level by number of answers remaining, maybe each question should be
-// labeled DIRECTLY as "easy" or "hard." All single-answer questions could be "HARD" by default, BOTH questions that
-// start out as single-answer AND questions that later become single-answer questions. That's the same as what I have
-// now, but with this direct "easy"/"hard" labeling method, I could also designate some multi-answer questions as
-// being "hard" as well. Just because a question has multiple available answers doesn't mean that it is "easy" per se.
+    // TO DO - Maybe instead of arranging difficulty level by number of answers remaining, maybe each question should be
+    // labeled DIRECTLY as "easy" or "hard." All single-answer questions could be "HARD" by default, BOTH questions that
+    // start out as single-answer AND questions that later become single-answer questions. That's the same as what I have
+    // now, but with this direct "easy"/"hard" labeling method, I could also designate some multi-answer questions as
+    // being "hard" as well. Just because a question has multiple available answers doesn't mean that it is "easy" per se.
 
-superJSON = JSON.parse(superJSON);
-console.log("superJSON");
-console.log(superJSON);
-superJSON2 = JSON.parse(superJSON2);
-console.log("superJSON2");
-console.log(superJSON2);
-superJSON = superJSON.concat(superJSON2);
+    superJSON = JSON.parse(superJSON);
+    console.log("superJSON");
+    console.log(superJSON);
+    superJSON2 = JSON.parse(superJSON2);
+    console.log("superJSON2");
+    console.log(superJSON2);
+    superJSON = superJSON.concat(superJSON2);
 
-console.log(superJSON[1]);
-console.log("this should have everything");
-console.log(superJSON);
+    console.log(superJSON[1]);
+    console.log("this should have everything");
+    console.log(superJSON);
 
 };
 
