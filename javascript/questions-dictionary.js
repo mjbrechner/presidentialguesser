@@ -235,7 +235,7 @@ function resetJSON() {
     },
 
     {
-        "question": "Was a member of the Whig Party at least part of the time while president",
+        "question": "Was a member of the Whig Party at least part of the time while president (excluding other periods)",
         "answer": ["harrison_wh", "tyler", "taylor", "fillmore"],
         "answerNumber": 4
     },
@@ -458,6 +458,12 @@ function resetJSON() {
     }, 
 
     {
+        "question": "Known as the 'Sage of Monticello'",
+        "answer": ["jefferson"],
+        "answerNumber": 1
+    }, 
+
+    {
         "question": "First president to sign a Declaration of War",
         "answer": ["madison"],
         "answerNumber": 1
@@ -470,7 +476,43 @@ function resetJSON() {
     }, 
 
     {
+        "question": "Co-authored 'The Federalist' (known as 'The Federalist Papers') with Alexander Hamilton and John Jay",
+        "answer": ["madison"],
+        "answerNumber": 1
+    }, 
+
+    {
+        "question": "Time in office known as the 'Era of Good Feelings'",
+        "answer": ["monroe"],
+        "answerNumber": 1
+    }, 
+
+    {
+        "question": "Known as 'The Last Cocked Hat', wearing the tricorn hat and Revolutionary era fashion into the 19th century",
+        "answer": ["monroe"],
+        "answerNumber": 1
+    }, 
+
+    {
+        "question": "Only cabinet secretary to have held two different cabinet positions prior to becoming president",
+        "answer": ["monroe"],
+        "answerNumber": 1
+    }, 
+
+    {
         "question": "Only former president to serve in the the U.S. House of Representatives post-presidency",
+        "answer": ["adams_jq"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Only president to have also lost elections for the presidency, U.S. Senate, U.S. House of Representatives, and state governor",
+        "answer": ["adams_jq"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "The first president to be photographed",
         "answer": ["adams_jq"],
         "answerNumber": 1
     },
@@ -590,7 +632,7 @@ function resetJSON() {
     },
 
     {
-        "question": "Had a Newfoundland dog named 'Veto'",
+        "question": "Had a Newfoundland dog named 'Veto', despite never issues a veto as president",
         "answer": ["garfield"],
         "answerNumber": 1
     },

@@ -24,26 +24,9 @@ function toggle() {
 }
 
 
-// Question Asking
+// Question asking and answering
 
 let questionBeingAsked;
-let questionNumber = 1;
-
-async function getQuestions() {
-    const response = await fetch("javascript/questions.json");
-    const data = await response.json();
-
-    for (let i = 0; i < data.length; i++) {
-        // console.log(`Question ${data[i].question}`);
-    }
-
-}
-
-getQuestions();
-
-
-// Question answering
-
 let chosenPresident;
 let currentAnswers = [];
 const chosenPresidentBox = document.getElementById("pres-name-box");
