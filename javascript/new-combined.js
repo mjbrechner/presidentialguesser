@@ -3,7 +3,7 @@
 let chosenMode = "game";
 let presidentialList = ['washington', 'adams_j', 'jefferson', 'madison', 'monroe', 'adams_jq', 'jackson', 'vanburen', 'harrison_wh', 'tyler', 'polk', 'taylor', 'fillmore', 'pierce', 'buchanan', 'lincoln', 'johnson_a', 'grant', 'hayes', 'garfield', 'arthur', 'cleveland', 'harrison_b', 'mckinley', 'roosevelt_t', 'taft', 'wilson', 'harding', 'coolidge', 'hoover', 'roosevelt_fd', 'truman', 'eisenhower', 'kennedy', 'johnson_lb', 'nixon', 'ford', 'carter', 'reagan', 'bush_ghw', 'clinton', 'bush_gw', 'obama', 'trump', 'biden'];
 
-console.log("chosenMode");
+// console.log("chosenMode");
 
 // When a question isn't being asked (including at the start), disable the presidential portrait section.
 document.getElementById("pres-button-area").style.pointerEvents = "none";
@@ -34,7 +34,7 @@ async function getQuestions() {
     const data = await response.json();
 
     for (let i = 0; i < data.length; i++) {
-        console.log(`Question ${data[i].question}`);
+        // console.log(`Question ${data[i].question}`);
     }
 
 }
@@ -714,15 +714,15 @@ async function questionAsker() {
     }
 
     console.log("test 1");
-            for (let i = 0; i < superJSON.length; i++) {
+    for (let i = 0; i < superJSON.length; i++) {
         if (superJSON[i]["answer"].length === 0) {
             console.log(`DELETED ENTRY WITH NO ANSWERS: ${superJSON[i]["question"]} `);
             superJSON.splice(i, 1);
         }
     }
 
-        console.log("test 2");
-        for (let i = 0; i < superJSON.length; i++) {
+    console.log("test 2");
+    for (let i = 0; i < superJSON.length; i++) {
         if (superJSON[i]["answer"].length === 0) {
             console.log(`DELETED ENTRY WITH NO ANSWERS: ${superJSON[i]["question"]} `);
             superJSON.splice(i, 1);
@@ -735,24 +735,24 @@ async function questionAsker() {
     // This is odd, because (1) that question should be deleted, and (2) even if the question was there, there were still multi-answer questions that should
     // have been asked BEFORE this single-answer question. So there is an error in two places.
 
-   // POSSIBLE SOLUTION!!!! Maybe, just maybe, superJSON.splice(i, 1) is messing with things. Since it changes the index of various entries in the list of questions,
-   // perhaps this results in certain questions-with-no-answers getting skipped from the deletion process. One fix could be simple running the deletion loop
-   // multiple times. That is very imprecise, though. Perhaps... I don't actually delete the questions-with-no-answers at all, I just make sure that
-   // when a new question is generated, it automatically skips any questions-with-no-answers. I don't like adding in a second WHILE loop, because any slight error
-   // can make the loop endless, but considering how I will always have a surplus of questions, this should pose no real danger. At least, no more danger
-   // than the current while loop already poses.
+    // POSSIBLE SOLUTION!!!! Maybe, just maybe, superJSON.splice(i, 1) is messing with things. Since it changes the index of various entries in the list of questions,
+    // perhaps this results in certain questions-with-no-answers getting skipped from the deletion process. One fix could be simple running the deletion loop
+    // multiple times. That is very imprecise, though. Perhaps... I don't actually delete the questions-with-no-answers at all, I just make sure that
+    // when a new question is generated, it automatically skips any questions-with-no-answers. I don't like adding in a second WHILE loop, because any slight error
+    // can make the loop endless, but considering how I will always have a surplus of questions, this should pose no real danger. At least, no more danger
+    // than the current while loop already poses.
 
 
-   // Make all questions with less than 2 answers be labeled as "hard." 
-    console.log("Here are a list of all remaining questions with less than 2 answers");
+    // Make all questions with less than 2 answers be labeled as "hard." 
+    // console.log("Here are a list of all remaining questions with less than 2 answers");
 
     for (let i = 0; i < superJSON.length; i++) {
         if (superJSON[i]["answer"].length <= 1) {
             superJSON[i]["difficulty"] = "hard";
-            console.log(`${superJSON[i]["answer"].length} answers remain for question: ${superJSON[i]["question"]}. Answers are: ${superJSON[i]["answer"]}`);
+            // console.log(`${superJSON[i]["answer"].length} answers remain for question: ${superJSON[i]["question"]}. Answers are: ${superJSON[i]["answer"]}`);
         }
     }
-    console.log(superJSON);
+    // console.log(superJSON);
 
     // Use the answersStillFound array to see if any questions with 2+ answers still remain.
     // If questions with 2+ answers are found, these questions are chosen at random to be asked.
@@ -768,7 +768,7 @@ async function questionAsker() {
         }
     }
 
-    console.log("still found array :" + answersStillFound);
+    // console.log("still found array :" + answersStillFound);
 
 
     if (answersStillFound.indexOf("yes") > -1) {
@@ -797,14 +797,20 @@ async function questionAsker() {
     questionBeingAsked = superJSON[randomizer]["question"];
     questionBox.innerText = questionBeingAsked;
     currentAnswers = superJSON[randomizer]["answer"];
-    console.log(superJSON.length + " " + randomizer + " " + superJSON[randomizer]["question"] + " " + currentAnswers);
+    // console.log(superJSON.length + " " + randomizer + " " + superJSON[randomizer]["question"] + " " + currentAnswers);
 
     // Now that a queston has been asked, hide the Question Asker button for the time being.
     document.getElementById("question-asker-button").style.visibility = "hidden";
 
     // This should delete the question that has just been asked. Still need to delete the president who has just been answered, though.
     console.log(`I want to delete the question ${superJSON[randomizer]["question"]} It currents has the answers: ${currentAnswers}.`);
+
+    // for (let i = 0; i < superJSON.length; i++) { // This loop just for console.log purposes; can be deleted later
+    //     console.log(`Raming Q: ${superJSON[i]["question"]}. A: ${superJSON[i]["answer"]}.`);
+    // }
+
+
     superJSON.splice(randomizer, 1);
-    console.log(superJSON);
+    // console.log(superJSON);
 
 }

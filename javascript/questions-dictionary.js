@@ -464,6 +464,12 @@ function resetJSON() {
     }, 
 
     {
+        "question": "Shortest president at five feet, four inches tall",
+        "answer": ["madison"],
+        "answerNumber": 1
+    }, 
+
+    {
         "question": "Only former president to serve in the the U.S. House of Representatives post-presidency",
         "answer": ["adams_jq"],
         "answerNumber": 1
@@ -471,6 +477,12 @@ function resetJSON() {
 
     {
         "question": "Served as commissioner and governor of the territories of East and West Florida",
+        "answer": ["jackson"],
+        "answerNumber": 1
+    }, 
+
+    {
+        "question": "Known as the 'Hero of New Orleans' and 'Old Hickory'",
         "answer": ["jackson"],
         "answerNumber": 1
     }, 
@@ -554,6 +566,12 @@ function resetJSON() {
     },
 
     {
+        "question": "Was never married",
+        "answer": ["buchanan"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Born in Kentucky",
         "answer": ["lincoln"],
         "answerNumber": 1
@@ -615,6 +633,12 @@ function resetJSON() {
     
     {
         "question": "Awarded the Medal of Honor",
+        "answer": ["roosevelt_t"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Youngest-ever president",
         "answer": ["roosevelt_t"],
         "answerNumber": 1
     },
@@ -716,6 +740,12 @@ function resetJSON() {
     },
 
     {
+        "question": "Only president to be a Rhodes Scholar",
+        "answer": ["clinton"],
+        "answerNumber": 1
+    },
+    
+    {
         "question": "Born in Connecticut",
         "answer": ["bush_gw"],
         "answerNumber": 1
@@ -724,6 +754,12 @@ function resetJSON() {
     {
         "question": "Born in Hawaii",
         "answer": ["obama"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Oldest-ever president",
+        "answer": ["biden"],
         "answerNumber": 1
     }
     
