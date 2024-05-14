@@ -402,11 +402,15 @@ function resetJSON() {
         "difficulty": "hard"
     }    
 
-
-
 ]`;
 
-    // The following set of questions are unique for having only a single answer.
+    // The following set of questions are unique for having only a single answer. The goal is to make sure there are
+    // at least THREE one-answer questions for each president. The reason for this is that if a user guesses
+    // wrong (and the question is skipped), the user might need a question with that president to still remain
+    // available for a future question. Since users have three chances to guess an answer (two failures and then
+    // one more chance), there needs to be the POSSIBILITY (however rare) that each president would have at least
+    // three questions in which that president GUARANTEED to be an available answer. It also has the benefit of adding
+    // variety to the question pool. While that is a nice bonus, the most pressing issue is avoiding an error state.
 
     superJSON2 = `[
     {
@@ -512,7 +516,7 @@ function resetJSON() {
     },
 
     {
-        "question": "The first president to be photographed",
+        "question": "Served as ambassador to the Netherlands, Germany, Russia, and Great Britain",
         "answer": ["adams_jq"],
         "answerNumber": 1
     },
@@ -530,7 +534,19 @@ function resetJSON() {
     }, 
 
     {
+        "question": "After surviving being shot in a duel, lived with a bullet lodged near the heart",
+        "answer": ["jackson"],
+        "answerNumber": 1
+    }, 
+
+    {
         "question": "Native speaker of Dutch",
+        "answer": ["vanburen"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Known as 'Old Kinderhook'",
         "answer": ["vanburen"],
         "answerNumber": 1
     },
@@ -566,7 +582,25 @@ function resetJSON() {
     },
 
     {
+        "question": "Expelled from own political party during tenure as U.S. president",
+        "answer": ["tyler"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Served as speaker of the U.S. House of Representatives",
+        "answer": ["polk"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "This 'Dark Horse' president was known as the 'Napoleon of the Stump'",
+        "answer": ["polk"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "As president, signed the annexation of Texas and served through the subsequent Mexican-American War",
         "answer": ["polk"],
         "answerNumber": 1
     },
@@ -597,6 +631,12 @@ function resetJSON() {
 
     {
         "question": "Once ran for president as the candidate for the Know Nothings",
+        "answer": ["fillmore"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "A co-founder of the University at Buffalo who served as chancellor for more than 25 years",
         "answer": ["fillmore"],
         "answerNumber": 1
     },
@@ -633,6 +673,12 @@ function resetJSON() {
 
     {
         "question": "Had a Newfoundland dog named 'Veto', despite never issues a veto as president",
+        "answer": ["garfield"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Rose from being a student-janitor at Western Reserve Eclectic Institute (now Hiram College) to becoming its principal",
         "answer": ["garfield"],
         "answerNumber": 1
     },
@@ -728,6 +774,12 @@ function resetJSON() {
     },
 
     {
+        "question": "Worked as a geologist and minining engineer",
+        "answer": ["hoover"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Born in Missouri",
         "answer": ["truman"],
         "answerNumber": 1
@@ -806,13 +858,6 @@ function resetJSON() {
     }
     
 ]`;
-
-
-    // TO DO - Need to make sure there are THREE one-answer questions for each president. The reason for this is that
-    // if a user guesses wrong (and the question is skipped), the user might need a question with that president to
-    // still remain available for a future question. Since users have three chances to guess an answer (two failures
-    // and the one more chance), there needs to be the POSSIBILITY (however rare) that each president would have at least
-    // three questions in which that president GUARANTEED to be an available answer.
 
     // TO DO - Maybe instead of arranging difficulty level by number of answers remaining, maybe each question should be
     // labeled DIRECTLY as "easy" or "hard." All single-answer questions could be "HARD" by default, BOTH questions that
