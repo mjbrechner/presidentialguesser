@@ -389,6 +389,12 @@ function resetJSON() {
     },
 
     {
+        "question": "Honored with a star on the Hollywood Walk of Fame",
+        "answer": ["reagan", "trump"],
+        "answerNumber": 2
+    },
+    
+    {
         "question": "Had one or more pet oppossums",
         "answer": ["harrison_b", "hoover"],
         "answerNumber": 2,
@@ -432,7 +438,7 @@ function resetJSON() {
     },
 
     {
-        "question": "Member of the Federalist Party",
+        "question": "Member of the Federalist Party during presidency",
         "answer": ["adams_j"],
         "answerNumber": 1
     }, 
@@ -552,6 +558,12 @@ function resetJSON() {
     },
 
     {
+        "question": "First president to be born a citizen of the United States of America",
+        "answer": ["vanburen"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Held the office of govenor of Indiana Territory",
         "answer": ["harrison_wh"],
         "answerNumber": 1
@@ -648,6 +660,18 @@ function resetJSON() {
     },
 
     {
+        "question": "Known as 'Young Hickory of the Granite Hills'",
+        "answer": ["pierce"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "As a student at Bowdoin College, Captained the 'Bowdoin Cadets' and befriended Nathaniel Hawthorne",
+        "answer": ["pierce"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Was never married",
         "answer": ["buchanan"],
         "answerNumber": 1
@@ -672,6 +696,18 @@ function resetJSON() {
     },
 
     {
+        "question": "Served as president of the National Rifle Association",
+        "answer": ["grant"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "First president to use the Resolute Desk, a gift from the British monarch made of timber from the HMS Resolute",
+        "answer": ["hayes"],
+        "answerNumber": 1
+    },
+    
+    {
         "question": "Had a Newfoundland dog named 'Veto', despite never issues a veto as president",
         "answer": ["garfield"],
         "answerNumber": 1
@@ -691,6 +727,12 @@ function resetJSON() {
 
     {
         "question": "Known as the 'Dude President' or 'Gentleman Boss'",
+        "answer": ["arthur"],
+        "answerNumber": 1
+    },
+
+   {
+        "question": "First president to take the oath of office in own personal home",
         "answer": ["arthur"],
         "answerNumber": 1
     },
@@ -726,7 +768,13 @@ function resetJSON() {
     },
 
     {
-        "question": "Youngest-ever president",
+        "question": "Youngest-ever person to serve as president",
+        "answer": ["roosevelt_t"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "First president to make an international diplomatic trip while in office",
         "answer": ["roosevelt_t"],
         "answerNumber": 1
     },
@@ -757,6 +805,12 @@ function resetJSON() {
 
     {
         "question": "Earned a PhD from Johns Hopkins University",
+        "answer": ["wilson"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as president of Princeton University",
         "answer": ["wilson"],
         "answerNumber": 1
     },
@@ -810,11 +864,23 @@ function resetJSON() {
     },
 
     {
+        "question": "Known for working the family peanut farm",
+        "answer": ["carter"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Born in Illinois",
         "answer": ["reagan"],
         "answerNumber": 1
     },
-    
+ 
+    {
+        "question": "Known as 'The Great Communicator' and named to the National Speakers Association Hall of Fame",
+        "answer": ["reagan"],
+        "answerNumber": 1
+    },    
+
     {
         "question": "Awarded the Distinguished Flying Cross",
         "answer": ["bush_ghw"],
@@ -823,6 +889,12 @@ function resetJSON() {
 
     {
         "question": "Served as Director of Central Intelligence",
+        "answer": ["bush_ghw"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Played in the first two editions of the NCAA Men's College Baseball World Series on the runner-up team",
         "answer": ["bush_ghw"],
         "answerNumber": 1
     },
@@ -838,9 +910,27 @@ function resetJSON() {
         "answer": ["clinton"],
         "answerNumber": 1
     },
-    
+
+    {
+        "question": "Spent 4,366 days, nearly 12 years, as a state governor",
+        "answer": ["clinton"],
+        "answerNumber": 1
+    },
+
     {
         "question": "Born in Connecticut",
+        "answer": ["bush_gw"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Was a co-owner of Major League Baseball's Texas Rangers",
+        "answer": ["bush_gw"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Only president who earned a Master of Business Administration",
         "answer": ["bush_gw"],
         "answerNumber": 1
     },
@@ -852,7 +942,37 @@ function resetJSON() {
     },
 
     {
-        "question": "Oldest-ever president",
+        "question": "First president to be indicted by a grand jury in both a state and a federal case",
+        "answer": ["trump"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Inducted into the WWE (World Wrestling Federation) Hall of Fame",
+        "answer": ["trump"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Graduated from New York Military Academy",
+        "answer": ["trump"],
+        "answerNumber": 1
+    },
+    
+    {
+        "question": "Oldest-ever person to serve as president",
+        "answer": ["biden"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Was awarded the Presidential Medal of Freedom before becoming president (as opposed to post-presidency)",
+        "answer": ["biden"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served more than 35 years in the United States Congress",
         "answer": ["biden"],
         "answerNumber": 1
     }

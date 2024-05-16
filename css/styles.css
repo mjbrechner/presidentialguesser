@@ -10,7 +10,6 @@
 * {
     background-color: #FFE9CC;
     color: #102C57;
-
 }
 
 
@@ -57,10 +56,6 @@
     visibility: hidden;
 }
 
-/* #mistake-1 {
-    visibility: visible;
-} */
-
 .president-area {
     display: flex;
     flex-direction: column-reverse;
@@ -75,7 +70,6 @@
             #940404 10%,
             #FFE9CC 9%,
             #FFE9CC 18%); */
-
 }
 
 #game-over-notice {
@@ -110,7 +104,6 @@
 .pres-button {
     height: 5em;
     width: 5em;
-    border-radius: 50%;
     border: 3px solid #FFE9CC;
     border-radius: 10%;
     box-shadow: 2px 2px #94918e;
@@ -142,7 +135,6 @@
     width: 10em;
     padding: .5em;
     font-size: 2em;
-
 }
 
 #mode-game {
@@ -181,26 +173,22 @@ footer {
 @media only screen and (min-width: 768px) {
 
     .president-area {
+        background-color: #940404;
+        width: fit-content;
         display: flex;
         flex-direction: row;
-
     }
-
 
     #pres-name-area {
         width: 832px;
-        height: 450px;
+        height: auto;
         background: repeating-linear-gradient(#940404,
-                #940404 8%,
-                #FFE9CC 8%,
-                #FFE9CC 16%);
-
-        /* background: repeating-linear-gradient(#940404,
-                #940404 10%,
-                #FFE9CC 9%,
-                #FFE9CC 18%); */
+                #940404 9.5%,
+                #FFE9CC 9.5%,
+                #FFE9CC 18.1%);
+                /* border-right: 5px solid #940404;
+                border-radius: 10px; */
     }
-
 
     footer {
         flex-direction: row;
