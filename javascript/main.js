@@ -726,39 +726,39 @@ async function questionAsker() {
     // than the current while loop already poses.
 
 
-    // Make all questions with less than 2 answers be labeled as "hard." 
-    // console.log("Here are a list of all remaining questions with less than 2 answers");
+    // Make all questions with less than 2 answers be labeled as "hard." Some questions with 2+ answers are marked "hard" from the beginning,
+    // but this creates new questions for the "hard" pool as the game progresses.
 
     for (let i = 0; i < superJSON.length; i++) {
         if (superJSON[i]["answer"].length <= 1) {
             superJSON[i]["difficulty"] = "hard";
-            // console.log(`${superJSON[i]["answer"].length} answers remain for question: ${superJSON[i]["question"]}. Answers are: ${superJSON[i]["answer"]}`);
+            // console.log(`${superJSON[i]["answer"].length} answers remain for question: ${superJSON[i]["question"]}. Answers are: ${superJSON[i]["answer"]}. Difficulty is ${superJSON[i]["difficulty"]}`);
         }
     }
-    // console.log(superJSON);
 
-    // Use the answersStillFound array to see if any questions with 2+ answers still remain.
-    // If questions with 2+ answers are found, these questions are chosen at random to be asked.
-    // If ALL the remaining questions have only a single possible answer, these single-answer questions will be available to be asked. 
+    // Use the easyQuestionsStillFound array to see if any "easy" questions (that is, questions NOT marked with "Difficulty" = "hard") remain.
+    // If easy questions are found, these questions are chosen at random to be asked.
+    // If ALL the remaining questions are marked as "hard", those "hard" questions will become available to be asked.
+
     let answersThreshold = "easy";
-    let answersStillFound = [];
+    let easyQuestionsStillFound = [];
 
     for (let i = 0; i < superJSON.length; i++) {
-        if (superJSON[i]["answer"].length > 1) {
-            answersStillFound.push("yes");
+        if (superJSON[i]["difficulty"] !== "hard") {
+            easyQuestionsStillFound.push("yes");
         } else {
-            answersStillFound.push("no");
+            easyQuestionsStillFound.push("no");
         }
     }
 
-    // console.log("still found array :" + answersStillFound);
+    console.log("still found array :" + easyQuestionsStillFound);
 
 
-    if (answersStillFound.indexOf("yes") > -1) {
-        console.log("Threshold set on easy questions: " + answersStillFound.indexOf("yes"));
+    if (easyQuestionsStillFound.indexOf("yes") > -1) {
+        console.log("Threshold set on easy questions: " + easyQuestionsStillFound.indexOf("yes"));
         answersThreshold = "easy";
-    } else if (answersStillFound.indexOf("yes") === -1) {
-        console.log("Threshold set on hard questions: " + answersStillFound.indexOf("yes"));
+    } else if (easyQuestionsStillFound.indexOf("yes") === -1) {
+        console.log("Threshold set on hard questions: " + easyQuestionsStillFound.indexOf("yes"));
         answersThreshold = "hard";
     }
 
@@ -769,8 +769,8 @@ async function questionAsker() {
     // a question with 2+ answers be chosen first. If answersThreshold is on "hard", this loop will be skipped, so that
     // single-answer questions will be available from the question pool.
     while (answersThreshold === "easy") {
-        if (superJSON[randomizer]["answer"].length === 1) {
-            console.log(`This question only has one remaining answer. Need to randomize again.`)
+        if (superJSON[randomizer]["difficulty"] === "hard") {
+            console.log(`Needs to randomize again. Question: ${superJSON[randomizer]["question"]}. Answers: ${superJSON[randomizer]["answer"].length}. Difficulty: ${superJSON[randomizer]["difficulty"]}`)
             randomizer = Math.floor(Math.random() * superJSON.length);
         } else {
             break;

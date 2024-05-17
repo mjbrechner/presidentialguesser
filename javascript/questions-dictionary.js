@@ -28,7 +28,9 @@ function resetJSON() {
         "question": "Born in Massachusetts",
         "answer": ["adams_j", "adams_jq", "kennedy", "bush_ghw"],
         "answerNumber": 4
-    }, {
+    },
+    
+    {
         "question": "Born in New York",
         "answer": ["roosevelt_t", "roosevelt_fd", "vanburen", "trump", "fillmore"],
         "answerNumber": 5
@@ -50,6 +52,12 @@ function resetJSON() {
         "question": "Born in Vermont",
         "answer": ["arthur", "coolidge"],
         "answerNumber": 2
+    },
+
+    {
+        "question": "Born in either North Carolina or South Carolina",
+        "answer": ["jackson", "polk", "johnson_a"],
+        "answerNumber": 3
     },
 
     {
@@ -242,8 +250,8 @@ function resetJSON() {
 
     {
         "question": "Did not serve in the U.S. military prior to becoming president",
-        "answer": ["adams_j", "adams_jq", "vanburen", "cleveland", "wilson", "harding", "coolidge", "hoover", "roosevelt_fd", "clinton", "obama", "trump", "biden"],
-        "answerNumber": 13
+        "answer": ["adams_j", "adams_jq", "vanburen", "cleveland", "taft", "wilson", "harding", "coolidge", "hoover", "roosevelt_fd", "clinton", "obama", "trump", "biden"],
+        "answerNumber": 14
     },
 
     {
@@ -285,7 +293,8 @@ function resetJSON() {
     {
         "question": "Born in January",
         "answer": ["fillmore", "mckinley", "roosevelt_fd", "nixon"],
-        "answerNumber": 4
+        "answerNumber": 4,
+        "difficulty": "hard"
     },
 
     {
@@ -297,53 +306,64 @@ function resetJSON() {
     {
         "question": "Born in March",
         "answer": ["madison", "jackson", "tyler", "cleveland"],
-        "answerNumber": 4
+        "answerNumber": 4,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in April",
         "answer": ["jefferson", "monroe", "buchanan", "grant"],
-        "answerNumber": 4
+        "answerNumber": 4,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in May",
         "answer": ["truman", "kennedy"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in June",
         "answer": ["bush_ghw", "trump"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "hard"
     },
+
     {
         "question": "Born in July",
         "answer": ["adams_jq", "coolidge", "ford", "bush_gw"],
-        "answerNumber": 4
+        "answerNumber": 4,
+        "difficulty": "hard"
     },
+
     {
         "question": "Born in August",
         "answer": ["harrison_b", "hoover", "johnson_lb", "clinton", "obama"],
-        "answerNumber": 5
+        "answerNumber": 5,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in October",
         "answer": ["adams_j", "hayes", "arthur", "roosevelt_t", "eisenhower", "carter"],
-        "answerNumber": 6
+        "answerNumber": 6,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in November",
         "answer": ["polk", "taylor", "pierce", "garfield", "harding", "biden"],
-        "answerNumber": 6
+        "answerNumber": 6,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in December",
         "answer": ["vanburen", "johnson_a", "wilson"],
-        "answerNumber": 3
+        "answerNumber": 3,
+        "difficulty": "hard"
     },
 
     {
@@ -402,16 +422,30 @@ function resetJSON() {
     },
     
     {
+        "question": "Served as chair of the U.S. Senate Committee on Foreign Relations",
+        "answer": ["buchanan", "biden"],
+        "answerNumber": 2,
+        "difficulty": "hard"
+    },
+
+    {
+        "question": "Had more than ten vetoes overridden",
+        "answer": ["johnson_a", "truman", "ford"],
+        "answerNumber": 3,
+        "difficulty": "hard"
+    },
+    
+    {
         "question": "Served as chancellor of the College of William & Mary",
         "answer": ["washington", "tyler"],
         "answerNumber": 2,
         "difficulty": "hard"
-    }    
+    }
 
 ]`;
 
     // The following set of questions are unique for having only a single answer. The goal is to make sure there are
-    // at least THREE one-answer questions for each president. The reason for this is that if a user guesses
+    // at least THREE one-answer questions for each president. The reason is that if a user guesses
     // wrong (and the question is skipped), the user might need a question with that president to still remain
     // available for a future question. Since users have three chances to guess an answer (two failures and then
     // one more chance), there needs to be the POSSIBILITY (however rare) that each president would have at least
@@ -606,7 +640,7 @@ function resetJSON() {
     },
 
     {
-        "question": "This 'Dark Horse' president was known as the 'Napoleon of the Stump'",
+        "question": "A 'Dark Horse' president who was known as the 'Napoleon of the Stump'",
         "answer": ["polk"],
         "answerNumber": 1
     },
@@ -618,7 +652,7 @@ function resetJSON() {
     },
 
     {
-        "question": "Spent his childhood in Louisville, Kentucky, and was buried in Jefferson County",
+        "question": "Spent childhood in Louisville, Kentucky, and was buried in Jefferson County",
         "answer": ["taylor"],
         "answerNumber": 1
     }, 
@@ -678,6 +712,30 @@ function resetJSON() {
     },
 
     {
+        "question": "Only president with prior military service not to serve as an officer, with private as highest rank achieved",
+        "answer": ["buchanan"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Represented Pennsylvania in the United States Congress",
+        "answer": ["buchanan"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Represented Illinois in the United States Congress",
+        "answer": ["lincoln"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as postmaster for the village of New Salem for three years",
+        "answer": ["lincoln"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Born in Kentucky",
         "answer": ["lincoln"],
         "answerNumber": 1
@@ -696,11 +754,29 @@ function resetJSON() {
     },
 
     {
+        "question": "Only southern U.S. senator to remain seated after own state seceded from the Union",
+        "answer": ["johnson_a"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Served as president of the National Rifle Association",
         "answer": ["grant"],
         "answerNumber": 1
     },
 
+    {
+        "question": "Established the nation's first national park by signing the Yellowstone National Park Protection Act",
+        "answer": ["grant"],
+        "answerNumber": 1
+    },    
+    
+    {
+        "question": "In a post-presidency tour, became the first former president to visit such locales as India, China, and Japan",
+        "answer": ["grant"],
+        "answerNumber": 1
+    },    
+    
     {
         "question": "First president to use the Resolute Desk, a gift from the British monarch made of timber from the HMS Resolute",
         "answer": ["hayes"],
@@ -730,8 +806,8 @@ function resetJSON() {
         "answer": ["arthur"],
         "answerNumber": 1
     },
-
-   {
+    
+    {
         "question": "First president to take the oath of office in own personal home",
         "answer": ["arthur"],
         "answerNumber": 1
@@ -755,6 +831,24 @@ function resetJSON() {
         "answerNumber": 1
     },
 
+    {
+        "question": "Known as the 'Pious Moonlight Dude' for the romantic courtship of a spouse",
+        "answer": ["harrison_b"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Six states admitted to the union during presidency, more than during any other president's tenure in office",
+        "answer": ["harrison_b"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Laws signed include the Sherman Antitrust Act and the International Copyright Act (also known as the 'Chace Act')",
+        "answer": ["harrison_b"],
+        "answerNumber": 1
+    },
+    
     {
         "question": "Called the 'Napoleon of Protection' for supporting tariffs",
         "answer": ["mckinley"],
@@ -846,6 +940,18 @@ function resetJSON() {
     },
 
     {
+        "question": "First president to take the oath of office on an airplane",
+        "answer": ["johnson_lb"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as party whip, majority leader, and minority leader in the U.S. Senate",
+        "answer": ["johnson_lb"],
+        "answerNumber": 1
+    },
+    
+    {
         "question": "Born in California",
         "answer": ["nixon"],
         "answerNumber": 1
@@ -874,7 +980,7 @@ function resetJSON() {
         "answer": ["reagan"],
         "answerNumber": 1
     },
- 
+
     {
         "question": "Known as 'The Great Communicator' and named to the National Speakers Association Hall of Fame",
         "answer": ["reagan"],
