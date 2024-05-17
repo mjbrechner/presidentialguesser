@@ -31,9 +31,17 @@
 
 #question-asker,
 #answer-box {
-    height: 25px;
+    width: 100%;
     margin: 5px;
     padding: 5px;
+}
+
+#question-asker {
+    height: 50px;
+}
+
+#answer-box {
+    height: 25px;
 }
 
 .mistake-area {
@@ -186,7 +194,7 @@ footer {
                 #940404 9.5%,
                 #FFE9CC 9.5%,
                 #FFE9CC 18.1%);
-                /* border-right: 5px solid #940404;
+        /* border-right: 5px solid #940404;
                 border-radius: 10px; */
     }
 

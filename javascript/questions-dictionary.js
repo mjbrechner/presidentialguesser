@@ -782,9 +782,27 @@ function resetJSON() {
         "answer": ["hayes"],
         "answerNumber": 1
     },
-    
+
     {
-        "question": "Had a Newfoundland dog named 'Veto', despite never issues a veto as president",
+        "question": "Served as city solicitor in Cincinnati",
+        "answer": ["hayes"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "First sitting president to visit a Pacific coast state",
+        "answer": ["hayes"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Personally commanded federal forces to victory in the Battle of Middle Creek in Eastern Kentucky",
+        "answer": ["garfield"],
+        "answerNumber": 1
+    },    
+
+    {
+        "question": "Had a Newfoundland dog named 'Veto', despite never issuing a veto as president",
         "answer": ["garfield"],
         "answerNumber": 1
     },
