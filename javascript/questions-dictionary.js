@@ -440,6 +440,13 @@ function resetJSON() {
         "answer": ["washington", "tyler"],
         "answerNumber": 2,
         "difficulty": "hard"
+    },
+
+    {
+        "question": "Won a presidential election by defeating Democratic William Jennings Bryan",
+        "answer": ["mckinley", "taft"],
+        "answerNumber": 2,
+        "difficulty": "hard"
     }
 
 ]`;
@@ -594,6 +601,12 @@ function resetJSON() {
     {
         "question": "First president to be born a citizen of the United States of America",
         "answer": ["vanburen"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Shortest-tenured president",
+        "answer": ["harrison_wh"],
         "answerNumber": 1
     },
 
@@ -874,6 +887,18 @@ function resetJSON() {
     },
     
     {
+        "question": "President when the U.S. gained control of Hawaii, Puerto Rico, Guam, the Philippines, and Cuba",
+        "answer": ["mckinley"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Chair of the 1892 Republican National Convention",
+        "answer": ["mckinley"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Awarded the Medal of Honor",
         "answer": ["roosevelt_t"],
         "answerNumber": 1
@@ -928,6 +953,24 @@ function resetJSON() {
     },
 
     {
+        "question": "Issued first presidential national emergency declaration, 'Emergency in Water Transportation of the United States'",
+        "answer": ["wilson"],
+        "answerNumber": 1
+    },
+    
+    {
+        "question": "Administration was rocked by the Teapot Dome scandal",
+        "answer": ["harding"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Worked in journalism as a publisher of 'The Marion Star' in Ohio",
+        "answer": ["harding"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Born in Iowa",
         "answer": ["hoover"],
         "answerNumber": 1
@@ -946,13 +989,25 @@ function resetJSON() {
     },
 
     {
+        "question": "Longest-serving president",
+        "answer": ["roosevelt_fd"],
+        "answerNumber": 1
+    },
+
+    {
         "question": "Born in Missouri",
         "answer": ["truman"],
         "answerNumber": 1
     },
 
     {
-        "question": "Awarded the Navy and Marine Corps Medal",
+        "question": "Awarded the Navy and Marine Corps Medal for the rescue of the crew of PT 109",
+        "answer": ["kennedy"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Secret Service code name of 'Lancer'",
         "answer": ["kennedy"],
         "answerNumber": 1
     },

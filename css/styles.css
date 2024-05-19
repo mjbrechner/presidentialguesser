@@ -5,13 +5,10 @@
 #FFF2E1
 */
 
-
-
 * {
     background-color: #FFE9CC;
     color: #102C57;
 }
-
 
 .title {
     background-color: #102C57;
@@ -67,17 +64,7 @@
 .president-area {
     display: flex;
     flex-direction: column-reverse;
-    /* background: repeating-linear-gradient(red,
-            red 10%,
-            #F8F0E5 9%,
-            #F8F0E5 18%);
-
-    filter: sepia(50%); */
-
-    /* background: repeating-linear-gradient(#940404,
-            #940404 10%,
-            #FFE9CC 9%,
-            #FFE9CC 18%); */
+    width: 100%;
 }
 
 #game-over-notice {
@@ -99,8 +86,6 @@
     color: #FFE9CC;
     display: grid;
     width: fit-content;
-    /* grid-template-columns: repeat (9, 1fr); */
-    /* grid-template-columns: 5.5em 5.5em 5.5em 5.5em 5.5em 5.5em 5.5em 5.5em 5.5em; */
     grid-template-columns: repeat(9, 5.5em);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
@@ -182,20 +167,18 @@ footer {
 
     .president-area {
         background-color: #940404;
-        width: fit-content;
         display: flex;
         flex-direction: row;
     }
 
     #pres-name-area {
-        width: 832px;
+        /* width: 832px; */
+        width: 100%;
         height: auto;
         background: repeating-linear-gradient(#940404,
                 #940404 9.5%,
                 #FFE9CC 9.5%,
                 #FFE9CC 18.1%);
-        /* border-right: 5px solid #940404;
-                border-radius: 10px; */
     }
 
     footer {
