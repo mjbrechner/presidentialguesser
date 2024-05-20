@@ -39,7 +39,8 @@ function resetJSON() {
     {
         "question": "Born in Pennsylvania",
         "answer": ["buchanan", "biden"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "hard"
     },
 
     {
@@ -51,13 +52,15 @@ function resetJSON() {
     {
         "question": "Born in Vermont",
         "answer": ["arthur", "coolidge"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in either North Carolina or South Carolina",
         "answer": ["jackson", "polk", "johnson_a"],
-        "answerNumber": 3
+        "answerNumber": 3,
+        "difficulty": "hard"
     },
 
     {
@@ -131,7 +134,8 @@ function resetJSON() {
     {
         "question": "Served as a U.S. Secretary of War (or Acting Secretary of War)",
         "answer": ["monroe", "grant", "taft"],
-        "answerNumber": 3
+        "answerNumber": 3,
+        "difficulty": "hard"
     },
 
     {
@@ -215,7 +219,8 @@ function resetJSON() {
     {
         "question": "Did not appoint any justices to the U.S. Supreme Court",
         "answer": ["harrison_wh", "taylor", "johnson_a", "carter"],
-        "answerNumber": 4
+        "answerNumber": 4,
+        "difficulty": "hard"
     },
 
     {
@@ -1085,6 +1090,12 @@ function resetJSON() {
     },    
 
     {
+        "question": "Served as president of the Screen Actors Guild",
+        "answer": ["reagan"],
+        "answerNumber": 1
+    }, 
+
+    {
         "question": "Awarded the Distinguished Flying Cross",
         "answer": ["bush_ghw"],
         "answerNumber": 1
@@ -1140,6 +1151,18 @@ function resetJSON() {
 
     {
         "question": "Born in Hawaii",
+        "answer": ["obama"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Signed the 'Patient Protection and Affordable Health Care Act'",
+        "answer": ["obama"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served in the Illinois State Senate and later represented Illinois in the U.S. Senate",
         "answer": ["obama"],
         "answerNumber": 1
     },
