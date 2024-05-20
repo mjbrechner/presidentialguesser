@@ -971,6 +971,12 @@ function resetJSON() {
     },
 
     {
+        "question": "Campaigned under the slogan 'Return to normalcy', speaking of getting 'out of the fevered delirium of war'",
+        "answer": ["harding"],
+        "answerNumber": 1
+    },    
+
+    {
         "question": "Born in Iowa",
         "answer": ["hoover"],
         "answerNumber": 1
@@ -995,7 +1001,25 @@ function resetJSON() {
     },
 
     {
+        "question": "Organized a series of programs dubbed the New Deal during the Great Depression",
+        "answer": ["roosevelt_fd"],
+        "answerNumber": 1
+    },    
+
+    {
+        "question": "Represented the United States at the Yalta Conference in the Soviet Union",
+        "answer": ["roosevelt_fd"],
+        "answerNumber": 1
+    },    
+
+    {
         "question": "Born in Missouri",
+        "answer": ["truman"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as a Field Artillery officer in World War I and then in the Officers' Reserve Corps for several decades",
         "answer": ["truman"],
         "answerNumber": 1
     },
@@ -1157,12 +1181,6 @@ function resetJSON() {
     }
     
 ]`;
-
-    // TO DO - Maybe instead of arranging difficulty level by number of answers remaining, maybe each question should be
-    // labeled DIRECTLY as "easy" or "hard." All single-answer questions could be "HARD" by default, BOTH questions that
-    // start out as single-answer AND questions that later become single-answer questions. That's the same as what I have
-    // now, but with this direct "easy"/"hard" labeling method, I could also designate some multi-answer questions as
-    // being "hard" as well. Just because a question has multiple available answers doesn't mean that it is "easy" per se.
 
     superJSON = JSON.parse(superJSON);
     console.log("superJSON");

@@ -87,13 +87,6 @@ function revealAnswer() {
             }
         }
 
-        // If 45 answers are correct, the game has been won!
-        if (rightAnswers === 45) {
-            document.getElementById("mistake-1").style.visibility = "visible";
-            document.getElementById("answer-box").innerText = `You win!`;
-            gameOver();
-        }
-
     } else {
         wrongAnswers++
 
@@ -115,9 +108,14 @@ function revealAnswer() {
         if (wrongAnswers === 3) {
             gameOver();
         }
-
     }
 
+        // If 45 answers are correct, the game has been won!
+        if (rightAnswers === 45) {
+            document.getElementById("mistake-1").style.visibility = "visible";
+            document.getElementById("answer-box").innerText = `You win!`;
+            gameOver();
+        }
 }
 
 // When presidents are actually clicked and therefore chosen
@@ -688,43 +686,23 @@ async function questionAsker() {
     //
 
 
-    // Delete entries with no answers
+// This next section deletes entries with no remaining answers. The loop nestled inside deletes these entries, while the outside loop merely runs
+// the deletion process a total of four times. The reason is this is that sometimes, questions with answer.length === 0 still somehow remained even
+// after this "delete entries with no answers" bit. This happened with Cleveland. I answered correctly, and then he was deleted from the questions
+// "Born in NJ" and "was sherriff", but then the "non-consecutive terms" question was asked. This is odd, because (1) that question should have been
+// deleted, and (2) even if the question remained, there were still multi-answer questions that should have been asked BEFORE this single-answer question.                                      
+// I suspected that superJSON.splice(i, 1) wass messing with things. Since it changes the index of various entries in the list of questions, perhaps
+// this results in certain questions-with-no-answers getting skipped from the deletion process. My fix is simply running the deletion loop multiple times.
+// An alternative could be making sure that when a new question is generated, it automatically skips any questions-with-no-answers.
+for (let indx = 0; indx < 4; indx++) {
+    console.log("index is " + indx);
     for (let i = 0; i < superJSON.length; i++) {
         if (superJSON[i]["answer"].length === 0) {
             console.log(`DELETED ENTRY WITH NO ANSWERS: ${superJSON[i]["question"]} `);
             superJSON.splice(i, 1);
         }
     }
-
-    console.log("test 1");
-    for (let i = 0; i < superJSON.length; i++) {
-        if (superJSON[i]["answer"].length === 0) {
-            console.log(`DELETED ENTRY WITH NO ANSWERS: ${superJSON[i]["question"]} `);
-            superJSON.splice(i, 1);
-        }
-    }
-
-    console.log("test 2");
-    for (let i = 0; i < superJSON.length; i++) {
-        if (superJSON[i]["answer"].length === 0) {
-            console.log(`DELETED ENTRY WITH NO ANSWERS: ${superJSON[i]["question"]} `);
-            superJSON.splice(i, 1);
-        }
-    }
-    // TO FIX!!!!!!!!!!!!!!!!!!!! Sometimes, questions with answer.length === 0 still somehow remain even after this "delete entries with no answers" bit!
-    //!!!!!!!!!!!!! Why is that? These questions-with-no-answers can be seen below in the "Here are the remaining..." but are NOT found in the
-    // console.log(superJSON) right below. Anyhow, this happened with Cleveland. I answered correctly, and then he was deleted from the questions "Born in NJ" and
-    // "was sherriff" but NOT from the "non-consecutive terms" question. And then that very "non-consecutive terms" question was then asked.
-    // This is odd, because (1) that question should be deleted, and (2) even if the question was there, there were still multi-answer questions that should
-    // have been asked BEFORE this single-answer question. So there is an error in two places.
-
-    // POSSIBLE SOLUTION!!!! Maybe, just maybe, superJSON.splice(i, 1) is messing with things. Since it changes the index of various entries in the list of questions,
-    // perhaps this results in certain questions-with-no-answers getting skipped from the deletion process. One fix could be simple running the deletion loop
-    // multiple times. That is very imprecise, though. Perhaps... I don't actually delete the questions-with-no-answers at all, I just make sure that
-    // when a new question is generated, it automatically skips any questions-with-no-answers. I don't like adding in a second WHILE loop, because any slight error
-    // can make the loop endless, but considering how I will always have a surplus of questions, this should pose no real danger. At least, no more danger
-    // than the current while loop already poses.
-
+}
 
     // Make all questions with less than 2 answers be labeled as "hard." Some questions with 2+ answers are marked "hard" from the beginning,
     // but this creates new questions for the "hard" pool as the game progresses.
@@ -797,3 +775,20 @@ async function questionAsker() {
     // console.log(superJSON);
 
 }
+
+
+    // TO DO
+    
+    // When the game is WON, an extra "incorrect" mark suddenly pops up.
+
+    // Maybe the answer (right or wrong) should appear in the same areas as the "game over" message.
+
+    // Show list of correct answers after someone makes a guess (for right or wrong)
+
+    // After the game is over (win or lose), show the average percentage of correct answers users have achieved.
+    
+    // Maybe instead of Difficulty as either "hard" or nothing at all, maybe an "easy" difficulty should go first with some of the more simple
+    // questions. There shouldn't be so many of them, maybe 5, or 10 at most. Then comes the standard questions (currenly with no difficulty
+    // setting), and then comes the hard questions as has already been coded.
+
+
