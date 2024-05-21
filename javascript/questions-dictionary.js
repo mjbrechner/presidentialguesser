@@ -278,6 +278,12 @@ function resetJSON() {
     },
 
     {
+        "question": "Represented Massachusetts in both the U.S. House and the U.S. Senate",
+        "answer": ["adams_jq", "kennedy"],
+        "answerNumber": 2
+    },
+
+    {
         "question": "Recipient of the Nobel Peace Prize",
         "answer": ["roosevelt_t", "wilson", "carter", "obama"],
         "answerNumber": 4
@@ -982,6 +988,24 @@ function resetJSON() {
     },    
 
     {
+        "question": "Served as governor of Massachusetts",
+        "answer": ["coolidge"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Was given the oath of office by a parent, a former state senator and state representative from Vermont",
+        "answer": ["coolidge"],
+        "answerNumber": 1
+    },
+    
+    {
+        "question": "Despite the nickname 'Silent,' was the first president featured in a talking motion picture",
+        "answer": ["coolidge"],
+        "answerNumber": 1
+    },
+    
+    {
         "question": "Born in Iowa",
         "answer": ["hoover"],
         "answerNumber": 1
@@ -1030,6 +1054,30 @@ function resetJSON() {
     },
 
     {
+        "question": "Served as Presiding Judge of Jackson County, Missouri",
+        "answer": ["truman"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Awarded the Army Distinguished Service Medal five times and the Navy Distinguished Service Medal once",
+        "answer": ["eisenhower"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Served as military governor of the American occupation zone in Germany",
+        "answer": ["eisenhower"],
+        "answerNumber": 1
+    },
+    
+    {
+        "question": "Twice defeated Democrat Adlai Stevenson II for the presidency",
+        "answer": ["eisenhower"],
+        "answerNumber": 1
+    },
+    
+    {
         "question": "Awarded the Navy and Marine Corps Medal for the rescue of the crew of PT 109",
         "answer": ["kennedy"],
         "answerNumber": 1
@@ -1037,6 +1085,12 @@ function resetJSON() {
 
     {
         "question": "Secret Service code name of 'Lancer'",
+        "answer": ["kennedy"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Established the Peace Crops with Executive Order 10924",
         "answer": ["kennedy"],
         "answerNumber": 1
     },
@@ -1052,7 +1106,13 @@ function resetJSON() {
         "answer": ["johnson_lb"],
         "answerNumber": 1
     },
-    
+
+    {
+        "question": "Represented Texas in the U.S. Senate",
+        "answer": ["johnson_lb"],
+        "answerNumber": 1
+    },
+
     {
         "question": "Born in California",
         "answer": ["nixon"],
@@ -1060,7 +1120,31 @@ function resetJSON() {
     },
 
     {
+        "question": "Represented California in both the U.S. House and U.S. Senate",
+        "answer": ["nixon"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Issued 'Reorganization Plan No. 3' to establish the Environmental Protection Agency",
+        "answer": ["nixon"],
+        "answerNumber": 1
+    },
+    
+    {
         "question": "Born in Nebraska",
+        "answer": ["ford"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Was never elected to the office of either president or vice president",
+        "answer": ["ford"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Represented Michigan in the U.S. House",
         "answer": ["ford"],
         "answerNumber": 1
     },
@@ -1073,6 +1157,12 @@ function resetJSON() {
 
     {
         "question": "Known for working the family peanut farm",
+        "answer": ["carter"],
+        "answerNumber": 1
+    },
+
+    {
+        "question": "Issued Proclamation 4483, pardoning all those who evaded the draft in the Vietnam War",
         "answer": ["carter"],
         "answerNumber": 1
     },
@@ -1202,7 +1292,7 @@ function resetJSON() {
         "answer": ["biden"],
         "answerNumber": 1
     }
-    
+
 ]`;
 
     superJSON = JSON.parse(superJSON);
