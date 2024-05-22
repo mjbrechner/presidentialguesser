@@ -14,26 +14,30 @@ function resetJSON() {
     {
         "question": "Born in Virginia",
         "answer": ["washington", "jefferson", "madison", "monroe", "harrison_wh", "tyler", "taylor", "wilson"],
-        "answerNumber": 8
+        "answerNumber": 8,
+        "difficulty": "easy"
     },
 
     {
         "question": "Born in Ohio",
         "answer": ["grant", "hayes", "garfield", "harrison_b", "mckinley", "taft", "harding"],
-        "answerNumber": 7
+        "answerNumber": 7,
+        "difficulty": "easy"
     },
 
 
     {
         "question": "Born in Massachusetts",
         "answer": ["adams_j", "adams_jq", "kennedy", "bush_ghw"],
-        "answerNumber": 4
+        "answerNumber": 4,
+        "difficulty": "moderate"
     },
     
     {
         "question": "Born in New York",
         "answer": ["roosevelt_t", "roosevelt_fd", "vanburen", "trump", "fillmore"],
-        "answerNumber": 5
+        "answerNumber": 5,
+        "difficulty": "easy"
     },
 
     {
@@ -46,7 +50,8 @@ function resetJSON() {
     {
         "question": "Born in Texas",
         "answer": ["eisenhower", "johnson_lb"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "easy"
     },
 
     {
@@ -66,69 +71,80 @@ function resetJSON() {
     {
         "question": "Born as a British citizen",
         "answer": ["washington", "adams_j", "jefferson", "madison", "monroe", "jackson", "adams_jq", "harrison_wh"],
-        "answerNumber": 8
+        "answerNumber": 8,
+        "difficulty": "easy"
     },
 
     {
         "question": "Issued no vetoes as president",
         "answer": ["adams_j", "jefferson", "adams_jq", "harrison_wh", "taylor", "fillmore", "garfield"],
-        "answerNumber": 7
+        "answerNumber": 7,
+        "difficulty": "easy"
     },
 
     {
         "question": "Issued more than 50 or more vetoes as president",
         "answer": ["roosevelt_fd", "cleveland", "truman", "eisenhower", "grant", "roosevelt_t", "reagan", "ford", "coolidge"],
-        "answerNumber": 9
+        "answerNumber": 9,
+        "difficulty": "easy"
     },
 
     {
         "question": "Never elected to public office before becoming president",
         "answer": ["taylor", "grant", "hoover", "eisenhower", "trump"],
-        "answerNumber": 5
+        "answerNumber": 5,
+        "difficulty": "easy"
     },
 
 
     {
         "question": "Served as U.S. vice president",
         "answer": ["adams_j", "jefferson", "vanburen", "tyler", "fillmore", "johnson_a", "arthur", "roosevelt_t", "coolidge", "truman", "nixon", "johnson_lb", "ford", "bush_ghw", "biden"],
-        "answerNumber": 15
+        "answerNumber": 15,
+        "difficulty": "easy"
     },
 
 
     {
         "question": "Served as U.S. secretary of state",
         "answer": ["jefferson", "madison", "monroe", "adams_jq", "vanburen", "buchanan"],
-        "answerNumber": 6
+        "answerNumber": 6,
+        "difficulty": "easy"
     },
 
     {
         "question": "Served as a U.S. senator",
         "answer": ["tyler", "monroe", "johnson_lb", "johnson_a", "jackson", "buchanan", "harding", "harrison_wh", "vanburen", "pierce", "truman", "kennedy", "adams_jq", "obama", "harrison_b", "biden", "nixon"],
-        "answerNumber": 17
+        "answerNumber": 17,
+        "difficulty": "easy"
     },
 
     {
         "question": "Served as a member of the U.S. House of Representatives",
         "answer": ["tyler", "madison", "bush_ghw", "johnson_lb", "johnson_a", "polk", "jackson", "buchanan", "mckinley", "garfield", "hayes", "harrison_wh", "fillmore", "pierce", "ford", "kennedy", "adams_jq", "lincoln", "nixon"],
-        "answerNumber": 19
+        "answerNumber": 19,
+        "difficulty": "easy"
     },
 
     {
         "question": "Served as a governor of a U.S. state (not territory)",
         "answer": ["tyler", "monroe", "jefferson", "bush_gw", "johnson_a", "polk", "mckinley", "hayes", "roosevelt_fd", "roosevelt_t", "cleveland", "vanburen", "wilson", "coolidge", "carter", "reagan", "clinton"],
-        "answerNumber": 17
+        "answerNumber": 17,
+        "difficulty": "easy"
     },
 
     {
         "question": "Served as a member of a colonial legislature under the Kingdom of Great Britain.",
         "answer": ["washington", "adams_j", "jefferson"],
-        "answerNumber": 3
+        "answerNumber": 3,
+        "difficulty": "easy"
     },
 
     {
         "question": "Served as a U.S. ambassador",
         "answer": ["adams_j", "jefferson", "monroe", "adams_jq", "vanburen", "harrison_wh", "buchanan", "bush_ghw"],
-        "answerNumber": 8
+        "answerNumber": 8,
+        "difficulty": "moderate"
     },
 
     {
@@ -141,79 +157,92 @@ function resetJSON() {
     {
         "question": "Died while president",
         "answer": ["harrison_wh", "taylor", "lincoln", "garfield", "mckinley", "harding", "roosevelt_fd", "kennedy"],
-        "answerNumber": 8
+        "answerNumber": 8,
+        "difficulty": "easy"
     },
 
 
     {
         "question": "President before the age of 50",
         "answer": ["roosevelt_t", "kennedy", "clinton", "grant", "obama", "cleveland", "pierce", "garfield", "polk"],
-        "answerNumber": 9
+        "answerNumber": 9,
+        "difficulty": "easy"
     },
 
     {
         "question": "Presidency included time over the age of 70",
         "answer": ["biden", "reagan", "trump", "eisenhower"],
-        "answerNumber": 4
+        "answerNumber": 4,
+        "difficulty": "easy"
     },
 
     {
         "question": "Alive past the age of 90",
         "answer": ["hoover", "adams_j", "reagan", "ford", "bush_ghw", "carter"],
-        "answerNumber": 6
+        "answerNumber": 6,
+        "difficulty": "easy"
     },
 
     {
         "question": "Did not graduate with a college degree",
         "answer": ["washington", "monroe", "jackson", "vanburen", "harrison_wh", "taylor", "fillmore", "lincoln", "johnson_a", "cleveland", "mckinley", "truman"],
-        "answerNumber": 12
+        "answerNumber": 12,
+        "difficulty": "easy"
     },
     {
         "question": "Undergraduate and/or graduate degree from Harvard University",
         "answer": ["adams_j", "adams_jq", "roosevelt_t", "roosevelt_fd", "kennedy", "bush_gw", "hayes", "obama"],
-        "answerNumber": 8
+        "answerNumber": 8,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Undergraduate and/or graduate degree from Yale University",
         "answer": ["taft", "bush_ghw", "bush_gw", "ford", "clinton"],
-        "answerNumber": 5
+        "answerNumber": 5,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Served two or more full terms as president",
         "answer": ["roosevelt_fd", "jefferson", "madison", "monroe", "jackson", "grant", "cleveland", "wilson", "eisenhower", "reagan", "clinton", "bush_gw", "obama", "washington"],
-        "answerNumber": 14
+        "answerNumber": 14,
+        "difficulty": "easy"
     },
 
     {
         "question": "Served exactly one full term as president (no more, no less)",
         "answer": ["adams_j", "adams_jq", "vanburen", "polk", "pierce", "buchanan", "hayes", "harrison_b", "taft", "hoover", "carter", "bush_ghw", "trump"],
-        "answerNumber": 13
+        "answerNumber": 13,
+        "difficulty": "easy"
     },
 
     {
         "question": "Served less than one complete term as president",
         "answer": ["harrison_wh", "garfield", "taylor", "harding", "ford", "fillmore", "kennedy", "biden", "arthur", "johnson_a", "tyler"],
-        "answerNumber": 11
+        "answerNumber": 11,
+        "difficulty": "easy"
     },
 
     {
         "question": "Impeached by the U.S. House of Representatives",
         "answer": ["johnson_a", "clinton", "trump"],
-        "answerNumber": 3
+        "answerNumber": 3,
+        "difficulty": "easy"
     },
 
     {
         "question": "Issued more than 500 executive orders",
         "answer": ["roosevelt_fd", "wilson", "coolidge", "roosevelt_t", "hoover", "truman", "taft", "harding"],
-        "answerNumber": 8
+        "answerNumber": 8,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Appointed five or more justices to the U.S. Supreme Court",
         "answer": ["washington", "roosevelt_fd", "taft", "jackson", "lincoln", "eisenhower"],
-        "answerNumber": 6
+        "answerNumber": 6,
+        "difficulty": "moderate"
     },
 
     {
@@ -226,79 +255,92 @@ function resetJSON() {
     {
         "question": "Had multiple different vice presidents",
         "answer": ["jefferson", "madison", "jackson", "lincoln", "grant", "cleveland", "mckinley", "roosevelt_fd", "nixon"],
-        "answerNumber": 9
+        "answerNumber": 9,
+        "difficulty": "easy"
     },
 
     {
         "question": "Was known to be a member of the Freemasons",
         "answer": ["washington", "monroe", "jackson", "polk", "buchanan", "johnson_a", "garfield", "mckinley", "roosevelt_t", "taft", "harding", "roosevelt_fd", "truman", "ford"],
-        "answerNumber": 14
+        "answerNumber": 14,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Won a presidential election while losing the popular vote",
         "answer": ["adams_jq", "hayes", "harrison_b", "bush_gw", "trump"],
-        "answerNumber": 5
+        "answerNumber": 5,
+        "difficulty": "easy"
     },
 
     {
         "question": "Won a presidential election with 85% or more of the Electoral College vote",
         "answer": ["washington", "monroe", "roosevelt_fd", "reagan", "nixon", "jefferson", "lincoln", "johnson_lb", "eisenhower", "pierce"],
-        "answerNumber": 10
+        "answerNumber": 10,
+        "difficulty": "easy"
     },
 
     {
         "question": "Was a member of the Whig Party at least part of the time while president (excluding other periods)",
         "answer": ["harrison_wh", "tyler", "taylor", "fillmore"],
-        "answerNumber": 4
+        "answerNumber": 4,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Did not serve in the U.S. military prior to becoming president",
         "answer": ["adams_j", "adams_jq", "vanburen", "cleveland", "taft", "wilson", "harding", "coolidge", "hoover", "roosevelt_fd", "clinton", "obama", "trump", "biden"],
-        "answerNumber": 14
+        "answerNumber": 14,
+        "difficulty": "easy"
     },
 
     {
         "question": "Prior to becoming president, achieved the rank of general in the U.S. Armed Forces",
         "answer": ["washington", "grant", "eisenhower", "jackson", "harrison_wh", "taylor", "hayes", "garfield", "pierce", "arthur", "johnson_a", "harrison_b"],
-        "answerNumber": 12
+        "answerNumber": 12,
+        "difficulty": "easy"
     },
 
     {
         "question": "Served in the U.S. Navy prior to becoming president",
         "answer": ["johnson_lb", "nixon", "ford", "kennedy", "bush_ghw", "carter"],
-        "answerNumber": 6
+        "answerNumber": 6,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Served in the U.S. Air Force or U.S. Army Air Forces before becoming president",
         "answer": ["reagan", "bush_gw"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Represented Massachusetts in both the U.S. House and the U.S. Senate",
         "answer": ["adams_jq", "kennedy"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Recipient of the Nobel Peace Prize",
         "answer": ["roosevelt_t", "wilson", "carter", "obama"],
-        "answerNumber": 4
+        "answerNumber": 4,
+        "difficulty": "easy"
     },
 
     {
         "question": "Was never elected to the office of the U.S. presidency",
         "answer": ["tyler", "fillmore", "johnson_a", "arthur", "ford"],
-        "answerNumber": 5
+        "answerNumber": 5,
+        "difficulty": "easy"
     },
 
     {
-        "question": "Day of either birth or death was on the fourth of July.",
+        "question": "Day of either birth or death was on the fourth of July",
         "answer": ["jefferson", "adams_j", "monroe", "coolidge"],
-        "answerNumber": 4
+        "answerNumber": 4,
+        "difficulty": "moderate"
     },
 
     {
@@ -311,7 +353,8 @@ function resetJSON() {
     {
         "question": "Born in February",
         "answer": ["washington", "harrison_wh", "lincoln", "reagan"],
-        "answerNumber": 4
+        "answerNumber": 4,
+        "difficulty": "easy"
     },
 
     {
@@ -380,49 +423,57 @@ function resetJSON() {
     {
         "question": "Held the office of attorney general of a U.S. state",
         "answer": ["vanburen", "clinton"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "hard"
     },
 
     {
         "question": "Once held the office of mayor of a town or city",
         "answer": ["johnson_a", "cleveland", "coolidge"],
-        "answerNumber": 3
+        "answerNumber": 3,
+        "difficulty": "moderate"
     },
     
     {
         "question": "Won or was nominated for a Grammy Award",
         "answer": ["truman", "kennedy", "nixon", "carter", "clinton", "obama"],
-        "answerNumber": 6
+        "answerNumber": 6,
+        "difficulty": "easy"
     }, 
 
     {
         "question": "Signed the Declaration of Independence or directly descended from one of its signers",
         "answer": ["adams_j", "jefferson", "harrison_wh", "harrison_b"],
-        "answerNumber": 4
+        "answerNumber": 4,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Member of the Roman Catholic Church",
         "answer": ["kennedy", "biden"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "easy"
     },
 
     {
         "question": "Raised in a Quaker family",
         "answer": ["hoover", "nixon"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Elected to a federal office as a candidate for the Anti-Masonic Party",
         "answer": ["adams_jq", "fillmore"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "hard"
     },
 
     {
         "question": "Honored with a star on the Hollywood Walk of Fame",
         "answer": ["reagan", "trump"],
-        "answerNumber": 2
+        "answerNumber": 2,
+        "difficulty": "easy"
     },
     
     {
@@ -802,7 +853,7 @@ function resetJSON() {
     },    
     
     {
-        "question": "First president to use the Resolute Desk, a gift from the British monarch made of timber from the HMS Resolute",
+        "question": "First president to use the Resolute Desk, a gift from Queen Victoria made of timber from the HMS Resolute",
         "answer": ["hayes"],
         "answerNumber": 1
     },
