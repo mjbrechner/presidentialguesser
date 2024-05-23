@@ -23,6 +23,9 @@
 }
 
 #question-asker-button {
+    border: 3px solid #102C57;
+    border-radius: 5px;
+    cursor: pointer;
     visibility: hidden;
 }
 
@@ -76,6 +79,20 @@
     justify-content: center;
     justify-self: center;
     border: 5px solid #940404;
+    border-radius: 10px;
+    z-index: 1;
+    visibility: hidden;
+}
+
+#answer-notification-box {
+    position: fixed;
+    display: flex;
+    height: 100px;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    border: 5px solid #102C57;
     border-radius: 10px;
     z-index: 1;
     visibility: hidden;
