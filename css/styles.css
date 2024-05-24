@@ -160,6 +160,8 @@
     width: 5em;
     border-radius: 5%;
     filter: sepia(100%);
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .portrait:hover {

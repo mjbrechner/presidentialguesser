@@ -323,6 +323,41 @@ function resetJSON() {
     },
 
     {
+        "question": "Represented Tennessee in the U.S. Senate",
+        "answer": ["jackson", "johnson_a"],
+        "answerNumber": 2,
+        "difficulty": "hard"
+    },
+
+    {
+        "question": "Represented Ohio in the U.S. Senate",
+        "answer": ["harrison_wh", "harding"],
+        "answerNumber": 2,
+        "difficulty": "hard"
+    },
+
+    {
+        "question": "Represented Virginia in the U.S. House of Representatives",
+        "answer": ["madison", "tyler"],
+        "answerNumber": 2,
+        "difficulty": "hard"
+    },
+
+    {
+        "question": "Represented Tennessee in the U.S. House of Representatives",
+        "answer": ["jackson", "polk", "johnson_a"],
+        "answerNumber": 3,
+        "difficulty": "hard"
+    },
+
+    {
+        "question": "Represented Ohio in the U.S. House of Representatives",
+        "answer": ["harrison_wh", "hayes", "garfield", "mckinley"],
+        "answerNumber": 4,
+        "difficulty": "moderate"
+    },
+
+    {
         "question": "Recipient of the Nobel Peace Prize",
         "answer": ["roosevelt_t", "wilson", "carter", "obama"],
         "answerNumber": 4,
@@ -525,823 +560,960 @@ function resetJSON() {
     {
         "question": "Never affiliated with a political party while president",
         "answer": ["washington"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Known as the 'American Cincinnatus'",
         "answer": ["washington"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as official surveyor of Culpeper County",
         "answer": ["washington"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Member of the Federalist Party during presidency",
         "answer": ["adams_j"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     }, 
 
     {
         "question": "First president to live in the White House",
         "answer": ["adams_j"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     }, 
 
     {
         "question": "Known as the 'Duke of Braintree'",
         "answer": ["adams_j"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     }, 
 
     {
         "question": "Founded the University of Virginia",
         "answer": ["jefferson"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     }, 
 
     {
         "question": "Pets included a horse named 'Caractacus' and a mockingbird named 'Dick'",
         "answer": ["jefferson"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     }, 
 
     {
         "question": "Known as the 'Sage of Monticello'",
         "answer": ["jefferson"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     }, 
 
     {
         "question": "First president to sign a Declaration of War",
         "answer": ["madison"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     }, 
 
     {
         "question": "Shortest president at five feet, four inches tall",
         "answer": ["madison"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     }, 
 
     {
         "question": "Co-authored 'The Federalist' (known as 'The Federalist Papers') with Alexander Hamilton and John Jay",
         "answer": ["madison"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     }, 
 
     {
         "question": "Time in office known as the 'Era of Good Feelings'",
         "answer": ["monroe"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     }, 
 
     {
         "question": "Known as 'The Last Cocked Hat', wearing the tricorn hat and Revolutionary era fashion into the 19th century",
         "answer": ["monroe"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     }, 
 
     {
         "question": "Only cabinet secretary to have held two different cabinet positions prior to becoming president",
         "answer": ["monroe"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     }, 
 
     {
         "question": "Only former president to serve in the the U.S. House of Representatives post-presidency",
         "answer": ["adams_jq"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Only president to have also lost elections for the presidency, U.S. Senate, U.S. House of Representatives, and state governor",
         "answer": ["adams_jq"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as ambassador to the Netherlands, Germany, Russia, and Great Britain",
         "answer": ["adams_jq"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as commissioner and governor of the territories of East and West Florida",
         "answer": ["jackson"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     }, 
 
     {
         "question": "Known as the 'Hero of New Orleans' and 'Old Hickory'",
         "answer": ["jackson"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     }, 
 
     {
         "question": "After surviving being shot in a duel, lived with a bullet lodged near the heart",
         "answer": ["jackson"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     }, 
 
     {
         "question": "Native speaker of Dutch",
         "answer": ["vanburen"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Known as 'Old Kinderhook'",
         "answer": ["vanburen"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "First president to be born a citizen of the United States of America",
         "answer": ["vanburen"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Shortest-tenured president",
         "answer": ["harrison_wh"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Held the office of govenor of Indiana Territory",
         "answer": ["harrison_wh"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Led U.S. forces in the Battle of Tippecanoe and the Battle of the Thames",
         "answer": ["harrison_wh"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Sometimes called 'Old Granny' or 'General Mum'",
         "answer": ["harrison_wh"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as president pro tempore of the U.S. Senate",
         "answer": ["tyler"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Elected to the Provisional Congress of the Conferedate States",
         "answer": ["tyler"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Expelled from own political party during tenure as U.S. president",
         "answer": ["tyler"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as speaker of the U.S. House of Representatives",
         "answer": ["polk"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "A 'Dark Horse' president who was known as the 'Napoleon of the Stump'",
         "answer": ["polk"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "As president, signed the annexation of Texas and served through the subsequent Mexican-American War",
         "answer": ["polk"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Spent childhood in Louisville, Kentucky, and was buried in Jefferson County",
         "answer": ["taylor"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     }, 
 
     {
         "question": "Only person to be awarded the Congressional Gold Medal three times",
         "answer": ["taylor"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     }, 
     
     {
         "question": "Known as 'Old Rough and Ready'",
         "answer": ["taylor"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     }, 
 
     {
         "question": "Held the office of New York State Comptroller",
         "answer": ["fillmore"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Once ran for president as the candidate for the Know Nothings",
         "answer": ["fillmore"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "A co-founder of the University at Buffalo who served as chancellor for more than 25 years",
         "answer": ["fillmore"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in New Hampshire",
         "answer": ["pierce"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Known as 'Young Hickory of the Granite Hills'",
         "answer": ["pierce"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "As a student at Bowdoin College, Captained the 'Bowdoin Cadets' and befriended Nathaniel Hawthorne",
         "answer": ["pierce"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Was never married",
         "answer": ["buchanan"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Only president with prior military service not to serve as an officer, with private as highest rank achieved",
         "answer": ["buchanan"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Represented Pennsylvania in the United States Congress",
         "answer": ["buchanan"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Represented Illinois in the United States Congress",
         "answer": ["lincoln"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as postmaster for the village of New Salem for three years",
         "answer": ["lincoln"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in Kentucky",
         "answer": ["lincoln"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Worked as a professional tailor",
         "answer": ["johnson_a"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Only former president to serve in the the U.S. Senate post-presidency",
         "answer": ["johnson_a"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Only southern U.S. senator to remain seated after own state seceded from the Union",
         "answer": ["johnson_a"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Served as president of the National Rifle Association",
         "answer": ["grant"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Established the nation's first national park by signing the Yellowstone National Park Protection Act",
         "answer": ["grant"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },    
     
     {
         "question": "In a post-presidency tour, became the first former president to visit such locales as India, China, and Japan",
         "answer": ["grant"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },    
     
     {
         "question": "First president to use the Resolute Desk, a gift from Queen Victoria made of timber from the HMS Resolute",
         "answer": ["hayes"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as city solicitor in Cincinnati",
         "answer": ["hayes"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "First sitting president to visit a Pacific coast state",
         "answer": ["hayes"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Personally commanded federal forces to victory in the Battle of Middle Creek in Eastern Kentucky",
         "answer": ["garfield"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },    
 
     {
         "question": "Had a Newfoundland dog named 'Veto', despite never issuing a veto as president",
         "answer": ["garfield"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Rose from being a student-janitor at Western Reserve Eclectic Institute (now Hiram College) to becoming its principal",
         "answer": ["garfield"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Served as Collector of the Port of New York",
         "answer": ["arthur"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Known as the 'Dude President' or 'Gentleman Boss'",
         "answer": ["arthur"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
     
     {
         "question": "First president to take the oath of office in own personal home",
         "answer": ["arthur"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Born in New Jersey",
         "answer": ["cleveland"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served non-consecutive terms as president",
         "answer": ["cleveland"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Held the office of sheriff",
         "answer": ["cleveland"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Known as the 'Pious Moonlight Dude' for the romantic courtship of a spouse",
         "answer": ["harrison_b"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Six states admitted to the union during presidency, more than during any other president's tenure in office",
         "answer": ["harrison_b"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Laws signed include the Sherman Antitrust Act and the International Copyright Act (also known as the 'Chace Act')",
         "answer": ["harrison_b"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
     
     {
         "question": "Called the 'Napoleon of Protection' for supporting tariffs",
         "answer": ["mckinley"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
     
     {
         "question": "President when the U.S. gained control of Hawaii, Puerto Rico, Guam, the Philippines, and Cuba",
         "answer": ["mckinley"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Chair of the 1892 Republican National Convention",
         "answer": ["mckinley"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Awarded the Medal of Honor",
         "answer": ["roosevelt_t"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Youngest-ever person to serve as president",
         "answer": ["roosevelt_t"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "First president to make an international diplomatic trip while in office",
         "answer": ["roosevelt_t"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as Chief Justice of the U.S. Supreme Court",
         "answer": ["taft"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Born in September",
         "answer": ["taft"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Held the office of governor-general of the Philippines",
         "answer": ["taft"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as dean of the University of Cincinnati College of Law",
         "answer": ["taft"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Earned a PhD from Johns Hopkins University",
         "answer": ["wilson"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Served as president of Princeton University",
         "answer": ["wilson"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Issued first presidential national emergency declaration, 'Emergency in Water Transportation of the United States'",
         "answer": ["wilson"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
     
     {
         "question": "Administration was rocked by the Teapot Dome scandal",
         "answer": ["harding"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Worked in journalism as a publisher of 'The Marion Star' in Ohio",
         "answer": ["harding"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Campaigned under the slogan 'Return to normalcy', speaking of getting 'out of the fevered delirium of war'",
         "answer": ["harding"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },    
 
     {
         "question": "Served as governor of Massachusetts",
         "answer": ["coolidge"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Was given the oath of office by a parent, a former state senator and state representative from Vermont",
         "answer": ["coolidge"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
     
     {
         "question": "Despite the nickname 'Silent,' was the first president featured in a talking motion picture",
         "answer": ["coolidge"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
     
     {
         "question": "Born in Iowa",
         "answer": ["hoover"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as U.S. Secretary of Commerce",
         "answer": ["hoover"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Worked as a geologist and minining engineer",
         "answer": ["hoover"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Longest-serving president",
         "answer": ["roosevelt_fd"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Organized a series of programs dubbed the New Deal during the Great Depression",
         "answer": ["roosevelt_fd"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },    
 
     {
         "question": "Represented the United States at the Yalta Conference in the Soviet Union",
         "answer": ["roosevelt_fd"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },    
 
     {
         "question": "Born in Missouri",
         "answer": ["truman"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Served as a Field Artillery officer in World War I and then in the Officers' Reserve Corps for several decades",
         "answer": ["truman"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as Presiding Judge of Jackson County, Missouri",
         "answer": ["truman"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Awarded the Army Distinguished Service Medal five times and the Navy Distinguished Service Medal once",
         "answer": ["eisenhower"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as military governor of the American occupation zone in Germany",
         "answer": ["eisenhower"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
     
     {
         "question": "Twice defeated Democrat Adlai Stevenson II for the presidency",
         "answer": ["eisenhower"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
     
     {
         "question": "Awarded the Navy and Marine Corps Medal for the rescue of the crew of PT 109",
         "answer": ["kennedy"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Secret Service code name of 'Lancer'",
         "answer": ["kennedy"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Established the Peace Crops with Executive Order 10924",
         "answer": ["kennedy"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "First president to take the oath of office on an airplane",
         "answer": ["johnson_lb"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Served as party whip, majority leader, and minority leader in the U.S. Senate",
         "answer": ["johnson_lb"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Represented Texas in the U.S. Senate",
         "answer": ["johnson_lb"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in California",
         "answer": ["nixon"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Represented California in both the U.S. House and U.S. Senate",
         "answer": ["nixon"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Issued 'Reorganization Plan No. 3' to establish the Environmental Protection Agency",
         "answer": ["nixon"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
     
     {
         "question": "Born in Nebraska",
         "answer": ["ford"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Was never elected to the office of either president or vice president",
         "answer": ["ford"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Represented Michigan in the U.S. House",
         "answer": ["ford"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in Georgia",
         "answer": ["carter"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Known for working the family peanut farm",
         "answer": ["carter"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Issued Proclamation 4483, pardoning all those who evaded the draft in the Vietnam War",
         "answer": ["carter"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in Illinois",
         "answer": ["reagan"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Known as 'The Great Communicator' and named to the National Speakers Association Hall of Fame",
         "answer": ["reagan"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },    
 
     {
         "question": "Served as president of the Screen Actors Guild",
         "answer": ["reagan"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     }, 
 
     {
         "question": "Awarded the Distinguished Flying Cross",
         "answer": ["bush_ghw"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served as Director of Central Intelligence",
         "answer": ["bush_ghw"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Played in the first two editions of the NCAA Men's College Baseball World Series on the runner-up team",
         "answer": ["bush_ghw"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in Arkansas",
         "answer": ["clinton"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Only president to be a Rhodes Scholar",
         "answer": ["clinton"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Spent 4,366 days, nearly 12 years, as a state governor",
         "answer": ["clinton"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in Connecticut",
         "answer": ["bush_gw"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Was a co-owner of Major League Baseball's Texas Rangers",
         "answer": ["bush_gw"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Only president who earned a Master of Business Administration",
         "answer": ["bush_gw"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Born in Hawaii",
         "answer": ["obama"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Signed the 'Patient Protection and Affordable Health Care Act'",
         "answer": ["obama"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Served in the Illinois State Senate and later represented Illinois in the U.S. Senate",
         "answer": ["obama"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "First president to be indicted by a grand jury in both a state and a federal case",
         "answer": ["trump"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Inducted into the WWE (World Wrestling Federation) Hall of Fame",
         "answer": ["trump"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Graduated from New York Military Academy",
         "answer": ["trump"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
     
     {
         "question": "Oldest-ever person to serve as president",
         "answer": ["biden"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "moderate"
     },
 
     {
         "question": "Was awarded the Presidential Medal of Freedom before becoming president (as opposed to post-presidency)",
         "answer": ["biden"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     },
 
     {
         "question": "Served more than 35 years in the United States Congress",
         "answer": ["biden"],
-        "answerNumber": 1
+        "answerNumber": 1,
+        "difficulty": "hard"
     }
 
 ]`;
@@ -1361,3 +1533,9 @@ function resetJSON() {
 };
 
 resetJSON();
+
+//// TO DO ///
+
+// Instead of going through all easy questions before all moderate questions before all hard questions,
+// what about going through easy for the first 10-15 right answers, then easy+moderate until, say,
+// 30-35 right answers, and then easy+moderate+hard for the rest? 
