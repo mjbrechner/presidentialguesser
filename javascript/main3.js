@@ -5,6 +5,7 @@ let presidentialList = ['washington', 'adams_j', 'jefferson', 'madison', 'monroe
 
 const answerNotificationBox = document.getElementById("answer-notification-box");
 const answerNotification = document.getElementById("answer-notification");
+const questionBox = document.getElementById("question-asker");
 
 // console.log("chosenMode");
 
@@ -70,7 +71,6 @@ function revealAnswer() {
     document.getElementById("question-asker-button").style.visibility = "visible";
 
     if (currentAnswers.includes(chosenPresident)) {
-        // document.getElementById("answer-box").innerText = `You have chosen ${chosenPresidentFullName}. Correct!`;
         answerNotificationBox.style.visibility = "visible";
         answerNotification.style.visibility = "visible";
         answerNotification.innerText = `You have chosen ${chosenPresidentFullName}. Correct!`;
@@ -100,19 +100,16 @@ function revealAnswer() {
 
         if (wrongAnswers >= 1) {
             document.getElementById("mistake-1").style.visibility = "visible";
-            // document.getElementById("answer-box").innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistake.`;
             answerNotification.innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistake.`;
         }
 
         if (wrongAnswers >= 2) {
             document.getElementById("mistake-2").style.visibility = "visible";
-            // document.getElementById("answer-box").innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistakes.`;
             answerNotification.innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistakes.`;
         }
 
         if (wrongAnswers >= 3) {
             document.getElementById("mistake-3").style.visibility = "visible";
-            // document.getElementById("answer-box").innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistakes.`;
             answerNotification.innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistakes.`;
         }
 
@@ -124,7 +121,7 @@ function revealAnswer() {
     // If 45 answers are correct, the game has been won!
     if (rightAnswers === 45) {
         document.getElementById("mistake-1").style.visibility = "visible";
-        document.getElementById("answer-box").innerText = `You win!`;
+        questionBox.innerText = `You win!`;
         gameOver();
     }
 }
@@ -684,21 +681,19 @@ function hoverNone() {
 
 'use strict';
 
-const questionBox = document.getElementById("question-asker");
-
 // let presidentialList = ['washington', 'adams_j', 'jefferson', 'madison', 'monroe', 'adams_jq', 'jackson', 'vanburen', 'harrison_wh', 'tyler', 'polk', 'taylor', 'fillmore', 'pierce', 'buchanan', 'lincoln', 'johnson_a', 'grant', 'hayes', 'garfield', 'arthur', 'cleveland', 'harrison_b', 'mckinley', 'roosevelt_t', 'taft', 'wilson', 'harding', 'coolidge', 'hoover', 'roosevelt_fd', 'truman', 'eisenhower', 'kennedy', 'johnson_lb', 'nixon', 'ford', 'carter', 'reagan', 'bush_ghw', 'clinton', 'bush_gw', 'obama', 'trump', 'biden'];
 let workingQuestionSet = [];
 
 function hiddeny() {
     answerNotificationBox.style.visibility = "hidden";
-    answerNotification.style.visibility = "hidden";    
+    answerNotification.style.visibility = "hidden";
 }
 
 async function questionAsker() {
     // When a question IS being asked, enable the presidential portrait section and clear answer area.
     document.getElementById("pres-button-area").style.pointerEvents = "auto";
     document.getElementById("pres-name-box").style.display = "flex";
-    document.getElementById("answer-box").innerText = "";
+    questionBox.innerText = "";
     answerNotificationBox.style.visibility = "hidden";
     answerNotification.style.visibility = "hidden";
     //

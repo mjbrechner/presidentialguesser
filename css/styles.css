@@ -19,6 +19,7 @@
         -1px -1px 1px #940404;
     text-align: center;
     padding: .35em;
+    margin: 0;
     font-size: 2.5em;
 }
 
@@ -29,23 +30,26 @@
     visibility: hidden;
 }
 
-#question-asker,
-#answer-box {
-    width: 100%;
+.question-area {
+    display: flex;
+    flex-direction: row;
+}
+
+#question-asker {
+    width: 75%;
+    height: 50px;
     margin: 5px;
     padding: 5px;
 }
 
-#question-asker {
-    height: 50px;
-}
 
-#answer-box {
+/* #answer-box {
     height: 25px;
-}
+} */
 
 .mistake-area {
     display: flex;
+    width: fit-content;
     gap: 2px;
     padding: 5px;
 }

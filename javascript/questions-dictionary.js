@@ -540,7 +540,7 @@ function resetJSON() {
     },
 
     {
-        "question": "Won a presidential election by defeating Democratic William Jennings Bryan",
+        "question": "Won a presidential election by defeating Democrat William Jennings Bryan",
         "answer": ["mckinley", "taft"],
         "answerNumber": 2,
         "difficulty": "hard"
