@@ -64,8 +64,14 @@ function displayChosenPresident() {
 // If any questions in the json no longer have any available answers, those questions are also removed.
 
 function revealAnswer() {
-    let chosenPresidentFullName = document.getElementById(`portrait-${chosenPresident}`).title;
-    console.log(`You have chosen ${chosenPresident}. The correct answer is ${currentAnswers}.`);
+    let chosenPresidentFullName = namesDictionary[chosenPresident];
+
+    let currentAnswersFullNames = []; // currentAnswersFullNames can show a list of all *currently available* correct answers, though not all possible answers.
+    for (let i = 0; i < currentAnswers.length; i++) {
+        currentAnswersFullNames.push(` ${namesDictionary[currentAnswers[i]]}`);
+    }
+
+    console.log(`You have chosen ${chosenPresident}. Remaining correct answers include:${currentAnswersFullNames}.`);
 
     //Enable "Next Question" button, though it will get disabled again if the game turns out to be over.
     document.getElementById("question-asker-button").style.visibility = "visible";

@@ -1534,8 +1534,74 @@ function resetJSON() {
 
 resetJSON();
 
+// the originalSuperJSON captures the state of the questions and their answers at the beginning of the game. Since superJSON gets manipulated
+// throughout the game, with questions/answers falling out after use, originalSuperJSON preserves all questions and all answers in total. 
+const originalSuperJSON = superJSON;
+
+// !!!!!!!!!!!!!!!!!!!!!!!!SO FAR NOT ACTUALLY USING originalSuperJSON!!!!!!!!!!!!!!!!!!!!!!!!
+
+// This dictionary is a quick way to summon the display name format for each president.
+const namesDictionary = {
+    "washington": "George Washington",
+    "adams_j": "John Adams",
+    "jefferson": "Thomas Jefferson",
+    "madison": "James Madison",
+    "monroe": "James Monroe",
+    "adams_jq": "John Quincy Adams",
+    "jackson": "Andrew Jackson",
+    "vanburen": "Martin Van Buren",
+    "harrison_wh": "William Henry Harrison",
+    "tyler": "John Tyler",
+    "polk": "James Polk",
+    "taylor": "Zachary Taylor",
+    "fillmore": "Millard Fillmore",
+    "pierce": "Franklin Pierce",
+    "buchanan": "James Buchanan",
+    "lincoln": "Abraham Lincoln",
+    "johnson_a": "Andrew Johnson",
+    "grant": "Ulysses Grant",
+    "hayes": "Rutherford Hayes",
+    "garfield": "James Garfield",
+    "arthur": "Chester Arthur",
+    "cleveland": "Grover Cleveland",
+    "harrison_b": "Benjamin Harrison",
+    "mckinley": "William McKinley",
+    "roosevelt_t": "Theodore Roosevelt",
+    "taft": "William Howard Taft",
+    "wilson": "Woodrow Wilson",
+    "harding": "Warren G. Harding",
+    "coolidge": "Calvin Coolidge",
+    "hoover": "Herbert Hoover",
+    "roosevelt_fd": "Franklin D. Roosevelt",
+    "truman": "Harry Truman",
+    "eisenhower": "Dwight Eisenhower",
+    "kennedy": "John F. Kennedy",
+    "johnson_lb": "Lyndon Johnson",
+    "nixon": "Richard Nixon",
+    "ford": "Gerald Ford",
+    "carter": "Jimmy Carter",
+    "reagan": "Ronald Reagan",
+    "bush_ghw": "George H.W. Bush",
+    "clinton": "Bill Clinton",
+    "bush_gw": "George W. Bush",
+    "obama": "Barack Obama",
+    "trump": "Donald Trump",
+    "biden": "Joe Biden"
+};
+
+
+
 //// TO DO ///
 
 // Instead of going through all easy questions before all moderate questions before all hard questions,
 // what about going through easy for the first 10-15 right answers, then easy+moderate until, say,
-// 30-35 right answers, and then easy+moderate+hard for the rest? 
+// 30-35 right answers, and then easy+moderate+hard for the rest?
+
+// !!!!!!!!!!!!!!!!!!!!!!!!SO FAR NOT ACTUALLY USING originalSuperJSON!!!!!!!!!!!!!!!!!!!!!!!!
+// !!!!!!!!!!!!!!!!!!!!!!!!! delete if it doesn't end up being used !!!!!!!!!!!!!!!!!!!!!!
+
+// !! So far, this new namesDictionary is a lot of lines of code that is being used for only one feature, which is replacing this line:
+// let chosenPresidentFullName = document.getElementById(`portrait-${chosenPresident}`).title;
+// for this line:
+// let chosenPresidentFullName = namesDictionary[chosenPresident];
+// While this dictionary is nice, if it ends up only being used once like this, should it be retained?
