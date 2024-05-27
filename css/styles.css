@@ -32,20 +32,16 @@
 
 .question-area {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 #question-asker {
     width: 75%;
-    height: 50px;
+    height: 55px;
+    font-size: 25px;
     margin: 5px;
     padding: 5px;
 }
-
-
-/* #answer-box {
-    height: 25px;
-} */
 
 .mistake-area {
     display: flex;

@@ -30,6 +30,10 @@ function toggle() {
 
 // Question asking and answering
 
+let timerSeconds = 0;
+let timerMinutes = 0;
+let timerString;
+
 let questionBeingAsked;
 let chosenPresident;
 let currentAnswers = [];
@@ -39,10 +43,28 @@ let rightAnswers = 0;
 
 
 function newGame() {
+    // Reset things to start out the new game.
     document.getElementById("new-game-button").style.visibility = "hidden";
+    timerSeconds = 0;
+    timerMinutes = 0;
+
+
     questionAsker();
+    setInterval(gameTimer, 1000);
 }
 
+function gameTimer() { // Tracks how long the game takes.
+    timerSeconds++;
+    if (timerSeconds === 60) {
+        timerMinutes++;
+        timerSeconds = 0;
+    }
+    if (timerMinutes < 1) {
+        timerString = `${timerSeconds} seconds`;
+    } else {
+        timerString = `${timerMinutes} minutes, ${timerSeconds} seconds`;
+    }
+}
 
 function gameOver() {
     document.getElementById("game-over-notice").style.visibility = "visible";
@@ -126,8 +148,7 @@ function revealAnswer() {
 
     // If 45 answers are correct, the game has been won!
     if (rightAnswers === 45) {
-        document.getElementById("mistake-1").style.visibility = "visible";
-        questionBox.innerText = `You win!`;
+        questionBox.innerText = `You win! You won in ${timerString}.`;
         gameOver();
     }
 }
