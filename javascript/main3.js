@@ -3,11 +3,24 @@
 let chosenMode = "game";
 let presidentialList = ['washington', 'adams_j', 'jefferson', 'madison', 'monroe', 'adams_jq', 'jackson', 'vanburen', 'harrison_wh', 'tyler', 'polk', 'taylor', 'fillmore', 'pierce', 'buchanan', 'lincoln', 'johnson_a', 'grant', 'hayes', 'garfield', 'arthur', 'cleveland', 'harrison_b', 'mckinley', 'roosevelt_t', 'taft', 'wilson', 'harding', 'coolidge', 'hoover', 'roosevelt_fd', 'truman', 'eisenhower', 'kennedy', 'johnson_lb', 'nixon', 'ford', 'carter', 'reagan', 'bush_ghw', 'clinton', 'bush_gw', 'obama', 'trump', 'biden'];
 
+let timerSeconds = 0;
+let timerMinutes = 0;
+let timerString;
+
+let questionBeingAsked;
+let chosenPresident;
+let currentAnswers = [];
+let workingQuestionSet = [];
+
+let wrongAnswers = 0;
+let rightAnswers = 0;
+
+
 const answerNotificationBox = document.getElementById("answer-notification-box");
 const answerNotification = document.getElementById("answer-notification");
 const questionBox = document.getElementById("question-asker");
+const chosenPresidentBox = document.getElementById("pres-name-box");
 
-// console.log("chosenMode");
 
 // When a question isn't being asked (including at the start), disable the presidential portrait section.
 document.getElementById("pres-button-area").style.pointerEvents = "none";
@@ -29,18 +42,6 @@ function toggle() {
 
 
 // Question asking and answering
-
-let timerSeconds = 0;
-let timerMinutes = 0;
-let timerString;
-
-let questionBeingAsked;
-let chosenPresident;
-let currentAnswers = [];
-const chosenPresidentBox = document.getElementById("pres-name-box");
-let wrongAnswers = 0;
-let rightAnswers = 0;
-
 
 function newGame() {
     // Reset things to start out the new game.
@@ -69,11 +70,6 @@ function gameTimer() { // Tracks how long the game takes.
 function gameOver() {
     document.getElementById("game-over-notice").style.visibility = "visible";
     document.getElementById("question-asker-button").style.visibility = "hidden";
-
-    // Option to play again. Changes the button from "New Game" to "Play Again," since "again" is appropriate
-    // for every game following the initial one.
-    // document.getElementById("new-game-button").style.visibility = "visible";
-    // document.getElementById("new-game-button").innerText = "Play Again";
 }
 
 function displayChosenPresident() {
@@ -705,16 +701,6 @@ function hoverNone() {
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////// first was index second was testing
 ////////////////////////////////////////////////////////////////////////////////////////////
-
-'use strict';
-
-// let presidentialList = ['washington', 'adams_j', 'jefferson', 'madison', 'monroe', 'adams_jq', 'jackson', 'vanburen', 'harrison_wh', 'tyler', 'polk', 'taylor', 'fillmore', 'pierce', 'buchanan', 'lincoln', 'johnson_a', 'grant', 'hayes', 'garfield', 'arthur', 'cleveland', 'harrison_b', 'mckinley', 'roosevelt_t', 'taft', 'wilson', 'harding', 'coolidge', 'hoover', 'roosevelt_fd', 'truman', 'eisenhower', 'kennedy', 'johnson_lb', 'nixon', 'ford', 'carter', 'reagan', 'bush_ghw', 'clinton', 'bush_gw', 'obama', 'trump', 'biden'];
-let workingQuestionSet = [];
-
-function hiddeny() {
-    answerNotificationBox.style.visibility = "hidden";
-    answerNotification.style.visibility = "hidden";
-}
 
 async function questionAsker() {
     // When a question IS being asked, enable the presidential portrait section and clear answer area.
