@@ -143,23 +143,42 @@ function revealAnswer() {
         }
 
     } else {
+        // Increase wrongAnswers by 1, display number of mistakes. In the "incorrect guess" notification, display a single correct answer.
+        // This will either be the only available correct answer (not already chosen) or a single random name from the list of correct answers.
+
         wrongAnswers++
         answerNotificationBox.style.visibility = "visible";
         answerNotification.style.visibility = "visible";
+        let getRandom = Math.floor(Math.random() * currentAnswersFullNames.length); // This variable used to generate a random answer from the list of those still available.
 
         if (wrongAnswers >= 1) {
             document.getElementById("mistake-1").style.visibility = "visible";
-            answerNotification.innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistake.`;
+
+            if (currentAnswersFullNames.length === 1) {
+                answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistake. The correct available answer was ${currentAnswersFullNames}.`;
+            } else {
+                answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistake. One of ${currentAnswersFullNames.length} remaining answers was ${currentAnswersFullNames[getRandom]}.`;
+            }
         }
 
         if (wrongAnswers >= 2) {
             document.getElementById("mistake-2").style.visibility = "visible";
-            answerNotification.innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistakes.`;
+
+            if (currentAnswersFullNames.length === 1) {
+                answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. The correct available answer was ${currentAnswersFullNames}.`;
+            } else {
+                answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. One of ${currentAnswersFullNames.length} remaining answers was ${currentAnswersFullNames[getRandom]}.`;
+            }
         }
 
         if (wrongAnswers >= 3) {
             document.getElementById("mistake-3").style.visibility = "visible";
-            answerNotification.innerText = `You have chosen ${chosenPresidentFullName}. Incorrect! You have ${wrongAnswers} mistakes.`;
+
+            if (currentAnswersFullNames.length === 1) {
+                answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. The correct available answer was ${currentAnswersFullNames}.`;
+            } else {
+                answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. One of ${currentAnswersFullNames.length} remaining answers was ${currentAnswersFullNames[getRandom]}.`;
+            }
         }
 
         if (wrongAnswers === 3) {
@@ -726,8 +745,6 @@ function hoverNone() {
     chosenPresidentBox.innerText = "";
 }
 
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////// first was index second was testing
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -842,18 +859,11 @@ async function questionAsker() {
     console.log(`I want to delete the question ${superJSON[randomizer]["question"]} It currents has the answers: ${currentAnswers}.`);
 
     superJSON.splice(randomizer, 1);
-    // console.log(superJSON);
 
 }
 
 
 // TO DO
-
-// When the game is WON, an extra "incorrect" mark suddenly pops up.
-
-// Maybe the answer (right or wrong) should appear in the same areas as the "game over" message.
-
-// Show list of correct answers after someone makes a guess (for right or wrong)
 
 // After the game is over (win or lose), show the average percentage of correct answers users have achieved.
 
