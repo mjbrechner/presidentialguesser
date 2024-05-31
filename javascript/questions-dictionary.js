@@ -14,6 +14,7 @@ function resetJSON() {
     {
         "question": "Born in Virginia",
         "answer": ["washington", "jefferson", "madison", "monroe", "harrison_wh", "tyler", "taylor", "wilson"],
+        "answerOriginal": ["washington", "jefferson", "madison", "monroe", "harrison_wh", "tyler", "taylor", "wilson"],
         "answerNumber": 8,
         "difficulty": "easy"
     },
@@ -21,6 +22,7 @@ function resetJSON() {
     {
         "question": "Born in Ohio",
         "answer": ["grant", "hayes", "garfield", "harrison_b", "mckinley", "taft", "harding"],
+        "answerOriginal": ["grant", "hayes", "garfield", "harrison_b", "mckinley", "taft", "harding"],
         "answerNumber": 7,
         "difficulty": "easy"
     },
@@ -29,6 +31,7 @@ function resetJSON() {
     {
         "question": "Born in Massachusetts",
         "answer": ["adams_j", "adams_jq", "kennedy", "bush_ghw"],
+        "answerOriginal": ["adams_j", "adams_jq", "kennedy", "bush_ghw"],
         "answerNumber": 4,
         "difficulty": "moderate"
     },
@@ -36,6 +39,7 @@ function resetJSON() {
     {
         "question": "Born in New York",
         "answer": ["roosevelt_t", "roosevelt_fd", "vanburen", "trump", "fillmore"],
+        "answerOriginal": ["roosevelt_t", "roosevelt_fd", "vanburen", "trump", "fillmore"],
         "answerNumber": 5,
         "difficulty": "easy"
     },
@@ -43,6 +47,7 @@ function resetJSON() {
     {
         "question": "Born in Pennsylvania",
         "answer": ["buchanan", "biden"],
+        "answerOriginal": ["buchanan", "biden"],
         "answerNumber": 2,
         "difficulty": "hard"
     },
@@ -50,6 +55,7 @@ function resetJSON() {
     {
         "question": "Born in Texas",
         "answer": ["eisenhower", "johnson_lb"],
+        "answerOriginal": ["eisenhower", "johnson_lb"],
         "answerNumber": 2,
         "difficulty": "easy"
     },
@@ -57,6 +63,7 @@ function resetJSON() {
     {
         "question": "Born in Vermont",
         "answer": ["arthur", "coolidge"],
+        "answerOriginal": ["arthur", "coolidge"],
         "answerNumber": 2,
         "difficulty": "hard"
     },
@@ -64,6 +71,7 @@ function resetJSON() {
     {
         "question": "Born in either North Carolina or South Carolina",
         "answer": ["jackson", "polk", "johnson_a"],
+        "answerOriginal": ["jackson", "polk", "johnson_a"],
         "answerNumber": 3,
         "difficulty": "hard"
     },
@@ -71,6 +79,7 @@ function resetJSON() {
     {
         "question": "Born as a British citizen",
         "answer": ["washington", "adams_j", "jefferson", "madison", "monroe", "jackson", "adams_jq", "harrison_wh"],
+        "answerOriginal": ["washington", "adams_j", "jefferson", "madison", "monroe", "jackson", "adams_jq", "harrison_wh"],
         "answerNumber": 8,
         "difficulty": "easy"
     },
@@ -78,6 +87,7 @@ function resetJSON() {
     {
         "question": "Issued no vetoes as president",
         "answer": ["adams_j", "jefferson", "adams_jq", "harrison_wh", "taylor", "fillmore", "garfield"],
+        "answerOriginal": ["adams_j", "jefferson", "adams_jq", "harrison_wh", "taylor", "fillmore", "garfield"],
         "answerNumber": 7,
         "difficulty": "easy"
     },
@@ -85,6 +95,7 @@ function resetJSON() {
     {
         "question": "Issued more than 50 or more vetoes as president",
         "answer": ["roosevelt_fd", "cleveland", "truman", "eisenhower", "grant", "roosevelt_t", "reagan", "ford", "coolidge"],
+        "answerOriginal": ["roosevelt_fd", "cleveland", "truman", "eisenhower", "grant", "roosevelt_t", "reagan", "ford", "coolidge"],
         "answerNumber": 9,
         "difficulty": "easy"
     },
@@ -92,6 +103,7 @@ function resetJSON() {
     {
         "question": "Never elected to public office before becoming president",
         "answer": ["taylor", "grant", "hoover", "eisenhower", "trump"],
+        "answerOriginal": ["taylor", "grant", "hoover", "eisenhower", "trump"],
         "answerNumber": 5,
         "difficulty": "easy"
     },
@@ -100,6 +112,7 @@ function resetJSON() {
     {
         "question": "Served as U.S. vice president",
         "answer": ["adams_j", "jefferson", "vanburen", "tyler", "fillmore", "johnson_a", "arthur", "roosevelt_t", "coolidge", "truman", "nixon", "johnson_lb", "ford", "bush_ghw", "biden"],
+        "answerOriginal": ["adams_j", "jefferson", "vanburen", "tyler", "fillmore", "johnson_a", "arthur", "roosevelt_t", "coolidge", "truman", "nixon", "johnson_lb", "ford", "bush_ghw", "biden"],
         "answerNumber": 15,
         "difficulty": "easy"
     },
@@ -108,6 +121,7 @@ function resetJSON() {
     {
         "question": "Served as U.S. secretary of state",
         "answer": ["jefferson", "madison", "monroe", "adams_jq", "vanburen", "buchanan"],
+        "answerOriginal": ["jefferson", "madison", "monroe", "adams_jq", "vanburen", "buchanan"],
         "answerNumber": 6,
         "difficulty": "easy"
     },
@@ -115,6 +129,7 @@ function resetJSON() {
     {
         "question": "Served as a U.S. senator",
         "answer": ["tyler", "monroe", "johnson_lb", "johnson_a", "jackson", "buchanan", "harding", "harrison_wh", "vanburen", "pierce", "truman", "kennedy", "adams_jq", "obama", "harrison_b", "biden", "nixon"],
+        "answerOriginal": ["tyler", "monroe", "johnson_lb", "johnson_a", "jackson", "buchanan", "harding", "harrison_wh", "vanburen", "pierce", "truman", "kennedy", "adams_jq", "obama", "harrison_b", "biden", "nixon"],
         "answerNumber": 17,
         "difficulty": "easy"
     },
@@ -122,6 +137,7 @@ function resetJSON() {
     {
         "question": "Served as a member of the U.S. House of Representatives",
         "answer": ["tyler", "madison", "bush_ghw", "johnson_lb", "johnson_a", "polk", "jackson", "buchanan", "mckinley", "garfield", "hayes", "harrison_wh", "fillmore", "pierce", "ford", "kennedy", "adams_jq", "lincoln", "nixon"],
+        "answerOriginal": ["tyler", "madison", "bush_ghw", "johnson_lb", "johnson_a", "polk", "jackson", "buchanan", "mckinley", "garfield", "hayes", "harrison_wh", "fillmore", "pierce", "ford", "kennedy", "adams_jq", "lincoln", "nixon"],
         "answerNumber": 19,
         "difficulty": "easy"
     },
@@ -129,6 +145,7 @@ function resetJSON() {
     {
         "question": "Served as a governor of a U.S. state (not territory)",
         "answer": ["tyler", "monroe", "jefferson", "bush_gw", "johnson_a", "polk", "mckinley", "hayes", "roosevelt_fd", "roosevelt_t", "cleveland", "vanburen", "wilson", "coolidge", "carter", "reagan", "clinton"],
+        "answerOriginal": ["tyler", "monroe", "jefferson", "bush_gw", "johnson_a", "polk", "mckinley", "hayes", "roosevelt_fd", "roosevelt_t", "cleveland", "vanburen", "wilson", "coolidge", "carter", "reagan", "clinton"],
         "answerNumber": 17,
         "difficulty": "easy"
     },
@@ -136,6 +153,7 @@ function resetJSON() {
     {
         "question": "Served as a member of a colonial legislature under the Kingdom of Great Britain.",
         "answer": ["washington", "adams_j", "jefferson"],
+        "answerOriginal": ["washington", "adams_j", "jefferson"],        
         "answerNumber": 3,
         "difficulty": "easy"
     },
@@ -143,6 +161,7 @@ function resetJSON() {
     {
         "question": "Served as a U.S. ambassador",
         "answer": ["adams_j", "jefferson", "monroe", "adams_jq", "vanburen", "harrison_wh", "buchanan", "bush_ghw"],
+        "answerOriginal": ["adams_j", "jefferson", "monroe", "adams_jq", "vanburen", "harrison_wh", "buchanan", "bush_ghw"],
         "answerNumber": 8,
         "difficulty": "moderate"
     },
@@ -150,6 +169,7 @@ function resetJSON() {
     {
         "question": "Served as a U.S. Secretary of War (or Acting Secretary of War)",
         "answer": ["monroe", "grant", "taft"],
+        "answerOriginal": ["monroe", "grant", "taft"],
         "answerNumber": 3,
         "difficulty": "hard"
     },
@@ -157,6 +177,7 @@ function resetJSON() {
     {
         "question": "Died while president",
         "answer": ["harrison_wh", "taylor", "lincoln", "garfield", "mckinley", "harding", "roosevelt_fd", "kennedy"],
+        "answerOriginal": ["harrison_wh", "taylor", "lincoln", "garfield", "mckinley", "harding", "roosevelt_fd", "kennedy"],
         "answerNumber": 8,
         "difficulty": "easy"
     },
@@ -165,6 +186,7 @@ function resetJSON() {
     {
         "question": "President before the age of 50",
         "answer": ["roosevelt_t", "kennedy", "clinton", "grant", "obama", "cleveland", "pierce", "garfield", "polk"],
+        "answerOriginal": ["roosevelt_t", "kennedy", "clinton", "grant", "obama", "cleveland", "pierce", "garfield", "polk"],
         "answerNumber": 9,
         "difficulty": "easy"
     },
@@ -172,6 +194,7 @@ function resetJSON() {
     {
         "question": "Presidency included time over the age of 70",
         "answer": ["biden", "reagan", "trump", "eisenhower"],
+        "answerOriginal": ["biden", "reagan", "trump", "eisenhower"],
         "answerNumber": 4,
         "difficulty": "easy"
     },
@@ -179,6 +202,7 @@ function resetJSON() {
     {
         "question": "Alive past the age of 90",
         "answer": ["hoover", "adams_j", "reagan", "ford", "bush_ghw", "carter"],
+        "answerOriginal": ["hoover", "adams_j", "reagan", "ford", "bush_ghw", "carter"],
         "answerNumber": 6,
         "difficulty": "easy"
     },
@@ -186,12 +210,14 @@ function resetJSON() {
     {
         "question": "Did not graduate with a college degree",
         "answer": ["washington", "monroe", "jackson", "vanburen", "harrison_wh", "taylor", "fillmore", "lincoln", "johnson_a", "cleveland", "mckinley", "truman"],
+        "answerOriginal": ["washington", "monroe", "jackson", "vanburen", "harrison_wh", "taylor", "fillmore", "lincoln", "johnson_a", "cleveland", "mckinley", "truman"],
         "answerNumber": 12,
         "difficulty": "easy"
     },
     {
         "question": "Undergraduate and/or graduate degree from Harvard University",
         "answer": ["adams_j", "adams_jq", "roosevelt_t", "roosevelt_fd", "kennedy", "bush_gw", "hayes", "obama"],
+        "answerOriginal": ["adams_j", "adams_jq", "roosevelt_t", "roosevelt_fd", "kennedy", "bush_gw", "hayes", "obama"],
         "answerNumber": 8,
         "difficulty": "moderate"
     },
@@ -199,6 +225,7 @@ function resetJSON() {
     {
         "question": "Undergraduate and/or graduate degree from Yale University",
         "answer": ["taft", "bush_ghw", "bush_gw", "ford", "clinton"],
+        "answerOriginal": ["taft", "bush_ghw", "bush_gw", "ford", "clinton"],
         "answerNumber": 5,
         "difficulty": "moderate"
     },
@@ -206,6 +233,7 @@ function resetJSON() {
     {
         "question": "Served two or more full terms as president",
         "answer": ["roosevelt_fd", "jefferson", "madison", "monroe", "jackson", "grant", "cleveland", "wilson", "eisenhower", "reagan", "clinton", "bush_gw", "obama", "washington"],
+        "answerOriginal": ["roosevelt_fd", "jefferson", "madison", "monroe", "jackson", "grant", "cleveland", "wilson", "eisenhower", "reagan", "clinton", "bush_gw", "obama", "washington"],
         "answerNumber": 14,
         "difficulty": "easy"
     },
@@ -213,6 +241,7 @@ function resetJSON() {
     {
         "question": "Served exactly one full term as president (no more, no less)",
         "answer": ["adams_j", "adams_jq", "vanburen", "polk", "pierce", "buchanan", "hayes", "harrison_b", "taft", "hoover", "carter", "bush_ghw", "trump"],
+        "answerOriginal": ["adams_j", "adams_jq", "vanburen", "polk", "pierce", "buchanan", "hayes", "harrison_b", "taft", "hoover", "carter", "bush_ghw", "trump"],
         "answerNumber": 13,
         "difficulty": "easy"
     },
@@ -220,6 +249,7 @@ function resetJSON() {
     {
         "question": "Served less than one complete term as president",
         "answer": ["harrison_wh", "garfield", "taylor", "harding", "ford", "fillmore", "kennedy", "biden", "arthur", "johnson_a", "tyler"],
+        "answerOriginal": ["harrison_wh", "garfield", "taylor", "harding", "ford", "fillmore", "kennedy", "biden", "arthur", "johnson_a", "tyler"],
         "answerNumber": 11,
         "difficulty": "easy"
     },
@@ -227,6 +257,7 @@ function resetJSON() {
     {
         "question": "Impeached by the U.S. House of Representatives",
         "answer": ["johnson_a", "clinton", "trump"],
+        "answerOriginal": ["johnson_a", "clinton", "trump"],
         "answerNumber": 3,
         "difficulty": "easy"
     },
@@ -234,6 +265,7 @@ function resetJSON() {
     {
         "question": "Issued more than 500 executive orders",
         "answer": ["roosevelt_fd", "wilson", "coolidge", "roosevelt_t", "hoover", "truman", "taft", "harding"],
+        "answerOriginal": ["roosevelt_fd", "wilson", "coolidge", "roosevelt_t", "hoover", "truman", "taft", "harding"],
         "answerNumber": 8,
         "difficulty": "moderate"
     },
@@ -241,6 +273,7 @@ function resetJSON() {
     {
         "question": "Appointed five or more justices to the U.S. Supreme Court",
         "answer": ["washington", "roosevelt_fd", "taft", "jackson", "lincoln", "eisenhower"],
+        "answerOriginal": ["washington", "roosevelt_fd", "taft", "jackson", "lincoln", "eisenhower"],
         "answerNumber": 6,
         "difficulty": "moderate"
     },
@@ -248,6 +281,7 @@ function resetJSON() {
     {
         "question": "Did not appoint any justices to the U.S. Supreme Court",
         "answer": ["harrison_wh", "taylor", "johnson_a", "carter"],
+        "answerOriginal": ["harrison_wh", "taylor", "johnson_a", "carter"],
         "answerNumber": 4,
         "difficulty": "hard"
     },
@@ -255,6 +289,7 @@ function resetJSON() {
     {
         "question": "Had multiple different vice presidents",
         "answer": ["jefferson", "madison", "jackson", "lincoln", "grant", "cleveland", "mckinley", "roosevelt_fd", "nixon"],
+        "answerOriginal": ["jefferson", "madison", "jackson", "lincoln", "grant", "cleveland", "mckinley", "roosevelt_fd", "nixon"],
         "answerNumber": 9,
         "difficulty": "easy"
     },
@@ -262,6 +297,7 @@ function resetJSON() {
     {
         "question": "Was known to be a member of the Freemasons",
         "answer": ["washington", "monroe", "jackson", "polk", "buchanan", "johnson_a", "garfield", "mckinley", "roosevelt_t", "taft", "harding", "roosevelt_fd", "truman", "ford"],
+        "answerOriginal": ["washington", "monroe", "jackson", "polk", "buchanan", "johnson_a", "garfield", "mckinley", "roosevelt_t", "taft", "harding", "roosevelt_fd", "truman", "ford"],
         "answerNumber": 14,
         "difficulty": "moderate"
     },
@@ -269,6 +305,7 @@ function resetJSON() {
     {
         "question": "Won a presidential election while losing the popular vote",
         "answer": ["adams_jq", "hayes", "harrison_b", "bush_gw", "trump"],
+        "answerOriginal": ["adams_jq", "hayes", "harrison_b", "bush_gw", "trump"],
         "answerNumber": 5,
         "difficulty": "easy"
     },
@@ -276,6 +313,7 @@ function resetJSON() {
     {
         "question": "Won a presidential election with 85% or more of the Electoral College vote",
         "answer": ["washington", "monroe", "roosevelt_fd", "reagan", "nixon", "jefferson", "lincoln", "johnson_lb", "eisenhower", "pierce"],
+        "answerOriginal": ["washington", "monroe", "roosevelt_fd", "reagan", "nixon", "jefferson", "lincoln", "johnson_lb", "eisenhower", "pierce"],
         "answerNumber": 10,
         "difficulty": "easy"
     },
@@ -283,6 +321,7 @@ function resetJSON() {
     {
         "question": "Was a member of the Whig Party at least part of the time while president (excluding other periods)",
         "answer": ["harrison_wh", "tyler", "taylor", "fillmore"],
+        "answerOriginal": ["harrison_wh", "tyler", "taylor", "fillmore"],
         "answerNumber": 4,
         "difficulty": "moderate"
     },
@@ -290,6 +329,7 @@ function resetJSON() {
     {
         "question": "Did not serve in the U.S. military prior to becoming president",
         "answer": ["adams_j", "adams_jq", "vanburen", "cleveland", "taft", "wilson", "harding", "coolidge", "hoover", "roosevelt_fd", "clinton", "obama", "trump", "biden"],
+        "answerOriginal": ["adams_j", "adams_jq", "vanburen", "cleveland", "taft", "wilson", "harding", "coolidge", "hoover", "roosevelt_fd", "clinton", "obama", "trump", "biden"],
         "answerNumber": 14,
         "difficulty": "easy"
     },
@@ -297,6 +337,7 @@ function resetJSON() {
     {
         "question": "Prior to becoming president, achieved the rank of general in the U.S. Armed Forces",
         "answer": ["washington", "grant", "eisenhower", "jackson", "harrison_wh", "taylor", "hayes", "garfield", "pierce", "arthur", "johnson_a", "harrison_b"],
+        "answerOriginal": ["washington", "grant", "eisenhower", "jackson", "harrison_wh", "taylor", "hayes", "garfield", "pierce", "arthur", "johnson_a", "harrison_b"],
         "answerNumber": 12,
         "difficulty": "easy"
     },
@@ -304,6 +345,7 @@ function resetJSON() {
     {
         "question": "Served in the U.S. Navy prior to becoming president",
         "answer": ["johnson_lb", "nixon", "ford", "kennedy", "bush_ghw", "carter"],
+        "answerOriginal": ["johnson_lb", "nixon", "ford", "kennedy", "bush_ghw", "carter"],
         "answerNumber": 6,
         "difficulty": "moderate"
     },
@@ -311,6 +353,7 @@ function resetJSON() {
     {
         "question": "Served in the U.S. Air Force or U.S. Army Air Forces before becoming president",
         "answer": ["reagan", "bush_gw"],
+        "answerOriginal": ["reagan", "bush_gw"],
         "answerNumber": 2,
         "difficulty": "moderate"
     },
@@ -318,6 +361,7 @@ function resetJSON() {
     {
         "question": "Represented Massachusetts in both the U.S. House and the U.S. Senate",
         "answer": ["adams_jq", "kennedy"],
+        "answerOriginal": ["adams_jq", "kennedy"],
         "answerNumber": 2,
         "difficulty": "moderate"
     },
@@ -325,6 +369,7 @@ function resetJSON() {
     {
         "question": "Represented Tennessee in the U.S. Senate",
         "answer": ["jackson", "johnson_a"],
+        "answerOriginal": ["jackson", "johnson_a"],
         "answerNumber": 2,
         "difficulty": "hard"
     },
@@ -332,6 +377,7 @@ function resetJSON() {
     {
         "question": "Represented Ohio in the U.S. Senate",
         "answer": ["harrison_wh", "harding"],
+        "answerOriginal": ["harrison_wh", "harding"],
         "answerNumber": 2,
         "difficulty": "hard"
     },
@@ -339,6 +385,7 @@ function resetJSON() {
     {
         "question": "Represented Virginia in the U.S. House of Representatives",
         "answer": ["madison", "tyler"],
+        "answerOriginal": ["madison", "tyler"],
         "answerNumber": 2,
         "difficulty": "hard"
     },
@@ -346,6 +393,7 @@ function resetJSON() {
     {
         "question": "Represented Tennessee in the U.S. House of Representatives",
         "answer": ["jackson", "polk", "johnson_a"],
+        "answerOriginal": ["jackson", "polk", "johnson_a"],
         "answerNumber": 3,
         "difficulty": "hard"
     },
@@ -353,6 +401,7 @@ function resetJSON() {
     {
         "question": "Represented Ohio in the U.S. House of Representatives",
         "answer": ["harrison_wh", "hayes", "garfield", "mckinley"],
+        "answerOriginal": ["harrison_wh", "hayes", "garfield", "mckinley"],
         "answerNumber": 4,
         "difficulty": "moderate"
     },
@@ -360,6 +409,7 @@ function resetJSON() {
     {
         "question": "Recipient of the Nobel Peace Prize",
         "answer": ["roosevelt_t", "wilson", "carter", "obama"],
+        "answerOriginal": ["roosevelt_t", "wilson", "carter", "obama"],
         "answerNumber": 4,
         "difficulty": "easy"
     },
@@ -367,6 +417,7 @@ function resetJSON() {
     {
         "question": "Was never elected to the office of the U.S. presidency",
         "answer": ["tyler", "fillmore", "johnson_a", "arthur", "ford"],
+        "answerOriginal": ["tyler", "fillmore", "johnson_a", "arthur", "ford"],
         "answerNumber": 5,
         "difficulty": "easy"
     },
@@ -374,6 +425,7 @@ function resetJSON() {
     {
         "question": "Day of either birth or death was on the fourth of July",
         "answer": ["jefferson", "adams_j", "monroe", "coolidge"],
+        "answerOriginal": ["jefferson", "adams_j", "monroe", "coolidge"],
         "answerNumber": 4,
         "difficulty": "moderate"
     },
@@ -381,6 +433,7 @@ function resetJSON() {
     {
         "question": "Born in January",
         "answer": ["fillmore", "mckinley", "roosevelt_fd", "nixon"],
+        "answerOriginal": ["fillmore", "mckinley", "roosevelt_fd", "nixon"],
         "answerNumber": 4,
         "difficulty": "hard"
     },
@@ -388,6 +441,7 @@ function resetJSON() {
     {
         "question": "Born in February",
         "answer": ["washington", "harrison_wh", "lincoln", "reagan"],
+        "answerOriginal": ["washington", "harrison_wh", "lincoln", "reagan"],
         "answerNumber": 4,
         "difficulty": "easy"
     },
@@ -395,6 +449,7 @@ function resetJSON() {
     {
         "question": "Born in March",
         "answer": ["madison", "jackson", "tyler", "cleveland"],
+        "answerOriginal": ["madison", "jackson", "tyler", "cleveland"],
         "answerNumber": 4,
         "difficulty": "hard"
     },
@@ -402,6 +457,7 @@ function resetJSON() {
     {
         "question": "Born in April",
         "answer": ["jefferson", "monroe", "buchanan", "grant"],
+        "answerOriginal": ["jefferson", "monroe", "buchanan", "grant"],
         "answerNumber": 4,
         "difficulty": "hard"
     },
@@ -409,6 +465,7 @@ function resetJSON() {
     {
         "question": "Born in May",
         "answer": ["truman", "kennedy"],
+        "answerOriginal": ["truman", "kennedy"],
         "answerNumber": 2,
         "difficulty": "hard"
     },
@@ -416,6 +473,7 @@ function resetJSON() {
     {
         "question": "Born in June",
         "answer": ["bush_ghw", "trump"],
+        "answerOriginal": ["bush_ghw", "trump"],
         "answerNumber": 2,
         "difficulty": "hard"
     },
@@ -423,6 +481,7 @@ function resetJSON() {
     {
         "question": "Born in July",
         "answer": ["adams_jq", "coolidge", "ford", "bush_gw"],
+        "answerOriginal": ["adams_jq", "coolidge", "ford", "bush_gw"],
         "answerNumber": 4,
         "difficulty": "hard"
     },
@@ -430,6 +489,7 @@ function resetJSON() {
     {
         "question": "Born in August",
         "answer": ["harrison_b", "hoover", "johnson_lb", "clinton", "obama"],
+        "answerOriginal": ["harrison_b", "hoover", "johnson_lb", "clinton", "obama"],
         "answerNumber": 5,
         "difficulty": "hard"
     },
@@ -437,6 +497,7 @@ function resetJSON() {
     {
         "question": "Born in October",
         "answer": ["adams_j", "hayes", "arthur", "roosevelt_t", "eisenhower", "carter"],
+        "answerOriginal": ["adams_j", "hayes", "arthur", "roosevelt_t", "eisenhower", "carter"],
         "answerNumber": 6,
         "difficulty": "hard"
     },
@@ -444,6 +505,7 @@ function resetJSON() {
     {
         "question": "Born in November",
         "answer": ["polk", "taylor", "pierce", "garfield", "harding", "biden"],
+        "answerOriginal": ["polk", "taylor", "pierce", "garfield", "harding", "biden"],
         "answerNumber": 6,
         "difficulty": "hard"
     },
@@ -451,6 +513,7 @@ function resetJSON() {
     {
         "question": "Born in December",
         "answer": ["vanburen", "johnson_a", "wilson"],
+        "answerOriginal": ["vanburen", "johnson_a", "wilson"],
         "answerNumber": 3,
         "difficulty": "hard"
     },
@@ -458,6 +521,7 @@ function resetJSON() {
     {
         "question": "Held the office of attorney general of a U.S. state",
         "answer": ["vanburen", "clinton"],
+        "answerOriginal": ["vanburen", "clinton"],
         "answerNumber": 2,
         "difficulty": "hard"
     },
@@ -465,6 +529,7 @@ function resetJSON() {
     {
         "question": "Once held the office of mayor of a town or city",
         "answer": ["johnson_a", "cleveland", "coolidge"],
+        "answerOriginal": ["johnson_a", "cleveland", "coolidge"],
         "answerNumber": 3,
         "difficulty": "moderate"
     },
@@ -472,6 +537,7 @@ function resetJSON() {
     {
         "question": "Won or was nominated for a Grammy Award",
         "answer": ["truman", "kennedy", "nixon", "carter", "clinton", "obama"],
+        "answerOriginal": ["truman", "kennedy", "nixon", "carter", "clinton", "obama"],
         "answerNumber": 6,
         "difficulty": "easy"
     }, 
@@ -479,6 +545,7 @@ function resetJSON() {
     {
         "question": "Signed the Declaration of Independence or directly descended from one of its signers",
         "answer": ["adams_j", "jefferson", "harrison_wh", "harrison_b"],
+        "answerOriginal": ["adams_j", "jefferson", "harrison_wh", "harrison_b"],
         "answerNumber": 4,
         "difficulty": "moderate"
     },
@@ -486,6 +553,7 @@ function resetJSON() {
     {
         "question": "Member of the Roman Catholic Church",
         "answer": ["kennedy", "biden"],
+        "answerOriginal": ["kennedy", "biden"],
         "answerNumber": 2,
         "difficulty": "easy"
     },
@@ -493,6 +561,7 @@ function resetJSON() {
     {
         "question": "Raised in a Quaker family",
         "answer": ["hoover", "nixon"],
+        "answerOriginal": ["hoover", "nixon"],
         "answerNumber": 2,
         "difficulty": "moderate"
     },
@@ -500,6 +569,7 @@ function resetJSON() {
     {
         "question": "Elected to a federal office as a candidate for the Anti-Masonic Party",
         "answer": ["adams_jq", "fillmore"],
+        "answerOriginal": ["adams_jq", "fillmore"],
         "answerNumber": 2,
         "difficulty": "hard"
     },
@@ -507,6 +577,7 @@ function resetJSON() {
     {
         "question": "Honored with a star on the Hollywood Walk of Fame",
         "answer": ["reagan", "trump"],
+        "answerOriginal": ["reagan", "trump"],
         "answerNumber": 2,
         "difficulty": "easy"
     },
@@ -514,6 +585,7 @@ function resetJSON() {
     {
         "question": "Had one or more pet oppossums",
         "answer": ["harrison_b", "hoover"],
+        "answerOriginal": ["harrison_b", "hoover"],
         "answerNumber": 2,
         "difficulty": "hard"
     },
@@ -521,6 +593,7 @@ function resetJSON() {
     {
         "question": "Served as chair of the U.S. Senate Committee on Foreign Relations",
         "answer": ["buchanan", "biden"],
+        "answerOriginal": ["buchanan", "biden"],
         "answerNumber": 2,
         "difficulty": "hard"
     },
@@ -528,6 +601,7 @@ function resetJSON() {
     {
         "question": "Had more than ten vetoes overridden",
         "answer": ["johnson_a", "truman", "ford"],
+        "answerOriginal": ["johnson_a", "truman", "ford"],
         "answerNumber": 3,
         "difficulty": "hard"
     },
@@ -535,6 +609,7 @@ function resetJSON() {
     {
         "question": "Served as chancellor of the College of William & Mary",
         "answer": ["washington", "tyler"],
+        "answerOriginal": ["washington", "tyler"],
         "answerNumber": 2,
         "difficulty": "hard"
     },
@@ -542,6 +617,7 @@ function resetJSON() {
     {
         "question": "Won a presidential election by defeating Democrat William Jennings Bryan",
         "answer": ["mckinley", "taft"],
+        "answerOriginal": ["mckinley", "taft"],
         "answerNumber": 2,
         "difficulty": "hard"
     }
@@ -1482,6 +1558,13 @@ function resetJSON() {
     },
 
     {
+        "question": "Only president to be convicted of a felony",
+        "answer": ["trump"],
+        "answerNumber": 1,
+        "difficulty": "moderate"
+    },
+
+    {
         "question": "Inducted into the WWE (World Wrestling Federation) Hall of Fame",
         "answer": ["trump"],
         "answerNumber": 1,
@@ -1605,3 +1688,6 @@ const namesDictionary = {
 // for this line:
 // let chosenPresidentFullName = namesDictionary[chosenPresident];
 // While this dictionary is nice, if it ends up only being used once like this, should it be retained?
+
+// Added answerOriginal if I want to display a list of total correct answers for when players make a mistake.
+// But again, if this isn't to be used, it could be deleted.

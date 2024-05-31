@@ -98,7 +98,6 @@ function gameOver() {
 }
 
 function displayChosenPresident() {
-    console.log(`minutes: ${timerMinutes}, seconds: ${timerSeconds}, string: ${timerString}`);
     document.getElementById("pres-button-area").style.pointerEvents = "none";
     document.getElementById("pres-name-box").style.display = "none";
 }
@@ -164,6 +163,11 @@ function revealAnswer() {
         }
 
         if (wrongAnswers === 3) {
+            if (rightAnswers === 1) {
+                questionBox.innerText = `Game Over! You had ${rightAnswers} right answer in ${timerString}.`;
+            } else {
+                questionBox.innerText = `Game Over! You had ${rightAnswers} right answers in ${timerString}.`;
+            }
             gameOver();
         }
     }
@@ -762,7 +766,6 @@ async function questionAsker() {
     for (let i = 0; i < superJSON.length; i++) {
         if (superJSON[i]["answer"].length <= 1) {
             superJSON[i]["difficulty"] = "hard";
-            // console.log(`${superJSON[i]["answer"].length} answers remain for question: ${superJSON[i]["question"]}. Answers are: ${superJSON[i]["answer"]}. Difficulty is ${superJSON[i]["difficulty"]}`);
         }
     }
 
@@ -794,18 +797,6 @@ async function questionAsker() {
         }
     }
 
-    console.log("Easy");
-    console.log(easyQuestions);
-    console.log("__________________");
-
-    console.log("Moderate");
-    console.log(moderateQuestions);
-    console.log("__________________");
-
-    console.log("Hard");
-    console.log(hardQuestions);
-    console.log("__________________");
-
     if (easyQuestions.length > 0) {
         answersThreshold = "easy";
     } else {
@@ -825,7 +816,6 @@ async function questionAsker() {
     // If answersThreshold is set to "easy," keep randomizing until an "easy" question is found.
     while (answersThreshold === "easy") {
         if (superJSON[randomizer]["difficulty"] !== "easy") {
-            // console.log(`Needs to randomize again. Question: ${superJSON[randomizer]["question"]}. Answers: ${superJSON[randomizer]["answer"].length}. Difficulty: ${superJSON[randomizer]["difficulty"]}`)
             randomizer = Math.floor(Math.random() * superJSON.length);
         } else {
             break;
@@ -835,7 +825,6 @@ async function questionAsker() {
     // If answersThreshold is set to "moderate," keep randomizing until an "moderate" question is found.
     while (answersThreshold === "moderate") {
         if (superJSON[randomizer]["difficulty"] !== "moderate") {
-            // console.log(`Needs to randomize again. Question: ${superJSON[randomizer]["question"]}. Answers: ${superJSON[randomizer]["answer"].length}. Difficulty: ${superJSON[randomizer]["difficulty"]}`)
             randomizer = Math.floor(Math.random() * superJSON.length);
         } else {
             break;
@@ -845,18 +834,12 @@ async function questionAsker() {
     questionBeingAsked = superJSON[randomizer]["question"];
     questionBox.innerText = questionBeingAsked;
     currentAnswers = superJSON[randomizer]["answer"];
-    // console.log(superJSON.length + " " + randomizer + " " + superJSON[randomizer]["question"] + " " + currentAnswers);
 
     // Now that a queston has been asked, hide the Question Asker button for the time being.
     document.getElementById("question-asker-button").style.visibility = "hidden";
 
     // This should delete the question that has just been asked. Still need to delete the president who has just been answered, though.
     console.log(`I want to delete the question ${superJSON[randomizer]["question"]} It currents has the answers: ${currentAnswers}.`);
-
-    // for (let i = 0; i < superJSON.length; i++) { // This loop just for console.log purposes; can be deleted later
-    //     console.log(`Raming Q: ${superJSON[i]["question"]}. A: ${superJSON[i]["answer"]}.`);
-    // }
-
 
     superJSON.splice(randomizer, 1);
     // console.log(superJSON);
