@@ -36,8 +36,8 @@
 }
 
 #question-asker {
-    width: 75%;
-    height: 55px;
+    width: 100%;
+    height: 45px;
     font-size: 25px;
     margin: 5px;
     padding: 5px;
@@ -87,8 +87,8 @@
 #answer-notification-box {
     position: fixed;
     display: flex;
-    height: 100px;
-    width: 500px;
+    height: 200px;
+    width: 200px;
     align-items: center;
     justify-content: center;
     justify-self: center;
@@ -200,6 +200,26 @@ footer {
                 #FFE9CC 18.1%);
     }
 
+    #pres-button-area {
+        grid-template-columns: repeat(5, 75px);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        padding: 5px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .pres-button {
+        height: 65px;
+        width: 65px;
+        border: 3px solid #FFE9CC;
+        box-shadow: 2px 2px #94918e;
+    }
+
+    .portrait {
+        height: 65px;
+        width: 65px;
+    }
+
     footer {
         flex-direction: row;
         margin-top: 1.25em;
@@ -214,6 +234,38 @@ footer {
 
 /*desktop query*/
 @media only screen and (min-width: 992px) {
+
+    #question-asker {
+        width: 95%;
+        height: 65px;
+        font-size: 30px;
+    }
+
+    #pres-button-area {
+        grid-template-columns: repeat(7, 80px);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        padding: 5px;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .pres-button {
+        height: 70px;
+        width: 70px;
+        border: 3px solid #FFE9CC;
+        box-shadow: 2px 2px #94918e;
+    }
+
+    .portrait {
+        height: 70px;
+        width: 70px;
+    }
+
+    #answer-notification-box {
+        height: 100px;
+        width: 500px;
+    }
+
     footer {
         font-size: 1em;
     }
@@ -222,4 +274,40 @@ footer {
         width: 3.75em;
         height: 3.75em;
     }
+}
+
+/*slightly larger desktop query*/
+@media only screen and (min-width: 1033px) {
+    #pres-button-area {
+        grid-template-columns: repeat(8, 75px);
+    }
+}
+
+/*large desktop query*/
+@media only screen and (min-width: 1260px) {
+
+    #pres-button-area {
+        grid-template-columns: repeat(9, 5.5em);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        padding: 1em;
+        border-radius: 0 10px 10px 0;
+    }
+
+    .pres-button {
+        height: 5em;
+        width: 5em;
+        border: 3px solid #FFE9CC;
+        box-shadow: 2px 2px #94918e;
+    }
+
+    .portrait {
+        height: 5em;
+        width: 5em;
+        border-radius: 5%;
+        filter: sepia(100%);
+        user-select: none;
+        -webkit-user-select: none;
+    }
+
 }
