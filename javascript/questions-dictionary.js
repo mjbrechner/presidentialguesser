@@ -1404,6 +1404,13 @@ function resetJSON() {
     },
     
     {
+        "question": "Only person to be both elected twice to the vice presidency and twice to the presidency",
+        "answer": ["nixon"],
+        "answerNumber": 1,
+        "difficulty": "moderate"
+    },
+
+    {
         "question": "Born in Nebraska",
         "answer": ["ford"],
         "answerNumber": 1,
@@ -1601,23 +1608,16 @@ function resetJSON() {
 
 ]`;
 
+// Combining the two JSON files
     superJSON = JSON.parse(superJSON);
-    console.log("superJSON");
-    console.log(superJSON);
     superJSON2 = JSON.parse(superJSON2);
-    console.log("superJSON2");
-    console.log(superJSON2);
     superJSON = superJSON.concat(superJSON2);
-
-    console.log(superJSON[1]);
-    console.log("this should have everything");
-    console.log(superJSON);
 
 };
 
 resetJSON();
 
-// the originalSuperJSON captures the state of the questions and their answers at the beginning of the game. Since superJSON gets manipulated
+// The originalSuperJSON captures the state of the questions and their answers at the beginning of the game. Since superJSON gets manipulated
 // throughout the game, with questions/answers falling out after use, originalSuperJSON preserves all questions and all answers in total. 
 const originalSuperJSON = superJSON;
 
