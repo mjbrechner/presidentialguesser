@@ -11,6 +11,7 @@ const timerInterval = setInterval(gameTimer, 1000);
 let questionBeingAsked;
 let chosenPresident;
 let currentAnswers = [];
+let currentAnswerNumber;
 let workingQuestionSet = [];
 
 let wrongAnswers = 0;
@@ -155,7 +156,11 @@ function revealAnswer() {
             document.getElementById("mistake-1").style.visibility = "visible";
 
             if (currentAnswersFullNames.length === 1) {
-                answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistake. The correct available answer was ${currentAnswersFullNames}.`;
+                if (currentAnswerNumber === 1) { // Differing message for questions with one possible answer vs. one still remaining answer
+                    answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistake. The correct answer was ${currentAnswersFullNames}.`;
+                } else {
+                    answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistake. The remaining correct answer was ${currentAnswersFullNames}.`;
+                }
             } else {
                 answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistake. One of ${currentAnswersFullNames.length} remaining answers was ${currentAnswersFullNames[getRandom]}.`;
             }
@@ -165,7 +170,11 @@ function revealAnswer() {
             document.getElementById("mistake-2").style.visibility = "visible";
 
             if (currentAnswersFullNames.length === 1) {
-                answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. The correct available answer was ${currentAnswersFullNames}.`;
+                if (currentAnswerNumber === 1) {
+                    answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. The correct answer was ${currentAnswersFullNames}.`;
+                } else {
+                    answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. The remaining correct answer was ${currentAnswersFullNames}.`;
+                }
             } else {
                 answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. One of ${currentAnswersFullNames.length} remaining answers was ${currentAnswersFullNames[getRandom]}.`;
             }
@@ -175,7 +184,11 @@ function revealAnswer() {
             document.getElementById("mistake-3").style.visibility = "visible";
 
             if (currentAnswersFullNames.length === 1) {
-                answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. The correct available answer was ${currentAnswersFullNames}.`;
+                if (currentAnswerNumber === 1) {
+                    answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. The correct answer was ${currentAnswersFullNames}.`;
+                } else {
+                    answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. The remaining correct answer was ${currentAnswersFullNames}.`;
+                }
             } else {
                 answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. One of ${currentAnswersFullNames.length} remaining answers was ${currentAnswersFullNames[getRandom]}.`;
             }
@@ -851,6 +864,7 @@ async function questionAsker() {
     questionBeingAsked = superJSON[randomizer]["question"];
     questionBox.innerText = questionBeingAsked;
     currentAnswers = superJSON[randomizer]["answer"];
+    currentAnswerNumber = superJSON[randomizer]["answerNumber"]; // Grabbing the value of how many possible answers the question *started* with (which is static even after potential answers are removed after being chosen)
 
     // Now that a queston has been asked, hide the Question Asker button for the time being.
     document.getElementById("question-asker-button").style.visibility = "hidden";
