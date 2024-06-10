@@ -3,6 +3,10 @@
 let chosenMode = "game";
 let presidentialList = ['washington', 'adams_j', 'jefferson', 'madison', 'monroe', 'adams_jq', 'jackson', 'vanburen', 'harrison_wh', 'tyler', 'polk', 'taylor', 'fillmore', 'pierce', 'buchanan', 'lincoln', 'johnson_a', 'grant', 'hayes', 'garfield', 'arthur', 'cleveland', 'harrison_b', 'mckinley', 'roosevelt_t', 'taft', 'wilson', 'harding', 'coolidge', 'hoover', 'roosevelt_fd', 'truman', 'eisenhower', 'kennedy', 'johnson_lb', 'nixon', 'ford', 'carter', 'reagan', 'bush_ghw', 'clinton', 'bush_gw', 'obama', 'trump', 'biden'];
 
+const difficultyLevelChooser = document.getElementById("difficulty-level-chooser");
+let difficultyLevel;
+
+
 let timerSeconds = 0;
 let timerMinutes = 0;
 let timerString;
@@ -56,8 +60,12 @@ function newGame() {
     document.getElementById("mistake-2").style.visibility = "hidden";
     document.getElementById("mistake-3").style.visibility = "hidden";
 
+    difficultyLevelChooser.style.visibility = "hidden";
+
     chosenMode = "game";
     presidentialList = ['washington', 'adams_j', 'jefferson', 'madison', 'monroe', 'adams_jq', 'jackson', 'vanburen', 'harrison_wh', 'tyler', 'polk', 'taylor', 'fillmore', 'pierce', 'buchanan', 'lincoln', 'johnson_a', 'grant', 'hayes', 'garfield', 'arthur', 'cleveland', 'harrison_b', 'mckinley', 'roosevelt_t', 'taft', 'wilson', 'harding', 'coolidge', 'hoover', 'roosevelt_fd', 'truman', 'eisenhower', 'kennedy', 'johnson_lb', 'nixon', 'ford', 'carter', 'reagan', 'bush_ghw', 'clinton', 'bush_gw', 'obama', 'trump', 'biden'];
+
+    difficultyLevel = difficultyLevelChooser.value;
 
     timerSeconds = 0;
     timerMinutes = 0;
@@ -96,6 +104,7 @@ function gameOver() {
     document.getElementById("game-over-notice").style.visibility = "visible";
     document.getElementById("question-asker-button").style.visibility = "hidden";
     document.getElementById("new-game-button").style.visibility = "visible";
+    difficultyLevelChooser.style.visibility = "visible";
 }
 
 function displayChosenPresident() {
@@ -115,7 +124,7 @@ function revealAnswer() {
         currentAnswersFullNames.push(` ${namesDictionary[currentAnswers[i]]}`);
     }
 
-    console.log(`You have chosen ${chosenPresident}. Remaining correct answers include:${currentAnswersFullNames}.`);
+    // console.log(`You have chosen ${chosenPresident}. Remaining correct answers include:${currentAnswersFullNames}.`);
 
     //Enable "Next Question" button, though it will get disabled again if the game turns out to be over.
     document.getElementById("question-asker-button").style.visibility = "visible";
@@ -131,7 +140,7 @@ function revealAnswer() {
 
         document.getElementById(`portrait-${chosenPresident}`).style.filter = "sepia(100%) opacity(75%) brightness(.25)";
         presidentialList.splice((presidentialList.indexOf(chosenPresident)), 1);
-        console.log(`Remaining presidents: ${presidentialList}`);
+        // console.log(`Remaining presidents: ${presidentialList}`);
 
         // Remove any instance of that correct answer from future questions, so it won't be a possibility going forward.
         for (let i = 0; i < superJSON.length; i++) {
@@ -196,9 +205,9 @@ function revealAnswer() {
 
         if (wrongAnswers === 3) {
             if (rightAnswers === 1) {
-                questionBox.innerText = `Game Over! You had ${rightAnswers} right answer in ${timerString}.`;
+                questionBox.innerText = `Game Over! You had ${rightAnswers} right answer in ${timerString} on ${difficultyLevel} mode.`;
             } else {
-                questionBox.innerText = `Game Over! You had ${rightAnswers} right answers in ${timerString}.`;
+                questionBox.innerText = `Game Over! You had ${rightAnswers} right answers in ${timerString} on ${difficultyLevel} mode.`;
             }
             gameOver();
         }
@@ -206,7 +215,7 @@ function revealAnswer() {
 
     // If 45 answers are correct, the game has been won!
     if (rightAnswers === 45) {
-        questionBox.innerText = `You win! You won in ${timerString}.`;
+        questionBox.innerText = `You win! You won in ${timerString} on ${difficultyLevel} mode.`;
         gameOver();
     }
 }
@@ -781,10 +790,10 @@ async function questionAsker() {
     // this results in certain questions-with-no-answers getting skipped from the deletion process. My fix is simply running the deletion loop multiple times.
     // An alternative could be making sure that when a new question is generated, it automatically skips any questions-with-no-answers.
     for (let indx = 0; indx < 4; indx++) {
-        console.log("index is " + indx);
+        // console.log("index is " + indx);
         for (let i = 0; i < superJSON.length; i++) {
             if (superJSON[i]["answer"].length === 0) {
-                console.log(`DELETED ENTRY WITH NO ANSWERS: ${superJSON[i]["question"]} `);
+                // console.log(`DELETED ENTRY WITH NO ANSWERS: ${superJSON[i]["question"]} `);
                 superJSON.splice(i, 1);
             }
         }
@@ -837,7 +846,7 @@ async function questionAsker() {
         }
     }
 
-    console.log("ANSWERS THRESHOLD: " + answersThreshold);
+    // console.log("ANSWERS THRESHOLD: " + answersThreshold);
 
     // This next part picks a random question to be asked.
 
@@ -861,6 +870,15 @@ async function questionAsker() {
         }
     }
 
+    // The previous lines of code are the default to choose a question at the "normal" difficulty level. If the difficulty is set to "hard,"
+    // all of that goes out the window, and a new question is randomly generated. This is fairly simple, though, because the "hard" difficulty
+    // merely means that all available questions are up for grabs, so there is nothing complicated to the code as with the "normal" difficulty.
+    // What I do here is simply choose a question from the full pool of available options without regard to prioritizing "easy" or "moderate" questions.
+    if (difficultyLevel === "hard") {
+        // console.log("choose for hard mode");
+        randomizer = Math.floor(Math.random() * superJSON.length);
+    }
+
     questionBeingAsked = superJSON[randomizer]["question"];
     questionBox.innerText = questionBeingAsked;
     currentAnswers = superJSON[randomizer]["answer"];
@@ -870,7 +888,7 @@ async function questionAsker() {
     document.getElementById("question-asker-button").style.visibility = "hidden";
 
     // This should delete the question that has just been asked. Still need to delete the president who has just been answered, though.
-    console.log(`I want to delete the question ${superJSON[randomizer]["question"]} It currents has the answers: ${currentAnswers}.`);
+    // console.log(`I want to delete the question ${superJSON[randomizer]["question"]} It currents has the answers: ${currentAnswers}.`);
 
     superJSON.splice(randomizer, 1);
 

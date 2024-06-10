@@ -16,6 +16,10 @@
                 <h1 class="title">★★★ Presidential Guesser ★★★</h1>
                 <button onclick="toggle()">Toggle Game/Info</button>
                 <button id="new-game-button" onclick="newGame()">New Game</button>
+                <select name="difficultyLevelChooser" id="difficulty-level-chooser">
+                        <option label="normal" value="normal">Normal</option>
+                        <option label="hard" value="hard">Hard</option>
+                </select>
                 <div id="mode-game">
                         <button id="question-asker-button" onclick="questionAsker()">Next Question</button>
                         <div class="question-answer-area">
@@ -73,9 +77,9 @@
                                                         title="Andrew Jackson"></img></div>
 
                                         <div onmouseover="hoverVanBuren()" onmouseout="hoverNone()" class="pres-button">
-                                                <img src="images/08VanBuren.jpg" class="portrait"
-                                                        id="portrait-vanburen" onclick="chooserVanBuren()"
-                                                        alt="Martin Van Buren" title="Martin Van Buren"></img></div>
+                                                <img src="images/08VanBuren.jpg" class="portrait" id="portrait-vanburen"
+                                                        onclick="chooserVanBuren()" alt="Martin Van Buren"
+                                                        title="Martin Van Buren"></img></div>
 
                                         <div onmouseover="hoverHarrison_WH()" onmouseout="hoverNone()"
                                                 class="pres-button"><img src="images/09Harrison.jpg" class="portrait"
@@ -99,9 +103,9 @@
                                                         title="Zachary Taylor"></img></div>
 
                                         <div onmouseover="hoverFillmore()" onmouseout="hoverNone()" class="pres-button">
-                                                <img src="images/13Fillmore.jpg" class="portrait"
-                                                        alt="Millard Fillmore" id="portrait-fillmore"
-                                                        onclick="chooserFillmore()" title="Millard Fillmore"></img>
+                                                <img src="images/13Fillmore.jpg" class="portrait" alt="Millard Fillmore"
+                                                        id="portrait-fillmore" onclick="chooserFillmore()"
+                                                        title="Millard Fillmore"></img>
                                         </div>
 
                                         <div onmouseover="hoverPierce()" onmouseout="hoverNone()" class="pres-button">
@@ -159,9 +163,9 @@
                                         </div>
 
                                         <div onmouseover="hoverMcKinley()" onmouseout="hoverNone()" class="pres-button">
-                                                <img src="images/25McKinley.jpg" class="portrait"
-                                                        alt="William McKinley" id="portrait-mckinley"
-                                                        onclick="chooserMcKinley()" title="William McKinley"></img>
+                                                <img src="images/25McKinley.jpg" class="portrait" alt="William McKinley"
+                                                        id="portrait-mckinley" onclick="chooserMcKinley()"
+                                                        title="William McKinley"></img>
                                         </div>
 
                                         <div onmouseover="hoverRoosevelt_T()" onmouseout="hoverNone()"
@@ -182,9 +186,9 @@
                                                         title="Woodrow Wilson"></img></div>
 
                                         <div onmouseover="hoverHarding()" onmouseout="hoverNone()" class="pres-button">
-                                                <img src="images/29Harding.jpg" class="portrait"
-                                                        alt="Warren G. Harding" id="portrait-harding"
-                                                        onclick="chooserHarding()" title="Warren G. Harding"></img>
+                                                <img src="images/29Harding.jpg" class="portrait" alt="Warren G. Harding"
+                                                        id="portrait-harding" onclick="chooserHarding()"
+                                                        title="Warren G. Harding"></img>
                                         </div>
 
                                         <div onmouseover="hoverCoolidge()" onmouseout="hoverNone()" class="pres-button">
