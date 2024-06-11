@@ -37,10 +37,12 @@ document.getElementById("pres-name-box").style.display = "none";
 function toggle() {
     if (chosenMode === "game") {
         chosenMode = "info";
+        document.getElementById("game-info-button").innerText = "RETURN TO GAME";
         document.getElementById("mode-game").style.display = "none";
         document.getElementById("mode-info").style.display = "block";
     } else if (chosenMode === "info") {
         chosenMode = "game";
+        document.getElementById("game-info-button").innerText = "INFO";
         document.getElementById("mode-info").style.display = "none";
         document.getElementById("mode-game").style.display = "block";
     }

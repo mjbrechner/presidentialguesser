@@ -14,12 +14,13 @@
 
         <main>
                 <h1 class="title">★★★ Presidential Guesser ★★★</h1>
-                <button onclick="toggle()">Toggle Game/Info</button>
-                <button id="new-game-button" onclick="newGame()">New Game</button>
-                <select name="difficultyLevelChooser" id="difficulty-level-chooser">
-                        <option label="normal" value="normal">Normal</option>
-                        <option label="hard" value="hard">Hard</option>
-                </select>
+                <button id="game-info-button" onclick="toggle()">Info</button>
+                <div id="new-game-area"> <button id="new-game-button" onclick="newGame()">New Game</button>
+                        <select name="difficultyLevelChooser" id="difficulty-level-chooser">
+                                <option label="normal" value="normal">Normal</option>
+                                <option label="hard" value="hard">Hard</option>
+                        </select>
+                </div>
                 <div id="mode-game">
                         <button id="question-asker-button" onclick="questionAsker()">Next Question</button>
                         <div class="question-answer-area">
