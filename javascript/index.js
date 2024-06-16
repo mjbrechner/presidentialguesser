@@ -58,7 +58,7 @@ function newGame() {
 
     // document.getElementById("new-game-button").style.visibility = "hidden";
     // difficultyLevelChooser.style.visibility = "hidden";
-    document.getElementById("new-game-area").style.display = "none";
+    document.getElementById("new-game-area").style.visibility = "hidden";
 
     gameOverNotice.style.visibility = "hidden";
 
@@ -112,7 +112,7 @@ function gameOver() {
     document.getElementById("question-asker-button").style.visibility = "hidden";
     // document.getElementById("new-game-button").style.visibility = "visible";
     // difficultyLevelChooser.style.visibility = "visible";
-    document.getElementById("new-game-area").style.display = "block";
+    document.getElementById("new-game-area").style.visibility = "visible";
     answerNotification.style.pointerEvents = "none";
 }
 

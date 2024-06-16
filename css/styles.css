@@ -47,7 +47,27 @@ button {
     cursor: pointer;
 }
 
+#gameplay-area-top {
+    display: flex;
+    width: 98%;
+    height: fit-content;
+    margin-top: 5px;
+}
+
+/* #question-answer-area, #gameplay-area-middle, #new-game-area {
+    border: solid 1px pink;
+} */
+
+#gameplay-area-middle {
+width: 157px;
+}
+
+#question-answer-area {
+    width: 85%;
+}
+
 #question-asker-button {
+    /* height: 40px; */
     border: 3px solid #102C57;
     border-radius: 5px;
     cursor: pointer;
@@ -57,13 +77,12 @@ button {
 .question-area {
     display: flex;
     flex-direction: column;
-
 }
 
 #question-asker,
 #answer-notification {
     width: 100%;
-    height: 45px;
+    height: 75px;
     font-size: 25px;
     margin: 5px;
     padding: 5px;
@@ -89,12 +108,12 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1em;
-    width: 1em;
+    height: 15px;
+    width: 15px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #940404;
-    border: 7px solid #940404;
+    border: 3px solid #940404;
     border-radius: 25%;
     visibility: hidden;
 }
@@ -108,7 +127,7 @@ button {
     font-size: 2em;
     /* font-weight: 700; */
     color: #102C57;
-    margin: 5px;
+    margin-bottom: 5px;
 }
 
 .president-area {

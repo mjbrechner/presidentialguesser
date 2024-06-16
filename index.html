@@ -20,26 +20,45 @@
                 <h1 class="title">★★★ Presidential Guesser ★★★</h1>
                 <button id="game-info-button" onclick="toggle()">Info</button>
                 <div id="mode-game">
-                        <div id="new-game-area"> <button id="new-game-button" onclick="newGame()">New Game</button>
-                                <select name="difficultyLevelChooser" id="difficulty-level-chooser">
-                                        <option label="normal" value="normal">Normal</option>
-                                        <option label="hard" value="hard">Hard</option>
-                                </select>
-                        </div>
-                        <div class="question-answer-area">
-                                <div id="chosen-president"></div>
-                                <div class="question-area">
-                                        <h1 id="question-asker"></h1>
-                                        <h1 id="answer-notification" onclick="questionAsker()"></h1>
+                        <div id="gameplay-area-top">
+
+                                <div id="gameplay-area-middle">
+
+                                        <div id="new-game-area">
+                                                <button id="new-game-button" onclick="newGame()">New
+                                                        Game</button>
+                                                <select name="difficultyLevelChooser" id="difficulty-level-chooser">
+                                                        <option label="normal" value="normal">Normal</option>
+                                                        <option label="hard" value="hard">Hard</option>
+                                                </select>
+                                        </div>
+
+                                        <button id="question-asker-button" onclick="questionAsker()">Next
+                                                Question</button>
+
                                         <div class="mistake-area">
                                                 <div class="mistake-imagery" id="mistake-1">X</div>
                                                 <div class="mistake-imagery" id="mistake-2">X</div>
                                                 <div class="mistake-imagery" id="mistake-3">X</div>
-                                                <button id="question-asker-button" onclick="questionAsker()">Next
-                                                        Question</button>
                                         </div>
 
+
+
                                 </div>
+
+                                <div id="question-answer-area">
+                                        <div id="chosen-president"></div>
+                                        <div class="question-area">
+                                                <h1 id="question-asker"></h1>
+                                                <h1 id="answer-notification" onclick="questionAsker()"></h1>
+                                        </div>
+                                </div>
+
+
+
+
+
+
                         </div>
 
                         <div id="pres-name-box"></div>
