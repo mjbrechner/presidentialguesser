@@ -73,7 +73,7 @@ function newGame() {
     // document.getElementById("new-game-button").style.visibility = "hidden";
     // difficultyLevelChooser.style.visibility = "hidden";
     document.getElementById("popup").style.visibility = "hidden";
-    document.getElementById("new-game-area").style.visibility = "hidden";
+    // document.getElementById("new-game-area").style.visibility = "hidden";
 
     gameOverNotice.style.visibility = "hidden";
 
@@ -124,10 +124,10 @@ function gameTimer() { // Tracks how long the game takes.
 
 function gameOver() {
     gameOverNotice.style.visibility = "visible";
-    document.getElementById("question-asker-button").style.visibility = "hidden";
+    document.getElementById("question-asker-button").style.display = "none";
     // document.getElementById("new-game-button").style.visibility = "visible";
     // difficultyLevelChooser.style.visibility = "visible";
-    document.getElementById("new-game-area").style.visibility = "visible";
+    // document.getElementById("new-game-area").style.visibility = "visible";
     answerNotification.style.pointerEvents = "none";
 }
 
@@ -151,7 +151,7 @@ function revealAnswer() {
     // console.log(`You have chosen ${chosenPresident}. Remaining correct answers include:${currentAnswersFullNames}.`);
 
     //Enable "Next Question" button, though it will get disabled again if the game turns out to be over.
-    document.getElementById("question-asker-button").style.visibility = "visible";
+    document.getElementById("question-asker-button").style.display = "flex";
 
     // answerNotificationBox.style.visibility = "visible";
     questionBox.style.display = "none";
@@ -912,7 +912,7 @@ async function questionAsker() {
     currentAnswerNumber = superJSON[randomizer]["answerNumber"]; // Grabbing the value of how many possible answers the question *started* with (which is static even after potential answers are removed after being chosen)
 
     // Now that a queston has been asked, hide the Question Asker button for the time being.
-    document.getElementById("question-asker-button").style.visibility = "hidden";
+    document.getElementById("question-asker-button").style.display = "none";
 
     // This should delete the question that has just been asked. Still need to delete the president who has just been answered, though.
     // console.log(`I want to delete the question ${superJSON[randomizer]["question"]} It currents has the answers: ${currentAnswers}.`);
