@@ -50,6 +50,20 @@ function toggle() {
 }
 
 
+function newGamePopupOpen() {
+    document.getElementById("popup").style.visibility = "visible";
+}
+
+function newGameNormal() {
+    difficultyLevel = "normal";
+    newGame();
+}
+
+function newGameHard() {
+    difficultyLevel = "hard";
+    newGame();
+}
+
 // Question asking and answering
 
 function newGame() {
@@ -58,6 +72,7 @@ function newGame() {
 
     // document.getElementById("new-game-button").style.visibility = "hidden";
     // difficultyLevelChooser.style.visibility = "hidden";
+    document.getElementById("popup").style.visibility = "hidden";
     document.getElementById("new-game-area").style.visibility = "hidden";
 
     gameOverNotice.style.visibility = "hidden";
@@ -71,7 +86,7 @@ function newGame() {
     chosenMode = "game";
     presidentialList = ['washington', 'adams_j', 'jefferson', 'madison', 'monroe', 'adams_jq', 'jackson', 'vanburen', 'harrison_wh', 'tyler', 'polk', 'taylor', 'fillmore', 'pierce', 'buchanan', 'lincoln', 'johnson_a', 'grant', 'hayes', 'garfield', 'arthur', 'cleveland', 'harrison_b', 'mckinley', 'roosevelt_t', 'taft', 'wilson', 'harding', 'coolidge', 'hoover', 'roosevelt_fd', 'truman', 'eisenhower', 'kennedy', 'johnson_lb', 'nixon', 'ford', 'carter', 'reagan', 'bush_ghw', 'clinton', 'bush_gw', 'obama', 'trump', 'biden'];
 
-    difficultyLevel = difficultyLevelChooser.value;
+    // difficultyLevel = difficultyLevelChooser.value;
 
     timerSeconds = 0;
     timerMinutes = 0;
@@ -914,3 +929,7 @@ async function questionAsker() {
 // Maybe instead of Difficulty as either "hard" or nothing at all, maybe an "easy" difficulty should go first with some of the more simple
 // questions. There shouldn't be so many of them, maybe 5, or 10 at most. Then comes the standard questions (currenly with no difficulty
 // setting), and then comes the hard questions as has already been coded.
+
+// The Game Over notice is a bit redundant. Plus, it is unclickable, so maybe it should just be removed altogether.
+
+// Maybe disable the whole screen when the popup is open?
