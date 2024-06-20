@@ -18,8 +18,8 @@
 <body>
         <main>
                 <h1 class="title">★ Presidential Guesser ★</h1>
-                <button id="new-game-button" onclick="newGamePopupOpen()">New Game</button>
-                <button id="game-info-button" onclick="toggle()">Info</button>
+                <button id="new-game-button" onclick="newGamePopupOpen()">new game</button>
+                <button id="game-info-button" onclick="toggle()">info</button>
                 <div id="mode-game">
                         <div id="popup">
                                 <span id="popup-close" onclick="this.parentElement.style.visibility = `hidden`">×</span>
@@ -29,20 +29,15 @@
                                         <button class="game-selector-button" onclick="newGameHard()">Hard</button>
                                 </div>
                         </div>
-                        <div id="gameplay-area-top">
 
+                        <div id="gameplay-area-top">
                                 <div id="gameplay-area-top-1">
-<!-- 
-                                        <div id="new-game-area">
-                                        </div> -->
                                         <div class="mistake-area">
                                                 <div class="mistake-imagery" id="mistake-1">X</div>
                                                 <div class="mistake-imagery" id="mistake-2">X</div>
                                                 <div class="mistake-imagery" id="mistake-3">X</div>
                                         </div>
-
                                 </div>
-
                                 <div id="gameplay-area-top-2">
                                         <div id="chosen-president"></div>
                                         <div class="question-area">
@@ -50,20 +45,16 @@
                                                 <h1 id="answer-notification" onclick="questionAsker()"></h1>
                                         </div>
                                 </div>
-
                         </div>
 
                         <div id="gameplay-area-middle">
                                 <div id="pres-name-box"></div>
-                                <button id="question-asker-button" onclick="questionAsker()">Next Question</button>
+                                <button id="question-asker-button" onclick="questionAsker()">next question</button>
                         </div>
 
                         <div class="president-area">
                                 <div id="pres-button-area">
                                         <h2 id="game-over-notice" onclick="newGamePopupOpen()">GAME OVER!!!</h2>
-                                        <!-- <div id="answer-notification-box">
-                                                <h2 id="answer-notification">X</h2>
-                                        </div> -->
                                         <div onmouseover="hoverWashington()" onmouseout="hoverNone()"
                                                 class="pres-button"><img src="images/01Washington.jpg" class="portrait"
                                                         id="portrait-washington" onclick="chooserWashington()"
