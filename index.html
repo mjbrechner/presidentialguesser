@@ -19,14 +19,24 @@
         <main>
                 <h1 class="title">★ Presidential Guesser ★</h1>
                 <button id="new-game-button" onclick="newGamePopupOpen()">new game</button>
+                <button id="end-button" onclick="endGamePopupOpen()">quit game</button>
                 <button id="game-info-button" onclick="toggle()">info</button>
                 <div id="mode-game">
-                        <div id="popup">
-                                <span id="popup-close" onclick="this.parentElement.style.visibility = `hidden`">×</span>
-                                <div id="new-game-selector">
+                        <div class="popup" id="popup-new">
+                                <span class="popup-close" id="popup-close-new" onclick="closePopups()">×</span>
+                                <div class="popup-contents" id="popup-contents-new">
                                         Begin new game?
                                         <button class="game-selector-button" onclick="newGameNormal()">Normal</button>
                                         <button class="game-selector-button" onclick="newGameHard()">Hard</button>
+                                </div>
+                        </div>
+
+                        <div class="popup" id="popup-quit">
+                                <span class="popup-close" id="popup-close-quit" onclick="closePopups()">×</span>
+                                <div class="popup-contents" id="popup-contents-quit">
+                                        Quit current game?
+                                        <button class="quit-button" onclick="endGame()">Yes</button>
+                                        <button class="quit-button" onclick="closePopups()">No</button>
                                 </div>
                         </div>
 

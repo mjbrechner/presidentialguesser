@@ -39,6 +39,7 @@ button {
 }
 
 #new-game-button,
+#end-button,
 #game-info-button {
     position: absolute;
     top: 10px;
@@ -48,8 +49,14 @@ button {
     border-radius: 3px;
 }
 
-#new-game-button {
+#new-game-button,
+#end-button {
     left: 10px;
+}
+
+#end-button {
+    background-color: #940404;
+    visibility: hidden;
 }
 
 #game-info-button {
@@ -62,27 +69,35 @@ button {
     height: fit-content;
 }
 
-#popup {
+.popup {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 300px;
     height: 58px;
-    background-color: #102C57;
     color: #FFE9CC;
     border: 5px double #FFE9CC;
     border-radius: 5px;
     visibility: hidden;
 }
 
-#popup-close {
+#popup-new {
+    background-color: #102C57;
+    width: 300px;
+}
+
+#popup-quit {
+    background-color: #940404;
+    width: 275px;
+}
+
+.popup-close {
     display: flex;
+    /* background-color: #FFE9CC;
+    color: #102C57; */
     width: 15px;
     height: 15px;
     align-items: center;
     justify-content: center;
-    background-color: #FFE9CC;
-    color: #102C57;
     font-weight: 700;
     margin: 5px;
     float: right;
@@ -90,19 +105,42 @@ button {
     cursor: pointer;
 }
 
-#new-game-selector {
+#popup-close-new {
+    background-color: #FFE9CC;
+    color: #102C57;
+}
+
+#popup-close-quit {
+    background-color: #FFE9CC;
+    color: #940404;
+}
+
+.popup-contents {
     display: flex;
     gap: 3%;
     height: 100%;
-    background-color: #102C57;
-    color: #FFE9CC;
     align-items: center;
     align-items: center;
     margin: 0 0 0 10px;
 }
 
+#popup-contents-new {
+    background-color: #102C57;
+    color: #FFE9CC;
+}
+
+#popup-contents-quit {
+    background-color: #940404;
+    color: #FFE9CC;
+}
+
 .game-selector-button {
     width: 60px;
+    border-radius: 3px;
+}
+
+.quit-button {
+    color: #940404;
     border-radius: 3px;
 }
 
@@ -135,7 +173,6 @@ button {
 
 .mistake-area {
     display: flex;
-    /* width: fit-content; */
     gap: 2px;
     padding: 5px;
 }
@@ -310,6 +347,7 @@ footer {
     }
 
     #new-game-button,
+    #end-button,
     #game-info-button {
         font-size: 20px;
     }
@@ -380,6 +418,7 @@ footer {
     }
 
     #new-game-button,
+    #end-button,
     #game-info-button {
         font-size: 25px;
     }

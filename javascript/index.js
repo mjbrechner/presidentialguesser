@@ -34,24 +34,38 @@ document.getElementById("pres-button-area").style.pointerEvents = "none";
 chosenPresidentBox.style.visibility = "hidden";
 //
 
+function returnToGame() { //This function, used in several places, turns off the INFO section and returns to the game section. 
+    document.getElementById("game-info-button").innerText = "info";
+    document.getElementById("mode-info").style.display = "none";
+    document.getElementById("mode-game").style.display = "block";
+}
 
-function toggle() {
+function toggle() { // Toggles between GAMEPLAY mode and INFO mode.
     if (chosenMode === "game") {
         chosenMode = "info";
+        closePopups();
         document.getElementById("game-info-button").innerText = "return to game";
         document.getElementById("mode-game").style.display = "none";
         document.getElementById("mode-info").style.display = "block";
     } else if (chosenMode === "info") {
         chosenMode = "game";
-        document.getElementById("game-info-button").innerText = "info";
-        document.getElementById("mode-info").style.display = "none";
-        document.getElementById("mode-game").style.display = "block";
+        returnToGame();
     }
 }
 
-
 function newGamePopupOpen() {
-    document.getElementById("popup").style.visibility = "visible";
+    returnToGame(); // First return back to GAMEPLAY mode view.
+    document.getElementById("popup-new").style.visibility = "visible";
+}
+
+function endGamePopupOpen() {
+    returnToGame(); // First return back to GAMEPLAY mode view.
+    document.getElementById("popup-quit").style.visibility = "visible";
+}
+
+function closePopups() {
+    document.getElementById("popup-new").style.visibility = "hidden";
+    document.getElementById("popup-quit").style.visibility = "hidden";
 }
 
 function newGameNormal() {
@@ -70,9 +84,10 @@ function newGame() {
     // Reset things to start out the new game.
     resetJSON();
 
-    // document.getElementById("new-game-button").style.visibility = "hidden";
+    document.getElementById("new-game-button").style.visibility = "hidden";
+    document.getElementById("end-button").style.visibility = "visible";
     // difficultyLevelChooser.style.visibility = "hidden";
-    document.getElementById("popup").style.visibility = "hidden";
+    document.getElementById("popup-new").style.visibility = "hidden";
     // document.getElementById("new-game-area").style.visibility = "hidden";
 
     gameOverNotice.style.visibility = "hidden";
@@ -125,11 +140,30 @@ function gameTimer() { // Tracks how long the game takes.
 function gameOver() {
     gameOverNotice.style.visibility = "visible";
     document.getElementById("question-asker-button").style.display = "none";
-    // document.getElementById("new-game-button").style.visibility = "visible";
+    document.getElementById("new-game-button").style.visibility = "visible";
+    document.getElementById("end-button").style.visibility = "hidden";
     // difficultyLevelChooser.style.visibility = "visible";
     // document.getElementById("new-game-area").style.visibility = "visible";
     answerNotification.style.pointerEvents = "none";
 }
+
+function endGame() { // If game is purposefully ended by user
+    returnToGame(); // First return back to GAMEPLAY mode view.
+    closePopups();
+    questionBox.style.display = "none";
+    answerNotification.style.display = "block";
+    document.getElementById("pres-button-area").style.pointerEvents = "none";
+    chosenPresidentBox.style.visibility = "hidden";
+
+    if (rightAnswers === 1) {
+        answerNotification.innerText = `Game Over! You had ${rightAnswers} right answer in ${timerString} on ${difficultyLevel} mode.`;
+    } else {
+        answerNotification.innerText = `Game Over! You had ${rightAnswers} right answers in ${timerString} on ${difficultyLevel} mode.`;
+    }
+    gameOverNotice.style.borderColor = "#940404";
+    gameOver();
+}
+
 
 function displayChosenPresident() {
     document.getElementById("pres-button-area").style.pointerEvents = "none";
