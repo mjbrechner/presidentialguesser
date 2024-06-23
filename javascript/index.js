@@ -6,7 +6,6 @@ let presidentialList = ['washington', 'adams_j', 'jefferson', 'madison', 'monroe
 const difficultyLevelChooser = document.getElementById("difficulty-level-chooser");
 let difficultyLevel;
 
-
 let timerSeconds = 0;
 let timerMinutes = 0;
 let timerString;
@@ -21,12 +20,11 @@ let workingQuestionSet = [];
 let wrongAnswers = 0;
 let rightAnswers = 0;
 
-
 // const answerNotificationBox = document.getElementById("answer-notification-box");
 const answerNotification = document.getElementById("answer-notification");
 const questionBox = document.getElementById("question-asker");
 const chosenPresidentBox = document.getElementById("pres-name-box");
-const gameOverNotice = document.getElementById("game-over-notice");
+// const gameOverNotice = document.getElementById("game-over-notice");
 
 
 // When a question isn't being asked (including at the start), disable the presidential portrait section.
@@ -88,15 +86,15 @@ function newGame() {
     document.getElementById("end-button").style.visibility = "visible";
     // difficultyLevelChooser.style.visibility = "hidden";
     document.getElementById("popup-new").style.visibility = "hidden";
-    // document.getElementById("new-game-area").style.visibility = "hidden";
 
-    gameOverNotice.style.visibility = "hidden";
+    // gameOverNotice.style.visibility = "hidden";
 
     document.getElementById("mistake-1").style.visibility = "hidden";
     document.getElementById("mistake-2").style.visibility = "hidden";
     document.getElementById("mistake-3").style.visibility = "hidden";
 
-
+    answerNotification.style.color = "#102C57"; // Reset color to blue in case it had changed to the red that signifies a loss.
+    answerNotification.style.textShadow = "none"; // Remove any text-shadow that might have remained from a GAME OVER message.
 
     chosenMode = "game";
     presidentialList = ['washington', 'adams_j', 'jefferson', 'madison', 'monroe', 'adams_jq', 'jackson', 'vanburen', 'harrison_wh', 'tyler', 'polk', 'taylor', 'fillmore', 'pierce', 'buchanan', 'lincoln', 'johnson_a', 'grant', 'hayes', 'garfield', 'arthur', 'cleveland', 'harrison_b', 'mckinley', 'roosevelt_t', 'taft', 'wilson', 'harding', 'coolidge', 'hoover', 'roosevelt_fd', 'truman', 'eisenhower', 'kennedy', 'johnson_lb', 'nixon', 'ford', 'carter', 'reagan', 'bush_ghw', 'clinton', 'bush_gw', 'obama', 'trump', 'biden'];
@@ -138,12 +136,11 @@ function gameTimer() { // Tracks how long the game takes.
 }
 
 function gameOver() {
-    gameOverNotice.style.visibility = "visible";
+    // gameOverNotice.style.visibility = "visible";
     document.getElementById("question-asker-button").style.display = "none";
     document.getElementById("new-game-button").style.visibility = "visible";
     document.getElementById("end-button").style.visibility = "hidden";
     // difficultyLevelChooser.style.visibility = "visible";
-    // document.getElementById("new-game-area").style.visibility = "visible";
     answerNotification.style.pointerEvents = "none";
 }
 
@@ -155,12 +152,14 @@ function endGame() { // If game is purposefully ended by user
     document.getElementById("pres-button-area").style.pointerEvents = "none";
     chosenPresidentBox.style.visibility = "hidden";
 
+    answerNotification.style.color = "#940404"; // Change color to red since to signify a loss.
+    answerNotification.style.textShadow = "2px 2px 2px #102C57"; // Add a bit of shadow to highlight the fact that this is a GAME OVER message.
     if (rightAnswers === 1) {
         answerNotification.innerText = `Game Over! You had ${rightAnswers} right answer in ${timerString} on ${difficultyLevel} mode.`;
     } else {
         answerNotification.innerText = `Game Over! You had ${rightAnswers} right answers in ${timerString} on ${difficultyLevel} mode.`;
     }
-    gameOverNotice.style.borderColor = "#940404";
+    // gameOverNotice.style.borderColor = "#940404";
     gameOver();
 }
 
@@ -262,20 +261,23 @@ function revealAnswer() {
         }
 
         if (wrongAnswers === 3) {
+            answerNotification.style.color = "#940404"; // Change color to red since to signify a loss.
+            answerNotification.style.textShadow = "2px 2px 2px #102C57"; // Add a bit of shadow to highlight the fact that this is a GAME OVER message.
             if (rightAnswers === 1) {
                 answerNotification.innerText = `Game Over! You had ${rightAnswers} right answer in ${timerString} on ${difficultyLevel} mode. `;
             } else {
                 answerNotification.innerText = `Game Over! You had ${rightAnswers} right answers in ${timerString} on ${difficultyLevel} mode.`;
             }
-            gameOverNotice.style.borderColor = "#940404";
+            // gameOverNotice.style.borderColor = "#940404";
             gameOver();
         }
     }
 
     // If 45 answers are correct, the game has been won!
     if (rightAnswers === 45) {
+        answerNotification.style.textShadow = "2px 2px 2px #940404"; // Add a bit of shadow to highlight the fact that this is a GAME OVER message.
         answerNotification.innerText = `You win! You won in ${timerString} on ${difficultyLevel} mode.`;
-        gameOverNotice.style.borderColor = "#102C57";
+        // gameOverNotice.style.borderColor = "#102C57";
         gameOver();
     }
 }

@@ -232,7 +232,7 @@ button {
     border-radius: 5px;
 }
 
-#game-over-notice {
+/* #game-over-notice {
     position: fixed;
     display: flex;
     height: 100px;
@@ -244,7 +244,7 @@ button {
     border-radius: 10px;
     z-index: 1;
     visibility: hidden;
-}
+} */
 
 #pres-button-area {
     background-color: #102C57;
