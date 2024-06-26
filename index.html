@@ -17,7 +17,7 @@
 
 <body>
         <main>
-                <h1 class="title">★ Presidential Guesser ★</h1>
+                <h1 id="title">★ Presidential Guesser ★</h1>
                 <button id="new-game-button" onclick="newGamePopupOpen()">new game</button>
                 <button id="end-button" onclick="endGamePopupOpen()">quit game</button>
                 <button id="game-info-button" onclick="toggle()">info</button>
@@ -64,7 +64,6 @@
 
                         <div class="president-area">
                                 <div id="pres-button-area">
-                                        <!-- <h2 id="game-over-notice" onclick="newGamePopupOpen()">GAME OVER!!!</h2> -->
                                         <div onmouseover="hoverWashington()" onmouseout="hoverNone()"
                                                 class="pres-button"><img src="images/01Washington.jpg" class="portrait"
                                                         id="portrait-washington" onclick="chooserWashington()"

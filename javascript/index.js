@@ -24,7 +24,6 @@ let rightAnswers = 0;
 const answerNotification = document.getElementById("answer-notification");
 const questionBox = document.getElementById("question-asker");
 const chosenPresidentBox = document.getElementById("pres-name-box");
-// const gameOverNotice = document.getElementById("game-over-notice");
 
 
 // When a question isn't being asked (including at the start), disable the presidential portrait section.
@@ -87,8 +86,6 @@ function newGame() {
     // difficultyLevelChooser.style.visibility = "hidden";
     document.getElementById("popup-new").style.visibility = "hidden";
 
-    // gameOverNotice.style.visibility = "hidden";
-
     document.getElementById("mistake-1").style.visibility = "hidden";
     document.getElementById("mistake-2").style.visibility = "hidden";
     document.getElementById("mistake-3").style.visibility = "hidden";
@@ -136,7 +133,6 @@ function gameTimer() { // Tracks how long the game takes.
 }
 
 function gameOver() {
-    // gameOverNotice.style.visibility = "visible";
     document.getElementById("question-asker-button").style.display = "none";
     document.getElementById("new-game-button").style.visibility = "visible";
     document.getElementById("end-button").style.visibility = "hidden";
@@ -159,7 +155,6 @@ function endGame() { // If game is purposefully ended by user
     } else {
         answerNotification.innerText = `Game Over! You had ${rightAnswers} right answers in ${timerString} on ${difficultyLevel} mode.`;
     }
-    // gameOverNotice.style.borderColor = "#940404";
     gameOver();
 }
 
@@ -268,7 +263,6 @@ function revealAnswer() {
             } else {
                 answerNotification.innerText = `Game Over! You had ${rightAnswers} right answers in ${timerString} on ${difficultyLevel} mode.`;
             }
-            // gameOverNotice.style.borderColor = "#940404";
             gameOver();
         }
     }
@@ -277,7 +271,6 @@ function revealAnswer() {
     if (rightAnswers === 45) {
         answerNotification.style.textShadow = "2px 2px 2px #940404"; // Add a bit of shadow to highlight the fact that this is a GAME OVER message.
         answerNotification.innerText = `You win! You won in ${timerString} on ${difficultyLevel} mode.`;
-        // gameOverNotice.style.borderColor = "#102C57";
         gameOver();
     }
 }
@@ -957,7 +950,15 @@ async function questionAsker() {
 
 }
 
-
+const mediaMatcher = window.matchMedia("(max-width: 599px)");
+mediaMatcher.onchange = (x) => {
+    if (mediaMatcher.matches) {
+        document.getElementById("title").innerText = "Presidential Guesser";
+    } else {
+        document.getElementById("title").innerText = "★ Presidential Guesser ★";
+    }
+    
+}
 // TO DO
 
 // After the game is over (win or lose), show the average percentage of correct answers users have achieved.

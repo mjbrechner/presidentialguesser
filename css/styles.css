@@ -11,7 +11,7 @@
     font-family: "Urbanist", sans-serif;
 }
 
-.title {
+#title {
     background-color: #102C57;
     color: #FFE9CC;
     text-shadow: -5px 5px 5px #102C57,
@@ -232,20 +232,6 @@ button {
     border-radius: 5px;
 }
 
-/* #game-over-notice {
-    position: fixed;
-    display: flex;
-    height: 100px;
-    width: 300px;
-    align-items: center;
-    justify-content: center;
-    justify-self: center;
-    border: 5px solid #940404;
-    border-radius: 10px;
-    z-index: 1;
-    visibility: hidden;
-} */
-
 #pres-button-area {
     background-color: #102C57;
     color: #FFE9CC;
@@ -272,10 +258,6 @@ button {
     text-shadow: .4px .4px .75px #940404;
     transform: translate(1px);
 }
-
-/* #mode-game {
-    display: block;
-} */
 
 #mode-info {
     display: none;
@@ -342,7 +324,7 @@ footer {
 /*tablet query*/
 @media only screen and (min-width: 768px) {
 
-    .title {
+    #title {
         font-size: 2.5em;
     }
 
@@ -413,7 +395,7 @@ footer {
 /*desktop query*/
 @media only screen and (min-width: 992px) {
 
-    .title {
+    #title {
         font-size: 3em;
     }
 
