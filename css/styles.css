@@ -237,7 +237,7 @@ button {
     color: #FFE9CC;
     display: grid;
     width: fit-content;
-    grid-template-columns: repeat(5, 5.5em);
+    grid-template-columns: repeat(5, 80px);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     padding: 1em;
@@ -246,8 +246,10 @@ button {
 }
 
 .pres-button {
-    height: 5em;
-    width: 5em;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
     border: 3px solid #FFE9CC;
     border-radius: 10%;
     box-shadow: 2px 2px #94918e;
@@ -264,8 +266,8 @@ button {
 }
 
 .portrait {
-    height: 5em;
-    width: 5em;
+    height: 75px;
+    width: 75px;
     border-radius: 5%;
     filter: sepia(100%);
     user-select: none;
@@ -274,6 +276,14 @@ button {
 
 .portrait:hover {
     filter: sepia(100%) opacity(75%) brightness(.75);
+}
+
+.pres-name-text {
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 #mode-info>h1 {
@@ -356,16 +366,15 @@ footer {
         border-radius: 0 10px 10px 0;
     }
 
-    .pres-button {
-        height: 70px;
-        width: 70px;
-        border: 3px solid #FFE9CC;
-        box-shadow: 2px 2px #94918e;
-    }
-
     .portrait {
         height: 70px;
         width: 70px;
+    }
+
+    .pres-name-text {
+        display: none;
+        height: 0;
+        width: 0;
     }
 
     #mode-info>h1 {
@@ -436,13 +445,6 @@ footer {
         border-radius: 0 10px 10px 0;
     }
 
-    .pres-button {
-        height: 70px;
-        width: 70px;
-        border: 3px solid #FFE9CC;
-        box-shadow: 2px 2px #94918e;
-    }
-
     .portrait {
         height: 70px;
         width: 70px;
@@ -486,13 +488,6 @@ footer {
         grid-row-gap: 5px;
         padding: 1em;
         border-radius: 0 10px 10px 0;
-    }
-
-    .pres-button {
-        height: 5em;
-        width: 5em;
-        border: 3px solid #FFE9CC;
-        box-shadow: 2px 2px #94918e;
     }
 
     .portrait {
