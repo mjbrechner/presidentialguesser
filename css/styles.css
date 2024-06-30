@@ -237,10 +237,10 @@ button {
     color: #FFE9CC;
     display: grid;
     width: fit-content;
-    grid-template-columns: repeat(5, 80px);
+    grid-template-columns: repeat(5, 70px);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    padding: 1em;
+    padding: 20px;
     align-items: center;
     border-radius: 0 10px 10px 0;
 }
@@ -266,8 +266,8 @@ button {
 }
 
 .portrait {
-    height: 75px;
-    width: 75px;
+    height: 65px;
+    width: 65px;
     border-radius: 5%;
     filter: sepia(100%);
     user-select: none;
@@ -279,8 +279,8 @@ button {
 }
 
 .pres-name-text {
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 11px;
+    /* font-weight: 700; */
     text-align: center;
     margin: 0;
     padding: 0;
@@ -319,6 +319,21 @@ footer {
     #question-asker,
     #answer-notification {
         font-size: 18px;
+    }
+
+    #pres-button-area {
+        grid-template-columns: repeat(5, 80px);
+        padding: 1em;
+    }
+
+    .portrait {
+        height: 75px;
+        width: 75px;
+    }
+
+    .pres-name-text {
+        font-size: 12px;
+        font-weight: 700;
     }
 }
 
