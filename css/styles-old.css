@@ -8,19 +8,24 @@
 * {
     background-color: #FFE9CC;
     color: #102C57;
+    font-family: "Urbanist", sans-serif;
 }
 
-.title {
+#title {
     background-color: #102C57;
     color: #FFE9CC;
-    text-shadow: -1px 1px 1px #940404,
-        1px 1px 1px #940404,
-        1px -1px 1px #940404,
-        -1px -1px 1px #940404;
+    text-shadow: -5px 5px 5px #102C57,
+        5px 5px 5px #102C57,
+        5px -5px 5px #102C57,
+        -5px -5px 5px #102C57;
     text-align: center;
-    padding: .35em;
+    padding: 12px;
     margin: 0;
-    font-size: 2.5em;
+    font-size: 2em;
+    background: repeating-linear-gradient(#940404,
+            #940404 9.5%,
+            #FFE9CC 9.5%,
+            #FFE9CC 18.1%);
 }
 
 h1,
@@ -28,20 +33,119 @@ h2 {
     margin: 3px;
 }
 
-#game-info-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #940404;
-    color: #FFE9CC;
+button {
+    font-family: "Lilita One", sans-serif;
     cursor: pointer;
 }
 
-#question-asker-button {
-    border: 3px solid #102C57;
-    border-radius: 5px;
-    cursor: pointer;
+#new-game-button,
+#end-button,
+#game-info-button {
+    position: absolute;
+    top: 10px;
+    background-color: #102C57;
+    color: #FFE9CC;
+    font-size: 13px;
+    border-radius: 3px;
+}
+
+#new-game-button,
+#end-button {
+    left: 10px;
+}
+
+#end-button {
+    background-color: #940404;
     visibility: hidden;
+}
+
+#game-info-button {
+    right: 10px;
+}
+
+#gameplay-area-top {
+    display: flex;
+    width: 98%;
+    height: fit-content;
+}
+
+.popup {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    height: 58px;
+    color: #FFE9CC;
+    border: 5px double #FFE9CC;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+#popup-new {
+    background-color: #102C57;
+    width: 300px;
+}
+
+#popup-quit {
+    background-color: #940404;
+    width: 275px;
+}
+
+.popup-close {
+    display: flex;
+    /* background-color: #FFE9CC;
+    color: #102C57; */
+    width: 15px;
+    height: 15px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin: 5px;
+    float: right;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#popup-close-new {
+    background-color: #FFE9CC;
+    color: #102C57;
+}
+
+#popup-close-quit {
+    background-color: #FFE9CC;
+    color: #940404;
+}
+
+.popup-contents {
+    display: flex;
+    gap: 3%;
+    height: 100%;
+    align-items: center;
+    align-items: center;
+    margin: 0 0 0 10px;
+}
+
+#popup-contents-new {
+    background-color: #102C57;
+    color: #FFE9CC;
+}
+
+#popup-contents-quit {
+    background-color: #940404;
+    color: #FFE9CC;
+}
+
+.game-selector-button {
+    width: 60px;
+    border-radius: 3px;
+}
+
+.quit-button {
+    color: #940404;
+    border-radius: 3px;
+}
+
+#gameplay-area-top-2 {
+    width: 85%;
 }
 
 .question-area {
@@ -49,10 +153,11 @@ h2 {
     flex-direction: column;
 }
 
-#question-asker, #answer-notification {
+#question-asker,
+#answer-notification {
     width: 100%;
-    height: 45px;
-    font-size: 25px;
+    height: 75px;
+    font-size: 15px;
     margin: 5px;
     padding: 5px;
 }
@@ -62,9 +167,12 @@ h2 {
     cursor: pointer;
 }
 
+#next-question-plus-name-area {
+    display: flex;
+}
+
 .mistake-area {
     display: flex;
-    width: fit-content;
     gap: 2px;
     padding: 5px;
 }
@@ -73,34 +181,55 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1em;
-    width: 1em;
+    height: 15px;
+    width: 15px;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1em;
     color: #940404;
-    border: 7px solid #940404;
+    border: 3px solid #940404;
     border-radius: 25%;
     visibility: hidden;
+}
+
+#gameplay-area-middle {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+}
+
+#question-asker-button {
+    position: absolute;
+    display: none;
+    background-color: #102C57;
+    color: #FFE9CC;
+    /* width: fit-content;
+    height: fit-content; */
+    font-size: 1em;
+    /* border: 3px solid #102C57; */
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#pres-name-box {
+    display: flex;
+    font-family: "Lilita One", sans-serif;
+    justify-content: center;
+    color: #102C57;
+    width: 100%;
+    height: 1em;
+    font-size: 2em;
+    margin-bottom: 5px;
 }
 
 .president-area {
     display: flex;
     flex-direction: column-reverse;
+    background-color: #102C57;
     width: 100%;
-}
-
-#game-over-notice {
-    position: fixed;
-    display: flex;
-    height: 100px;
-    width: 300px;
     align-items: center;
-    justify-content: center;
-    justify-self: center;
-    border: 5px solid #940404;
-    border-radius: 10px;
-    z-index: 1;
-    visibility: hidden;
+    border-radius: 5px;
 }
 
 #pres-button-area {
@@ -108,17 +237,19 @@ h2 {
     color: #FFE9CC;
     display: grid;
     width: fit-content;
-    grid-template-columns: repeat(9, 5.5em);
+    grid-template-columns: repeat(5, 70px);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
-    padding: 1em;
+    padding: 20px;
     align-items: center;
     border-radius: 0 10px 10px 0;
 }
 
 .pres-button {
-    height: 5em;
-    width: 5em;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
     border: 3px solid #FFE9CC;
     border-radius: 10%;
     box-shadow: 2px 2px #94918e;
@@ -130,39 +261,13 @@ h2 {
     transform: translate(1px);
 }
 
-#pres-name-area {
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    align-items: center;
-    justify-content: center;
-}
-
-#pres-name-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #102C57;
-    color: #FFE9CC;
-    border: .25em solid #FFE9CC;
-    border-radius: 5px;
-    height: 1.5em;
-    width: 10em;
-    padding: .5em;
-    font-size: 2em;
-}
-
-#mode-game {
-    display: block;
-}
-
 #mode-info {
     display: none;
 }
 
 .portrait {
-    height: 5em;
-    width: 5em;
+    height: 65px;
+    width: 65px;
     border-radius: 5%;
     filter: sepia(100%);
     user-select: none;
@@ -171,6 +276,14 @@ h2 {
 
 .portrait:hover {
     filter: sepia(100%) opacity(75%) brightness(.75);
+}
+
+.pres-name-text {
+    font-size: 11px;
+    /* font-weight: 700; */
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 #mode-info>h1 {
@@ -199,43 +312,84 @@ footer {
     height: 3em;
 }
 
-/*tablet query*/
-@media only screen and (min-width: 768px) {
 
-    .president-area {
-        background-color: #940404;
-        display: flex;
-        flex-direction: row;
-    }
+/*slightly larger phone query*/
+@media only screen and (min-width: 500px) {
 
-    #pres-name-area {
-        /* width: 832px; */
-        width: 100%;
-        height: auto;
-        background: repeating-linear-gradient(#940404,
-                #940404 9.5%,
-                #FFE9CC 9.5%,
-                #FFE9CC 18.1%);
+    #question-asker,
+    #answer-notification {
+        font-size: 18px;
     }
 
     #pres-button-area {
-        grid-template-columns: repeat(5, 75px);
+        grid-template-columns: repeat(5, 80px);
+        padding: 1em;
+    }
+
+    .portrait {
+        height: 75px;
+        width: 75px;
+    }
+
+    .pres-name-text {
+        font-size: 12px;
+        font-weight: 700;
+    }
+}
+
+/*larger phone query*/
+@media only screen and (min-width: 600px) {
+
+    #question-asker,
+    #answer-notification {
+        font-size: 22px;
+    }
+}
+
+/*tablet query*/
+@media only screen and (min-width: 768px) {
+
+    #title {
+        font-size: 2.5em;
+    }
+
+    #new-game-button,
+    #end-button,
+    #game-info-button {
+        font-size: 20px;
+    }
+
+    .mistake-imagery {
+        height: 22px;
+        width: 22px;
+        font-size: 1.5em;
+        font-weight: 700;
+        border: 4px solid #940404;
+        border-radius: 25%;
+    }
+
+    #question-asker,
+    #answer-notification {
+        font-size: 25px;
+    }
+
+    #pres-button-area {
+        grid-template-columns: repeat(9, 75px);
         grid-column-gap: 5px;
         grid-row-gap: 5px;
         padding: 5px;
         border-radius: 0 10px 10px 0;
     }
 
-    .pres-button {
-        height: 65px;
-        width: 65px;
-        border: 3px solid #FFE9CC;
-        box-shadow: 2px 2px #94918e;
+    .portrait {
+        height: 70px;
+        width: 70px;
     }
 
-    .portrait {
-        height: 65px;
-        width: 65px;
+    .pres-name-text {
+        display: none;
+        height: 0;
+        width: 0;
     }
 
     #mode-info>h1 {
@@ -265,25 +419,45 @@ footer {
 /*desktop query*/
 @media only screen and (min-width: 992px) {
 
-    #question-asker, #answer-notification {
+    #title {
+        font-size: 3em;
+    }
+
+    #new-game-button,
+    #end-button,
+    #game-info-button {
+        font-size: 25px;
+    }
+
+    #question-asker,
+    #answer-notification {
         width: 95%;
         height: 65px;
         font-size: 30px;
     }
 
+    .president-area {
+        background-color: #940404;
+        display: flex;
+        flex-direction: row;
+        align-items: normal;
+    }
+
+    #pres-flag-area {
+        width: 100%;
+        height: auto;
+        background: repeating-linear-gradient(#940404,
+                #940404 9.5%,
+                #FFE9CC 9.5%,
+                #FFE9CC 18.1%);
+    }
+
     #pres-button-area {
-        grid-template-columns: repeat(7, 80px);
+        grid-template-columns: repeat(9, 80px);
         grid-column-gap: 5px;
         grid-row-gap: 5px;
         padding: 5px;
         border-radius: 0 10px 10px 0;
-    }
-
-    .pres-button {
-        height: 70px;
-        width: 70px;
-        border: 3px solid #FFE9CC;
-        box-shadow: 2px 2px #94918e;
     }
 
     .portrait {
@@ -314,11 +488,11 @@ footer {
 }
 
 /*slightly larger desktop query*/
-@media only screen and (min-width: 1033px) {
+/* @media only screen and (min-width: 1033px) {
     #pres-button-area {
         grid-template-columns: repeat(8, 75px);
     }
-}
+} */
 
 /*large desktop query*/
 @media only screen and (min-width: 1260px) {
@@ -329,13 +503,6 @@ footer {
         grid-row-gap: 5px;
         padding: 1em;
         border-radius: 0 10px 10px 0;
-    }
-
-    .pres-button {
-        height: 5em;
-        width: 5em;
-        border: 3px solid #FFE9CC;
-        box-shadow: 2px 2px #94918e;
     }
 
     .portrait {

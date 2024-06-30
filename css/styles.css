@@ -225,11 +225,31 @@ button {
 
 .president-area {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     background-color: #102C57;
     width: 100%;
     align-items: center;
     border-radius: 5px;
+
+
+    position: fixed;
+    height: 75%;
+    overflow-y:auto;
+    overflow-x:hidden;
+
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: #102C57;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FFE9CC;
+    border-radius: 15px;
 }
 
 #pres-button-area {
@@ -372,6 +392,12 @@ footer {
     #answer-notification {
         font-size: 25px;
     }
+
+.president-area {
+    position: relative;
+    height: fit-content;
+    overflow-x:auto;
+}
 
     #pres-button-area {
         grid-template-columns: repeat(9, 75px);
