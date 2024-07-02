@@ -218,12 +218,12 @@ function revealAnswer() {
 
             if (currentAnswersFullNames.length === 1) {
                 if (currentAnswerNumber === 1) { // Differing message for questions with one possible answer vs. one still remaining answer
-                    answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistake. The correct answer was ${currentAnswersFullNames}.`;
+                    answerNotification.innerText = `${chosenPresidentFullName} is wrong! You have ${wrongAnswers} mistake. The correct answer was ${currentAnswersFullNames}.`;
                 } else {
-                    answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistake. The remaining correct answer was ${currentAnswersFullNames}.`;
+                    answerNotification.innerText = `${chosenPresidentFullName} is wrong! You have ${wrongAnswers} mistake. The remaining correct answer was ${currentAnswersFullNames}.`;
                 }
             } else {
-                answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistake. One of ${currentAnswersFullNames.length} remaining answers was ${currentAnswersFullNames[getRandom]}.`;
+                answerNotification.innerText = `${chosenPresidentFullName} is wrong! Mistake #${wrongAnswers}. One of ${currentAnswersFullNames.length} remaining answers was ${currentAnswersFullNames[getRandom]}.`;
             }
         }
 
@@ -232,12 +232,12 @@ function revealAnswer() {
 
             if (currentAnswersFullNames.length === 1) {
                 if (currentAnswerNumber === 1) {
-                    answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. The correct answer was ${currentAnswersFullNames}.`;
+                    answerNotification.innerText = `${chosenPresidentFullName} is wrong! You have ${wrongAnswers} mistakes. The correct answer was ${currentAnswersFullNames}.`;
                 } else {
-                    answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. The remaining correct answer was ${currentAnswersFullNames}.`;
+                    answerNotification.innerText = `${chosenPresidentFullName} is wrong! You have ${wrongAnswers} mistakes. The remaining correct answer was ${currentAnswersFullNames}.`;
                 }
             } else {
-                answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. One of ${currentAnswersFullNames.length} remaining answers was ${currentAnswersFullNames[getRandom]}.`;
+                answerNotification.innerText = `${chosenPresidentFullName} is wrong! Mistake #${wrongAnswers}. One of ${currentAnswersFullNames.length} remaining answers was ${currentAnswersFullNames[getRandom]}.`;
             }
         }
 
@@ -246,12 +246,12 @@ function revealAnswer() {
 
             if (currentAnswersFullNames.length === 1) {
                 if (currentAnswerNumber === 1) {
-                    answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. The correct answer was ${currentAnswersFullNames}.`;
+                    answerNotification.innerText = `${chosenPresidentFullName} is wrong! You have ${wrongAnswers} mistakes. The correct answer was ${currentAnswersFullNames}.`;
                 } else {
-                    answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. The remaining correct answer was ${currentAnswersFullNames}.`;
+                    answerNotification.innerText = `${chosenPresidentFullName} is wrong! You have ${wrongAnswers} mistakes. The remaining correct answer was ${currentAnswersFullNames}.`;
                 }
             } else {
-                answerNotification.innerText = `${chosenPresidentFullName} is incorrect! You have ${wrongAnswers} mistakes. One of ${currentAnswersFullNames.length} remaining answers was ${currentAnswersFullNames[getRandom]}.`;
+                answerNotification.innerText = `${chosenPresidentFullName} is wrong! Mistake #${wrongAnswers}. One of ${currentAnswersFullNames.length} remaining answers was ${currentAnswersFullNames[getRandom]}.`;
             }
         }
 
