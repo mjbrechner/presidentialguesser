@@ -78,6 +78,10 @@ function newGameHard() {
 // Question asking and answering
 
 function newGame() {
+    document.getElementById("game-info-on-load").style.display = "none"; // This display of the RULES (and alternate START button) only appears when the game starts up. It is deleted when the first game begins but is always viewable in the INFO section.
+    document.getElementById("gameplay-area-top").style.display = "flex"; // Only hidden upon startup, otherwise always viewable.
+    document.getElementById("gameplay-area-middle").style.display = "flex"; // Only hidden upon startup, otherwise always viewable.
+
     // Reset things to start out the new game.
     resetJSON();
 
@@ -957,7 +961,7 @@ mediaMatcher.onchange = (x) => {
     } else {
         document.getElementById("title").innerText = "★ Presidential Guesser ★";
     }
-    
+
 }
 // TO DO
 

@@ -63,8 +63,24 @@ button {
     right: 10px;
 }
 
-#gameplay-area-top {
+#game-info-on-load {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+
+#new-game-button-on-load {
+    background-color: #102C57;
+    color: #FFE9CC;
+    font-size: 13px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+}
+
+#gameplay-area-top {
+    display: none;
     width: 98%;
     height: fit-content;
 }
@@ -173,6 +189,7 @@ button {
 
 .mistake-area {
     display: flex;
+    flex-direction: column;
     gap: 2px;
     padding: 5px;
 }
@@ -192,7 +209,7 @@ button {
 }
 
 #gameplay-area-middle {
-    display: flex;
+    display: none;
     justify-content: center;
     height: fit-content;
 }
@@ -389,7 +406,8 @@ footer {
 
     #new-game-button,
     #end-button,
-    #game-info-button {
+    #game-info-button,
+    #new-game-button-on-load {
         font-size: 20px;
     }
 
@@ -471,7 +489,8 @@ footer {
 
     #new-game-button,
     #end-button,
-    #game-info-button {
+    #game-info-button,
+    #new-game-button-on-load {
         font-size: 25px;
     }
 
