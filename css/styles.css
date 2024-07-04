@@ -69,14 +69,25 @@ button {
     align-items: center;
     width: 100%;
     height: fit-content;
+    margin: 5px;
+}
+
+#rules {
+    font-size: 18px;
+    padding: 0;
+    margin: 0 0 5px 0;
 }
 
 #new-game-button-on-load {
-    background-color: #102C57;
-    color: #FFE9CC;
-    font-size: 13px;
+    background-color: #940404;
+    color: #102C57;
+    text-shadow: -2px 2px 2px #FFE9CC,
+        2px 2px 2px #FFE9CC,
+        2px -2px 2px #FFE9CC,
+        -2px -2px 2px #FFE9CC;
+    font-size: 20px;
+    padding: 3px 15px 3px 15px;
     border-radius: 3px;
-    margin-bottom: 5px;
 }
 
 #gameplay-area-top {
@@ -334,8 +345,13 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-size: .8em;
-    margin-bottom: .25em;
+    margin: 5px 0 0 0;
+}
+
+footer>p {
+    margin: 0;
 }
 
 .profile-pic {
@@ -408,7 +424,7 @@ footer {
     #end-button,
     #game-info-button,
     #new-game-button-on-load {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .mistake-imagery {
@@ -470,7 +486,6 @@ footer {
 
     footer {
         flex-direction: row;
-        margin-top: 1.25em;
         font-size: .9em;
     }
 
