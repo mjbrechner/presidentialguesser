@@ -620,6 +620,14 @@ function resetJSON() {
         "answerOriginal": ["mckinley", "taft"],
         "answerNumber": 2,
         "difficulty": "hard"
+    },
+
+    {
+        "question": "During presidency, Daniel Webster served as secretary of state",
+        "answer": ["harrison_wh", "tyler", "fillmore"],
+        "answerOriginal": ["harrison_wh", "tyler", "fillmore"],
+        "answerNumber": 3,
+        "difficulty": "hard"
     }
 
 ]`;
@@ -695,6 +703,14 @@ function resetJSON() {
         "answerNumber": 1,
         "difficulty": "moderate"
     }, 
+
+    {
+        "question": "Only former vice president to serve two complete four-year terms as president",
+        "answer": ["jefferson"],
+        "answerOriginal": ["jefferson"],
+        "answerNumber": 1,
+        "difficulty": "moderate"
+    },
 
     {
         "question": "First president to sign a Declaration of War",
@@ -1608,7 +1624,7 @@ function resetJSON() {
 
 ]`;
 
-// Combining the two JSON files
+    // Combining the two JSON files
     superJSON = JSON.parse(superJSON);
     superJSON2 = JSON.parse(superJSON2);
     superJSON = superJSON.concat(superJSON2);
