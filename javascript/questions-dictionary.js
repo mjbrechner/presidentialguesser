@@ -628,6 +628,14 @@ function resetJSON() {
         "answerOriginal": ["harrison_wh", "tyler", "fillmore"],
         "answerNumber": 3,
         "difficulty": "hard"
+    }, 
+
+    {
+        "question": "Received electoral votes for the presidency in three or more different elections",
+        "answer": ["washington", "adams_j", "jefferson", "adams_jq", "jackson", "cleveland", "roosevelt_fd", "nixon", "reagan"],
+        "answerOriginal": ["washington", "adams_j", "jefferson", "adams_jq", "jackson", "cleveland", "roosevelt_fd", "nixon", "reagan"],
+        "answerNumber": 9,
+        "difficulty": "hard"
     }
 
 ]`;
