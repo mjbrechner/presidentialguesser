@@ -93,7 +93,8 @@ button {
 #gameplay-area-top {
     display: none;
     width: 98%;
-    height: fit-content;
+    /* height: fit-content; */
+    /* height might not end up mattering here */
 }
 
 .popup {
@@ -254,7 +255,8 @@ button {
     align-items: center;
     background-color: #102C57;
     width: 100%;
-    height: 75%;
+    height: 65%;
+    /*height had been set at 75%, but that wouldn't allow full scrolling on devices with smaller heights */
     border-radius: 5px;
     position: fixed;
     overflow-y: auto;
@@ -572,3 +574,6 @@ footer>p {
         -webkit-user-select: none;
     }
 }
+
+/* TO DO:
+Still can't see footer in mobile view due to president portrait box's positioning. */
