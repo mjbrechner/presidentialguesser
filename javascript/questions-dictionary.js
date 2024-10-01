@@ -1463,6 +1463,13 @@ function resetJSON() {
     },
 
     {
+        "question": "First president to reach the age of 100",
+        "answer": ["carter"],
+        "answerNumber": 1,
+        "difficulty": "moderate"
+    },
+
+    {
         "question": "Known for working the family peanut farm",
         "answer": ["carter"],
         "answerNumber": 1,
