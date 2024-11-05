@@ -309,6 +309,14 @@ button {
     display: none;
 }
 
+#mode-info a {
+font-weight: 700;
+}
+
+#mode-info li {
+padding: .1em;
+}
+
 .portrait {
     width: 65px;
     height: 65px;

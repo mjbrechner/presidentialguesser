@@ -87,7 +87,6 @@ function newGame() {
 
     document.getElementById("new-game-button").style.visibility = "hidden";
     document.getElementById("end-button").style.visibility = "visible";
-    // difficultyLevelChooser.style.visibility = "hidden";
     document.getElementById("popup-new").style.visibility = "hidden";
 
     document.getElementById("mistake-1").style.visibility = "hidden";
@@ -99,8 +98,6 @@ function newGame() {
 
     chosenMode = "game";
     presidentialList = ['washington', 'adams_j', 'jefferson', 'madison', 'monroe', 'adams_jq', 'jackson', 'vanburen', 'harrison_wh', 'tyler', 'polk', 'taylor', 'fillmore', 'pierce', 'buchanan', 'lincoln', 'johnson_a', 'grant', 'hayes', 'garfield', 'arthur', 'cleveland', 'harrison_b', 'mckinley', 'roosevelt_t', 'taft', 'wilson', 'harding', 'coolidge', 'hoover', 'roosevelt_fd', 'truman', 'eisenhower', 'kennedy', 'johnson_lb', 'nixon', 'ford', 'carter', 'reagan', 'bush_ghw', 'clinton', 'bush_gw', 'obama', 'trump', 'biden'];
-
-    // difficultyLevel = difficultyLevelChooser.value;
 
     timerSeconds = 0;
     timerMinutes = 0;
@@ -119,7 +116,6 @@ function newGame() {
     }
 
     questionAsker();
-    // setInterval(gameTimer, 1000);
     timerInterval;
 }
 
@@ -140,7 +136,6 @@ function gameOver() {
     document.getElementById("question-asker-button").style.display = "none";
     document.getElementById("new-game-button").style.visibility = "visible";
     document.getElementById("end-button").style.visibility = "hidden";
-    // difficultyLevelChooser.style.visibility = "visible";
     answerNotification.style.pointerEvents = "none";
 }
 
@@ -180,12 +175,9 @@ function revealAnswer() {
         currentAnswersFullNames.push(` ${namesDictionary[currentAnswers[i]]}`);
     }
 
-    // console.log(`You have chosen ${chosenPresident}. Remaining correct answers include:${currentAnswersFullNames}.`);
-
-    //Enable "Next Question" button, though it will get disabled again if the game turns out to be over.
+    // Enable "Next Question" button, though it will get disabled again if the game turns out to be over.
     document.getElementById("question-asker-button").style.display = "flex";
 
-    // answerNotificationBox.style.visibility = "visible";
     questionBox.style.display = "none";
     answerNotification.style.display = "block";
 
@@ -198,12 +190,11 @@ function revealAnswer() {
 
         document.getElementById(`portrait-${chosenPresident}`).style.filter = "sepia(100%) opacity(75%) brightness(.25)";
         presidentialList.splice((presidentialList.indexOf(chosenPresident)), 1);
-        // console.log(`Remaining presidents: ${presidentialList}`);
 
         // Remove any instance of that correct answer from future questions, so it won't be a possibility going forward.
         for (let i = 0; i < superJSON.length; i++) {
             if (superJSON[i]["answer"].includes(chosenPresident)) {
-                //remove
+                // Remove
                 superJSON[i]["answer"] = superJSON[i]["answer"].filter(function (nameToBeRemoved) {
                     return nameToBeRemoved !== chosenPresident
                 });
@@ -826,20 +817,13 @@ function hoverNone() {
     chosenPresidentBox.innerText = "";
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////// first was index second was testing
-////////////////////////////////////////////////////////////////////////////////////////////
-
 async function questionAsker() {
     // When a question IS being asked, enable the presidential portrait section and clear answer area.
     document.getElementById("pres-button-area").style.pointerEvents = "auto";
     chosenPresidentBox.style.visibility = "visible";
     questionBox.innerText = "";
     questionBox.style.display = "block";
-    // answerNotificationBox.style.visibility = "hidden";
     answerNotification.style.display = "none";
-    //
-
 
     // This next section deletes entries with no remaining answers. The loop nestled inside deletes these entries, while the outside loop merely runs
     // the deletion process a total of four times. The reason is this is that sometimes, questions with answer.length === 0 still somehow remained even
@@ -906,8 +890,6 @@ async function questionAsker() {
         }
     }
 
-    // console.log("ANSWERS THRESHOLD: " + answersThreshold);
-
     // This next part picks a random question to be asked.
 
     let randomizer = Math.floor(Math.random() * superJSON.length);
@@ -935,7 +917,6 @@ async function questionAsker() {
     // merely means that all available questions are up for grabs, so there is nothing complicated to the code as with the "normal" difficulty.
     // What I do here is simply choose a question from the full pool of available options without regard to prioritizing "easy" or "moderate" questions.
     if (difficultyLevel === "hard") {
-        // console.log("choose for hard mode");
         randomizer = Math.floor(Math.random() * superJSON.length);
     }
 
@@ -970,7 +951,5 @@ mediaMatcher.onchange = (x) => {
 // Maybe instead of Difficulty as either "hard" or nothing at all, maybe an "easy" difficulty should go first with some of the more simple
 // questions. There shouldn't be so many of them, maybe 5, or 10 at most. Then comes the standard questions (currenly with no difficulty
 // setting), and then comes the hard questions as has already been coded.
-
-// The Game Over notice is a bit redundant. Plus, it is unclickable, so maybe it should just be removed altogether.
 
 // Maybe disable the whole screen when the popup is open?
