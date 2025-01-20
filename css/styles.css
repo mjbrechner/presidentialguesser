@@ -351,10 +351,7 @@ li {
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     font-size: .8em;
     margin: 5px 0 0 0;
 }

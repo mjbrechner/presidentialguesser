@@ -240,17 +240,17 @@ function resetJSON() {
 
     {
         "question": "Served exactly one full term as president (no more, no less)",
-        "answer": ["adams_j", "adams_jq", "vanburen", "polk", "pierce", "buchanan", "hayes", "harrison_b", "taft", "hoover", "carter", "bush_ghw", "trump"],
-        "answerOriginal": ["adams_j", "adams_jq", "vanburen", "polk", "pierce", "buchanan", "hayes", "harrison_b", "taft", "hoover", "carter", "bush_ghw", "trump"],
+        "answer": ["adams_j", "adams_jq", "vanburen", "polk", "pierce", "buchanan", "hayes", "harrison_b", "taft", "hoover", "carter", "bush_ghw", "biden"],
+        "answerOriginal": ["adams_j", "adams_jq", "vanburen", "polk", "pierce", "buchanan", "hayes", "harrison_b", "taft", "hoover", "carter", "bush_ghw", "biden"],
         "answerNumber": 13,
         "difficulty": "easy"
     },
 
     {
         "question": "Served less than one complete term as president",
-        "answer": ["harrison_wh", "garfield", "taylor", "harding", "ford", "fillmore", "kennedy", "biden", "arthur", "johnson_a", "tyler"],
-        "answerOriginal": ["harrison_wh", "garfield", "taylor", "harding", "ford", "fillmore", "kennedy", "biden", "arthur", "johnson_a", "tyler"],
-        "answerNumber": 11,
+        "answer": ["harrison_wh", "garfield", "taylor", "harding", "ford", "fillmore", "kennedy", "arthur", "johnson_a", "tyler"],
+        "answerOriginal": ["harrison_wh", "garfield", "taylor", "harding", "ford", "fillmore", "kennedy", "arthur", "johnson_a", "tyler"],
+        "answerNumber": 10,
         "difficulty": "easy"
     },
 
@@ -288,9 +288,9 @@ function resetJSON() {
 
     {
         "question": "Had multiple different vice presidents",
-        "answer": ["jefferson", "madison", "jackson", "lincoln", "grant", "cleveland", "mckinley", "roosevelt_fd", "nixon"],
-        "answerOriginal": ["jefferson", "madison", "jackson", "lincoln", "grant", "cleveland", "mckinley", "roosevelt_fd", "nixon"],
-        "answerNumber": 9,
+        "answer": ["jefferson", "madison", "jackson", "lincoln", "grant", "cleveland", "mckinley", "roosevelt_fd", "nixon", "trump"],
+        "answerOriginal": ["jefferson", "madison", "jackson", "lincoln", "grant", "cleveland", "mckinley", "roosevelt_fd", "nixon", "trump"],
+        "answerNumber": 10,
         "difficulty": "easy"
     },
 
@@ -567,6 +567,14 @@ function resetJSON() {
     },
 
     {
+        "question": "Served non-consecutive terms as president",
+        "answer": ["cleveland", "trump"],
+        "answerOriginal": ["cleveland", "trump"],
+        "answerNumber": 2,
+        "difficulty": "moderate"
+    },
+
+    {
         "question": "Elected to a federal office as a candidate for the Anti-Masonic Party",
         "answer": ["adams_jq", "fillmore"],
         "answerOriginal": ["adams_jq", "fillmore"],
@@ -632,9 +640,9 @@ function resetJSON() {
 
     {
         "question": "Received electoral votes for the presidency in three or more different elections",
-        "answer": ["washington", "adams_j", "jefferson", "adams_jq", "jackson", "cleveland", "roosevelt_fd", "nixon", "reagan"],
-        "answerOriginal": ["washington", "adams_j", "jefferson", "adams_jq", "jackson", "cleveland", "roosevelt_fd", "nixon", "reagan"],
-        "answerNumber": 9,
+        "answer": ["washington", "adams_j", "jefferson", "adams_jq", "jackson", "cleveland", "roosevelt_fd", "nixon", "reagan", "trump"],
+        "answerOriginal": ["washington", "adams_j", "jefferson", "adams_jq", "jackson", "cleveland", "roosevelt_fd", "nixon", "reagan", "trump"],
+        "answerNumber": 10,
         "difficulty": "hard"
     }
 
@@ -1113,10 +1121,10 @@ function resetJSON() {
     },
 
     {
-        "question": "Served non-consecutive terms as president",
+        "question": "President during the protest of Coxley's Army as well as the Pullman Strike.",
         "answer": ["cleveland"],
         "answerNumber": 1,
-        "difficulty": "moderate"
+        "difficulty": "hard"
     },
 
     {
@@ -1589,7 +1597,7 @@ function resetJSON() {
     },
 
     {
-        "question": "First president to be indicted by a grand jury in both a state and a federal case",
+        "question": "Indicted by a grand jury in both a state and a federal case",
         "answer": ["trump"],
         "answerNumber": 1,
         "difficulty": "moderate"
@@ -1616,6 +1624,13 @@ function resetJSON() {
         "difficulty": "hard"
     },
     
+    {
+        "question": "Oldest president to begin a new term on inauguration day",
+        "answer": ["trump"],
+        "answerNumber": 1,
+        "difficulty": "moderate"
+    },
+
     {
         "question": "Oldest-ever person to serve as president",
         "answer": ["biden"],
@@ -1722,3 +1737,5 @@ const namesDictionary = {
 
 // Added answerOriginal if I want to display a list of total correct answers for when players make a mistake.
 // But again, if this isn't to be used, it could be deleted.
+
+// Question-answer sequences accurate as of 12:00 p.m., 20 January 2025.
