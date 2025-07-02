@@ -813,6 +813,13 @@ function resetJSON() {
     }, 
 
     {
+        "question": "First president to ride in a train",
+        "answer": ["jackson"],
+        "answerNumber": 1,
+        "difficulty": "hard"
+    }, 
+
+    {
         "question": "Native speaker of Dutch",
         "answer": ["vanburen"],
         "answerNumber": 1,
@@ -1327,8 +1334,15 @@ function resetJSON() {
         "question": "Represented the United States at the Yalta Conference in the Soviet Union",
         "answer": ["roosevelt_fd"],
         "answerNumber": 1,
+        "difficulty": "moderate"
+    },
+
+    {
+        "question": "First to fly in an aircraft during presidency, riding onboard a plane nicknamed 'Sacred Cow.'",
+        "answer": ["roosevelt_fd"],
+        "answerNumber": 1,
         "difficulty": "hard"
-    },    
+    },  
 
     {
         "question": "Born in Missouri",
