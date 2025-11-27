@@ -644,6 +644,14 @@ function resetJSON() {
         "answerOriginal": ["washington", "adams_j", "jefferson", "adams_jq", "jackson", "cleveland", "roosevelt_fd", "nixon", "reagan", "trump"],
         "answerNumber": 10,
         "difficulty": "hard"
+    },
+
+    {
+        "question": "Served as governor of New York",
+        "answer": ["vanburen", "cleveland", "roosevelt_t", "roosevelt_fd"],
+        "answerOriginal": ["vanburen", "cleveland", "roosevelt_t", "roosevelt_fd"],
+        "answerNumber": 4,
+        "difficulty": "moderate"
     }
 
 ]`;
